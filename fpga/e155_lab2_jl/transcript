@@ -1,0 +1,24 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/source/impl_1/lab2top_jl.sv
+# Questa Lattice OEM Edition-64 vlog 2025.2 Compiler 2025.05 May 31 2025
+# Start time: 04:25:45 on Sep 12,2026
+# vlog -reportprogress 300 -work work C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/source/impl_1/lab2top_jl.sv 
+# ** Note: (vlog-220) 'C:/lscc/radiant/2026.1/questasim/win64/../modelsim.ini' is used as the ini file.
+# -- Compiling module lab1_jl
+# ** Error: (vlog-13069) C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/source/impl_1/lab2top_jl.sv(12): near "input": syntax error, unexpected input, expecting ')'.
+# End time: 04:25:46 on Sep 12,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

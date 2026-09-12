@@ -5,7 +5,7 @@
 // The top-level module also uses another module for switch-to-7-segment display, and another module for the counter.
 
 
-module lab1_jl(
+module lab2top_jl(
 	input   logic  [3:0] sw1,
 	input   logic  [3:0] sw2,
 	input   logic  [3:0] col
