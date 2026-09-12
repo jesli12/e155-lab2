@@ -11,11 +11,11 @@ module scanner(
 	output  logic   [3:0] rows
 );
 
-	logic scan_count; // must i specify size?
+	logic [24:0] scan_count; // must i specify size?
 	logic scan_clk;
 	
 	// counter for timing *each* of the 4 codes to go at 2Hz 
-	counter (
+	counter #(
 		.WIDTH(25),
 		.MAX_COUNT(12_000_000) // MAX_COUNT = 12_000_000 = a signal on/off frequency of 2 Hz
 	) scanner_counter (

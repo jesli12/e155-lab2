@@ -12,7 +12,7 @@ module counter
 );
 
 	logic clk_state = 0;
-	logic [WIDTH-1:0] count = 0; // check this!
+	// logic [WIDTH-1:0] count = 0; // check this!
 	
 	always_ff @(posedge osc) begin
 			if (~nrst) begin
@@ -23,6 +23,9 @@ module counter
 				if (count >= (MAX_COUNT-1)) begin //for exact timing MAX_COUNT - 1 to account for the cycle it takes to register that it hit max
 					clk_state <= ~clk_state; // toggles clk state on or off once desired cycle time up
 					count <= 0;
+				end
+				else begin
+					count <= count + 1'b1;
 				end
 			end
 	end

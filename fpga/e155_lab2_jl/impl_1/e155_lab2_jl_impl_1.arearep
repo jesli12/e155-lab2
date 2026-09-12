@@ -1,0 +1,54 @@
+----------------------------------------------------------------------
+Report for cell lab2top_jl.TECH
+Register bits:  47 of 5280 (0.890%)
+I/O cells:      31
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2        24          100.0
+                            FD1P3XZ        47          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB        14          100.0
+                               LUT4        99          100.0
+                                 OB        17          100.0
+SUB MODULES
+        counter(MAX_COUNT=12000000)         1
+ counter(WIDTH=20,MAX_COUNT=200000)         1
+                            scanner         1
+                            sev_seg         1
+                              TOTAL       206
+----------------------------------------------------------------------
+Report for cell scanner.v1
+Instance Path : scanning
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        13           54.2
+                            FD1P3XZ        26           55.3
+                               LUT4        54           54.5
+SUB MODULES
+        counter(MAX_COUNT=12000000)         1
+                              TOTAL        94
+----------------------------------------------------------------------
+Report for cell counter(MAX_COUNT=12000000).v1
+Instance Path : scanning.scanner_counter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        13           54.2
+                            FD1P3XZ        26           55.3
+                               LUT4        36           36.4
+                              TOTAL        75
+----------------------------------------------------------------------
+Report for cell counter(WIDTH=20,MAX_COUNT=200000).v1
+Instance Path : segment_counter
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2        11           45.8
+                            FD1P3XZ        21           44.7
+                               LUT4        29           29.3
+                              TOTAL        61
+----------------------------------------------------------------------
+Report for cell sev_seg.v1
+Instance Path : segment_decoder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7            7.1
+                              TOTAL         7

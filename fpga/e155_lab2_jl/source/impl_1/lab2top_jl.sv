@@ -8,7 +8,7 @@
 module lab2top_jl(
 	input   logic  [3:0] sw1,
 	input   logic  [3:0] sw2,
-	input   logic  [3:0] col
+	input   logic  [3:0] col,
 	input   logic nreset,
 	input   logic enable,  // do i make these signals internal?
 	output  logic  [1:0] pwr,
@@ -25,7 +25,7 @@ module lab2top_jl(
 	HSOSC hf_osc (.CLKHFPU(1'b1), .CLKHFEN(1'b1), .CLKHF(int_osc));
 	
 	// counter for timing multiplexer (120 Hz)
-	counter (
+	counter #(
 		.WIDTH(20),
 		.MAX_COUNT(200_000) // MAX_COUNT = 200_000 = a signal on/off frequency of 120 Hz
 	) segment_counter (
