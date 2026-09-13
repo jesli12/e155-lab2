@@ -26,8 +26,8 @@ module lab2top_jl(
 	
 	// counter for timing multiplexer (120 Hz)
 	counter #(
-		.WIDTH(20),
-		.MAX_COUNT(200_000) // MAX_COUNT = 200_000 = a signal on/off frequency of 120 Hz
+		.WIDTH(28),
+		.MAX_COUNT(200_00_000) // MAX_COUNT = 200_000 = a signal on/off frequency of 120 Hz
 	) segment_counter (
 		.osc (int_osc), 
 		.nrst (nreset),  

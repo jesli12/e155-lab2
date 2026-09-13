@@ -3,50 +3,50 @@ Report for cell lab2top_jl
    Instance path: lab2top_jl
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	        146        100.0
-                               LUTGATE	         98        100.0
-                                LUTCCU	         48        100.0
+                                  LUT4	        165        100.0
+                               LUTGATE	        109        100.0
+                                LUTCCU	         56        100.0
                                  IOBUF	         31        100.0
-                                PFUREG	         47        100.0
+                                PFUREG	         55        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-    counter(WIDTH=20,MAX_COUNT=200000)	          1        34.9
-                               scanner	          1        53.4
-                               sev_seg	          1         4.8
+  counter(WIDTH=28,MAX_COUNT=20000000)	          1        41.8
+                               scanner	          1        47.3
+                               sev_seg	          1         4.2
 ---------------------------------------------------
 Report for cell scanner
    Instance path: lab2top_jl/scanning
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         78        53.4
-                               LUTGATE	         52        53.1
-                                LUTCCU	         26        54.2
-                                PFUREG	         26        55.3
+                                  LUT4	         78        47.3
+                               LUTGATE	         52        47.7
+                                LUTCCU	         26        46.4
+                                PFUREG	         26        47.3
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-           counter(MAX_COUNT=12000000)	          1        43.2
+           counter(MAX_COUNT=12000000)	          1        37.6
 ---------------------------------------------------
 Report for cell counter(MAX_COUNT=12000000)
    Instance path: lab2top_jl/scanning/scanner_counter
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         63        43.2
-                               LUTGATE	         37        37.8
-                                LUTCCU	         26        54.2
-                                PFUREG	         26        55.3
+                                  LUT4	         62        37.6
+                               LUTGATE	         36        33.0
+                                LUTCCU	         26        46.4
+                                PFUREG	         26        47.3
 ---------------------------------------------------
-Report for cell counter(WIDTH=20,MAX_COUNT=200000)
+Report for cell counter(WIDTH=28,MAX_COUNT=20000000)
    Instance path: lab2top_jl/segment_counter
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         51        34.9
-                               LUTGATE	         29        29.6
-                                LUTCCU	         22        45.8
-                                PFUREG	         21        44.7
+                                  LUT4	         69        41.8
+                               LUTGATE	         39        35.8
+                                LUTCCU	         30        53.6
+                                PFUREG	         29        52.7
 ---------------------------------------------------
 Report for cell sev_seg
    Instance path: lab2top_jl/segment_decoder
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          7         4.8
-                               LUTGATE	          7         7.1
+                                  LUT4	          7         4.2
+                               LUTGATE	          7         6.4

@@ -1,29 +1,29 @@
 ----------------------------------------------------------------------
 Report for cell lab2top_jl.TECH
-Register bits:  47 of 5280 (0.890%)
+Register bits:  55 of 5280 (1.042%)
 I/O cells:      31
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2        24          100.0
-                            FD1P3XZ        47          100.0
+                               CCU2        28          100.0
+                            FD1P3XZ        55          100.0
                          HSOSC_CORE         1          100.0
                                  IB        14          100.0
-                               LUT4        97          100.0
+                               LUT4       108          100.0
                                  OB        17          100.0
 SUB MODULES
         counter(MAX_COUNT=12000000)         1
- counter(WIDTH=20,MAX_COUNT=200000)         1
+counter(WIDTH=28,MAX_COUNT=20000000)         1
                             scanner         1
                             sev_seg         1
-                              TOTAL       204
+                              TOTAL       227
 ----------------------------------------------------------------------
 Report for cell scanner.v1
 Instance Path : scanning
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        13           54.2
-                            FD1P3XZ        26           55.3
-                               LUT4        52           53.6
+                                FA2        13           46.4
+                            FD1P3XZ        26           47.3
+                               LUT4        52           48.1
 SUB MODULES
         counter(MAX_COUNT=12000000)         1
                               TOTAL        92
@@ -32,23 +32,23 @@ Report for cell counter(MAX_COUNT=12000000).v1
 Instance Path : scanning.scanner_counter
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        13           54.2
-                            FD1P3XZ        26           55.3
-                               LUT4        37           38.1
-                              TOTAL        76
+                                FA2        13           46.4
+                            FD1P3XZ        26           47.3
+                               LUT4        36           33.3
+                              TOTAL        75
 ----------------------------------------------------------------------
-Report for cell counter(WIDTH=20,MAX_COUNT=200000).v1
+Report for cell counter(WIDTH=28,MAX_COUNT=20000000).v1
 Instance Path : segment_counter
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2        11           45.8
-                            FD1P3XZ        21           44.7
-                               LUT4        29           29.9
-                              TOTAL        61
+                                FA2        15           53.6
+                            FD1P3XZ        29           52.7
+                               LUT4        39           36.1
+                              TOTAL        83
 ----------------------------------------------------------------------
 Report for cell sev_seg.v1
 Instance Path : segment_decoder
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         7            7.2
+                               LUT4         7            6.5
                               TOTAL         7

@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Sun Sep 13 04:43:12 2026
+Mapped on: Sun Sep 13 05:30:52 2026
 
 Design Information
 ------------------
@@ -22,11 +22,11 @@ Command line:   map -pdc C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab
 Design Summary
 --------------
 
-   Number of slice registers:  47 out of  5280 (1%)
+   Number of slice registers:  55 out of  5280 (1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           146 out of  5280 (3%)
-      Number of logic LUT4s:              98
-      Number of ripple logic:             24 (48 LUT4s)
+   Number of LUT4s:           165 out of  5280 (3%)
+      Number of logic LUT4s:             109
+      Number of ripple logic:             28 (56 LUT4s)
    Number of IO sites used:   31 out of 39 (79%)
       Number of IO sites used for general PIO: 31
       Number of IO sites used for I3C: 0 out of 2 (0%)
@@ -49,17 +49,17 @@ Design Summary
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net int_osc: 47 loads, 47 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
+      Net int_osc: 55 loads, 55 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
    Number of Clock Enables:  2
       Net VCC_net: 1 loads, 0 SLICEs
-      Net n204: 47 loads, 47 SLICEs
+      Net n224: 55 loads, 55 SLICEs
    Number of LSRs:  1
-      Net n3: 47 loads, 47 SLICEs
+      Net n3: 55 loads, 55 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net n204: 47 loads
-      Net n3: 47 loads
+      Net n224: 55 loads
+      Net n3: 55 loads
+      Net segment_counter.n4_adj_84: 29 loads
       Net scanning.scanner_counter.n4: 26 loads
-      Net segment_counter.n4: 21 loads
 
                                     Page 1
 
@@ -210,7 +210,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 67 MB
-Checksum -- map: 6e558d0820162f144c1c12a64754ae0972d523e2
+Checksum -- map: 852a44f39e5823b3391cd2987ddeb8cc857500d4
 
 
 
