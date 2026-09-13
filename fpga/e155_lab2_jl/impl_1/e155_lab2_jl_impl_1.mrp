@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Sat Sep 12 04:44:03 2026
+Mapped on: Sat Sep 12 22:39:27 2026
 
 Design Information
 ------------------
@@ -23,8 +23,8 @@ Design Summary
 
    Number of slice registers:  47 out of  5280 (1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:           148 out of  5280 (3%)
-      Number of logic LUT4s:             100
+   Number of LUT4s:           146 out of  5280 (3%)
+      Number of logic LUT4s:              98
       Number of ripple logic:             24 (48 LUT4s)
    Number of IO sites used:   31 out of 39 (79%)
       Number of IO sites used for general PIO: 31
@@ -51,11 +51,11 @@ Design Summary
       Net int_osc: 47 loads, 47 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
    Number of Clock Enables:  2
       Net VCC_net: 1 loads, 0 SLICEs
-      Net n195: 47 loads, 47 SLICEs
+      Net n204: 47 loads, 47 SLICEs
    Number of LSRs:  1
       Net n3: 47 loads, 47 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net n195: 47 loads
+      Net n204: 47 loads
       Net n3: 47 loads
       Net scanning.scanner_counter.n4: 26 loads
       Net segment_counter.n4: 21 loads
@@ -73,7 +73,7 @@ Design Summary (cont)
       Net sw[1]: 7 loads
       Net sw[2]: 7 loads
       Net sw[3]: 7 loads
-      Net scanning.scan_count[23]: 6 loads
+      Net scanning.scan_clk: 5 loads
 
 
 
@@ -207,7 +207,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 66 MB
-Checksum -- map: 4a7c9a4420f06c4bf460f82b42ab63b4faedc7d5
+Checksum -- map: 324f3c5316adea9f88fc22f242e7291d601fcb94
 
 
 

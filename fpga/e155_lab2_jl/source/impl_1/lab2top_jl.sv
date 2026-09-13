@@ -58,10 +58,10 @@ module lab2top_jl(
 	
 	
 	// Note: col output is 0 when button pressed & row powered, pulled up to 1 when not pressed due to transistors
-	assign led[0] = (col == 4'b0111)? 1'b1 : 1'b0;
-	assign led[1] = (col == 4'b1011)? 1'b1 : 1'b0;
-	assign led[2] = (col == 4'b1101)? 1'b1 : 1'b0;
-	assign led[3] = (col == 4'b1110)? 1'b1 : 1'b0;
+	assign led[0] = (col[0] == 0)? 1'b1 : 1'b0;
+	assign led[1] = (col[1] == 0)? 1'b1 : 1'b0;
+	assign led[2] = (col[2] == 0)? 1'b1 : 1'b0;
+	assign led[3] = (col[3] == 0)? 1'b1 : 1'b0;
 	
 
 endmodule

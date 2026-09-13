@@ -26,7 +26,7 @@ module scanner(
 		.count (scan_count)
 	);
 	
-	assign rows = (nreset == 0)? 4'b0000 : ((scan_clk == 0) & (scan_count <= 5_999_999))? 4'b1000 : ((scan_clk == 0) & (scan_count <= 11_999_999))? 4'b0100 : ((scan_clk == 1) & (scan_count <= 5_999_999))? 4'b0010 : ((scan_clk == 1) & (scan_count <= 11_999_999))? 4'b0001 : 4'b0000;
-	// DOES THIS IMPLY LATCH (not supposed to)
+	assign rows = ((scan_clk == 0) & (scan_count <= 5_999_999))? 4'b1000 : ((scan_clk == 0) & (scan_count <= 11_999_999))? 4'b0100 : ((scan_clk == 1) & (scan_count <= 5_999_999))? 4'b0010 : ((scan_clk == 1) & (scan_count <= 11_999_999))? 4'b0001 : 4'b1000;
+	// Not needed? (nreset == 0)? 4'b1000 :
 
 endmodule
