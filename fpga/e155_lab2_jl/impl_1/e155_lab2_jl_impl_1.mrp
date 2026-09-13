@@ -8,12 +8,13 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Sat Sep 12 22:39:27 2026
+Mapped on: Sun Sep 13 04:43:12 2026
 
 Design Information
 ------------------
 
-Command line:   map -i e155_lab2_jl_impl_1_syn.udb -o
+Command line:   map -pdc C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab
+     2_jl/lab2sev_seg_pinout.pdc -i e155_lab2_jl_impl_1_syn.udb -o
      e155_lab2_jl_impl_1_map.udb -mp e155_lab2_jl_impl_1.mrp -hierrpt -gui
      -msgset
      C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/promote.xml
@@ -59,7 +60,6 @@ Design Summary
       Net n3: 47 loads
       Net scanning.scanner_counter.n4: 26 loads
       Net segment_counter.n4: 21 loads
-      Net pwr_c: 7 loads
 
                                     Page 1
 
@@ -69,6 +69,7 @@ Design Summary
 
 Design Summary (cont)
 ---------------------
+      Net pwr_c: 7 loads
       Net sw[0]: 7 loads
       Net sw[1]: 7 loads
       Net sw[2]: 7 loads
@@ -126,7 +127,6 @@ IO (PIO) Attributes
 | pwr[1]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | pwr[0]              | OUTPUT    |           |       |       |           |
-+---------------------+-----------+-----------+-------+-------+-----------+
 
                                     Page 2
 
@@ -136,6 +136,7 @@ IO (PIO) Attributes
 
 IO (PIO) Attributes (cont)
 --------------------------
++---------------------+-----------+-----------+-------+-------+-----------+
 | seg[6]              | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | seg[5]              | OUTPUT    |           |       |       |           |
@@ -191,8 +192,7 @@ Instance Name: hf_osc
 Constraint Summary
 ------------------
 
-   Total number of constraints: 2
-   Total number of constraints dropped: 0
+   Total number of constraints: 21
 
                                     Page 3
 
@@ -200,17 +200,17 @@ Constraint Summary
 
 
 
+Constraint Summary (cont)
+-------------------------
+   Total number of constraints dropped: 0
 
 Run Time and Memory Usage
 -------------------------
 
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
-   Peak Memory Usage: 66 MB
-Checksum -- map: 324f3c5316adea9f88fc22f242e7291d601fcb94
-
-
-
+   Peak Memory Usage: 67 MB
+Checksum -- map: 6e558d0820162f144c1c12a64754ae0972d523e2
 
 
 

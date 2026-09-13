@@ -1,6 +1,6 @@
 Lattice Timing Report -  Setup  and Hold, Version Radiant Software (64-bit) 2026.1.0.37.0
 
-Sat Sep 12 22:39:34 2026
+Sun Sep 13 04:43:20 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -172,16 +172,16 @@ Clock Domain Crossing
 -------------------------------------------------------
           Listing 10 End Points          |    Slack    
 -------------------------------------------------------
-scanning/scanner_counter/count__i24/D    |    4.430 ns 
-scanning/scanner_counter/count__i23/D    |    4.707 ns 
-scanning/scanner_counter/count__i22/D    |    5.275 ns 
-scanning/scanner_counter/count__i21/D    |    5.552 ns 
-scanning/scanner_counter/count__i20/D    |    5.829 ns 
-scanning/scanner_counter/count__i19/D    |    6.053 ns 
-scanning/scanner_counter/count__i18/D    |    6.383 ns 
-scanning/scanner_counter/count__i4/D     |    6.558 ns 
-scanning/scanner_counter/count__i2/D     |    6.558 ns 
-scanning/scanner_counter/count__i17/D    |    6.660 ns 
+scanning/scanner_counter/count__i24/D    |    5.025 ns 
+scanning/scanner_counter/count__i23/D    |    5.038 ns 
+scanning/scanner_counter/count__i22/D    |    5.870 ns 
+scanning/scanner_counter/count__i21/D    |    6.147 ns 
+scanning/scanner_counter/count__i20/D    |    6.424 ns 
+scanning/scanner_counter/count__i19/D    |    6.648 ns 
+segment_counter/count__i19/D             |    6.701 ns 
+segment_counter/count__i18/D             |    6.978 ns 
+scanning/scanner_counter/count__i18/D    |    6.978 ns 
+scanning/scanner_counter/count__i17/D    |    7.255 ns 
 -------------------------------------------------------
                                          |             
 Setup # of endpoints with negative slack:|           0 
@@ -204,15 +204,15 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i24/D  (SLICE_R14C6D)
+Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R17C9B)
+Path End         : scanning/scanner_counter/count__i24/D  (SLICE_R17C12C)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 27
-Delay Ratio      : 44.2% (route), 55.8% (logic)
+Delay Ratio      : 42.1% (route), 57.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 4.430 ns  (Passed)
+Path Slack       : 5.025 ns  (Passed)
 
 
 Source Clock Path
@@ -228,87 +228,87 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY               2.670                  9.557  2       
+                                          SLICE_R17C9B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
+scanning/scanner_counter/scan_count[0]                       NET DELAY               2.075                  8.962  2       
 scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
-                                          SLICE_R14C3A       B1_TO_COUT1_DELAY       0.357                  9.914  2       
-scanning/scanner_counter/n776                                NET DELAY               0.000                  9.914  2       
+                                          SLICE_R16C10A      B1_TO_COUT1_DELAY       0.357                  9.319  2       
+scanning/scanner_counter/n776                                NET DELAY               0.000                  9.319  2       
 scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
-                                          SLICE_R14C3B       CIN0_TO_COUT0_DELAY     0.277                 10.191  2       
-scanning/scanner_counter/n1574                               NET DELAY               0.000                 10.191  2       
+                                          SLICE_R16C10B      CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+scanning/scanner_counter/n1574                               NET DELAY               0.000                  9.596  2       
 scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
-                                          SLICE_R14C3B       CIN1_TO_COUT1_DELAY     0.277                 10.468  2       
-scanning/scanner_counter/n778                                NET DELAY               0.000                 10.468  2       
+                                          SLICE_R16C10B      CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+scanning/scanner_counter/n778                                NET DELAY               0.000                  9.873  2       
 scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
-                                          SLICE_R14C3C       CIN0_TO_COUT0_DELAY     0.277                 10.745  2       
-scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.745  2       
+                                          SLICE_R16C10C      CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.150  2       
 scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
-                                          SLICE_R14C3C       CIN1_TO_COUT1_DELAY     0.277                 11.022  2       
-scanning/scanner_counter/n780                                NET DELAY               0.000                 11.022  2       
+                                          SLICE_R16C10C      CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+scanning/scanner_counter/n780                                NET DELAY               0.000                 10.427  2       
 scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
-                                          SLICE_R14C3D       CIN0_TO_COUT0_DELAY     0.277                 11.299  2       
-scanning/scanner_counter/n1580                               NET DELAY               0.000                 11.299  2       
+                                          SLICE_R16C10D      CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+scanning/scanner_counter/n1580                               NET DELAY               0.000                 10.704  2       
 scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
-                                          SLICE_R14C3D       CIN1_TO_COUT1_DELAY     0.277                 11.576  2       
-scanning/scanner_counter/n782                                NET DELAY               0.555                 12.131  2       
+                                          SLICE_R16C10D      CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+scanning/scanner_counter/n782                                NET DELAY               0.555                 11.536  2       
 scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
-                                          SLICE_R14C4A       CIN0_TO_COUT0_DELAY     0.277                 12.408  2       
-scanning/scanner_counter/n1583                               NET DELAY               0.000                 12.408  2       
+                                          SLICE_R16C11A      CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+scanning/scanner_counter/n1583                               NET DELAY               0.000                 11.813  2       
 scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
-                                          SLICE_R14C4A       CIN1_TO_COUT1_DELAY     0.277                 12.685  2       
-scanning/scanner_counter/n784                                NET DELAY               0.000                 12.685  2       
+                                          SLICE_R16C11A      CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+scanning/scanner_counter/n784                                NET DELAY               0.000                 12.090  2       
 scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
-                                          SLICE_R14C4B       CIN0_TO_COUT0_DELAY     0.277                 12.962  2       
-scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.962  2       
+                                          SLICE_R16C11B      CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.367  2       
 scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
-                                          SLICE_R14C4B       CIN1_TO_COUT1_DELAY     0.277                 13.239  2       
-scanning/scanner_counter/n786                                NET DELAY               0.000                 13.239  2       
+                                          SLICE_R16C11B      CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+scanning/scanner_counter/n786                                NET DELAY               0.000                 12.644  2       
 scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
-                                          SLICE_R14C4C       CIN0_TO_COUT0_DELAY     0.277                 13.516  2       
-scanning/scanner_counter/n1589                               NET DELAY               0.000                 13.516  2       
+                                          SLICE_R16C11C      CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+scanning/scanner_counter/n1589                               NET DELAY               0.000                 12.921  2       
 scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
-                                          SLICE_R14C4C       CIN1_TO_COUT1_DELAY     0.277                 13.793  2       
-scanning/scanner_counter/n788                                NET DELAY               0.000                 13.793  2       
+                                          SLICE_R16C11C      CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+scanning/scanner_counter/n788                                NET DELAY               0.000                 13.198  2       
 scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
-                                          SLICE_R14C4D       CIN0_TO_COUT0_DELAY     0.277                 14.070  2       
-scanning/scanner_counter/n1592                               NET DELAY               0.000                 14.070  2       
+                                          SLICE_R16C11D      CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+scanning/scanner_counter/n1592                               NET DELAY               0.000                 13.475  2       
 scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
-                                          SLICE_R14C4D       CIN1_TO_COUT1_DELAY     0.277                 14.347  2       
-scanning/scanner_counter/n790                                NET DELAY               0.555                 14.902  2       
+                                          SLICE_R16C11D      CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+scanning/scanner_counter/n790                                NET DELAY               0.555                 14.307  2       
 scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
-                                          SLICE_R14C5A       CIN0_TO_COUT0_DELAY     0.277                 15.179  2       
-scanning/scanner_counter/n1595                               NET DELAY               0.000                 15.179  2       
+                                          SLICE_R16C12A      CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+scanning/scanner_counter/n1595                               NET DELAY               0.000                 14.584  2       
 scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
-                                          SLICE_R14C5A       CIN1_TO_COUT1_DELAY     0.277                 15.456  2       
-scanning/scanner_counter/n792                                NET DELAY               0.000                 15.456  2       
+                                          SLICE_R16C12A      CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+scanning/scanner_counter/n792                                NET DELAY               0.000                 14.861  2       
 scanning/scanner_counter/add_7_add_5_19/CI0->scanning/scanner_counter/add_7_add_5_19/CO0
-                                          SLICE_R14C5B       CIN0_TO_COUT0_DELAY     0.277                 15.733  2       
-scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.733  2       
+                                          SLICE_R16C12B      CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.138  2       
 scanning/scanner_counter/add_7_add_5_19/CI1->scanning/scanner_counter/add_7_add_5_19/CO1
-                                          SLICE_R14C5B       CIN1_TO_COUT1_DELAY     0.277                 16.010  2       
-scanning/scanner_counter/n794                                NET DELAY               0.000                 16.010  2       
+                                          SLICE_R16C12B      CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+scanning/scanner_counter/n794                                NET DELAY               0.000                 15.415  2       
 scanning/scanner_counter/add_7_add_5_21/CI0->scanning/scanner_counter/add_7_add_5_21/CO0
-                                          SLICE_R14C5C       CIN0_TO_COUT0_DELAY     0.277                 16.287  2       
-scanning/scanner_counter/n1601                               NET DELAY               0.000                 16.287  2       
+                                          SLICE_R16C12C      CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+scanning/scanner_counter/n1601                               NET DELAY               0.000                 15.692  2       
 scanning/scanner_counter/add_7_add_5_21/CI1->scanning/scanner_counter/add_7_add_5_21/CO1
-                                          SLICE_R14C5C       CIN1_TO_COUT1_DELAY     0.277                 16.564  2       
-scanning/scanner_counter/n796                                NET DELAY               0.000                 16.564  2       
+                                          SLICE_R16C12C      CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+scanning/scanner_counter/n796                                NET DELAY               0.000                 15.969  2       
 scanning/scanner_counter/add_7_add_5_23/CI0->scanning/scanner_counter/add_7_add_5_23/CO0
-                                          SLICE_R14C5D       CIN0_TO_COUT0_DELAY     0.277                 16.841  2       
-scanning/scanner_counter/n1604                               NET DELAY               0.000                 16.841  2       
+                                          SLICE_R16C12D      CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+scanning/scanner_counter/n1604                               NET DELAY               0.000                 16.246  2       
 scanning/scanner_counter/add_7_add_5_23/CI1->scanning/scanner_counter/add_7_add_5_23/CO1
-                                          SLICE_R14C5D       CIN1_TO_COUT1_DELAY     0.277                 17.118  2       
-scanning/scanner_counter/n798                                NET DELAY               0.555                 17.673  2       
+                                          SLICE_R16C12D      CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
+scanning/scanner_counter/n798                                NET DELAY               0.555                 17.078  2       
 scanning/scanner_counter/add_7_add_5_25/CI0->scanning/scanner_counter/add_7_add_5_25/CO0
-                                          SLICE_R14C6A       CIN0_TO_COUT0_DELAY     0.277                 17.950  2       
-scanning/scanner_counter/n1607                               NET DELAY               0.661                 18.611  2       
+                                          SLICE_R16C13A      CIN0_TO_COUT0_DELAY     0.277                 17.355  2       
+scanning/scanner_counter/n1607                               NET DELAY               0.661                 18.016  2       
 scanning/scanner_counter/add_7_add_5_25/D1->scanning/scanner_counter/add_7_add_5_25/S1
-                                          SLICE_R14C6A       D1_TO_F1_DELAY          0.449                 19.060  1       
-scanning/scanner_counter/n132[24]                            NET DELAY               2.168                 21.228  1       
+                                          SLICE_R16C13A      D1_TO_F1_DELAY          0.449                 18.465  1       
+scanning/scanner_counter/n132[24]                            NET DELAY               2.168                 20.633  1       
 scanning/scanner_counter/i512_2_lut/A->scanning/scanner_counter/i512_2_lut/Z
-                                          SLICE_R14C6D       D1_TO_F1_DELAY          0.476                 21.704  1       
-scanning/scanner_counter/n34[24]                             NET DELAY               0.000                 21.704  1       
-scanning/scanner_counter/count__i24/D                        ENDPOINT                0.000                 21.704  1       
+                                          SLICE_R17C12C      D1_TO_F1_DELAY          0.476                 21.109  1       
+scanning/scanner_counter/n34[24]                             NET DELAY               0.000                 21.109  1       
+scanning/scanner_counter/count__i24/D                        ENDPOINT                0.000                 21.109  1       
 
 
 Destination Clock Path
@@ -323,24 +323,24 @@ segment_counter/int_osc                                      NET DELAY          
                                                              Setup time           -(0.198)                 26.134  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 Required Time                                                                                              26.134  
-Arrival Time                                                                                            -(21.703)  
+Arrival Time                                                                                            -(21.108)  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                        4.430  
+Path Slack  (Passed)                                                                                        5.025  
 
 
 
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i23/D  (SLICE_R14C6D)
+Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R17C9B)
+Path End         : scanning/scanner_counter/count__i23/D  (SLICE_R17C12C)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 26
-Delay Ratio      : 45.0% (route), 55.0% (logic)
+Delay Ratio      : 43.8% (route), 56.2% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 4.707 ns  (Passed)
+Path Slack       : 5.038 ns  (Passed)
 
 
 Source Clock Path
@@ -356,84 +356,84 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY               2.670                  9.557  2       
+                                          SLICE_R17C9B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
+scanning/scanner_counter/scan_count[0]                       NET DELAY               2.075                  8.962  2       
 scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
-                                          SLICE_R14C3A       B1_TO_COUT1_DELAY       0.357                  9.914  2       
-scanning/scanner_counter/n776                                NET DELAY               0.000                  9.914  2       
+                                          SLICE_R16C10A      B1_TO_COUT1_DELAY       0.357                  9.319  2       
+scanning/scanner_counter/n776                                NET DELAY               0.000                  9.319  2       
 scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
-                                          SLICE_R14C3B       CIN0_TO_COUT0_DELAY     0.277                 10.191  2       
-scanning/scanner_counter/n1574                               NET DELAY               0.000                 10.191  2       
+                                          SLICE_R16C10B      CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+scanning/scanner_counter/n1574                               NET DELAY               0.000                  9.596  2       
 scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
-                                          SLICE_R14C3B       CIN1_TO_COUT1_DELAY     0.277                 10.468  2       
-scanning/scanner_counter/n778                                NET DELAY               0.000                 10.468  2       
+                                          SLICE_R16C10B      CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+scanning/scanner_counter/n778                                NET DELAY               0.000                  9.873  2       
 scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
-                                          SLICE_R14C3C       CIN0_TO_COUT0_DELAY     0.277                 10.745  2       
-scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.745  2       
+                                          SLICE_R16C10C      CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.150  2       
 scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
-                                          SLICE_R14C3C       CIN1_TO_COUT1_DELAY     0.277                 11.022  2       
-scanning/scanner_counter/n780                                NET DELAY               0.000                 11.022  2       
+                                          SLICE_R16C10C      CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+scanning/scanner_counter/n780                                NET DELAY               0.000                 10.427  2       
 scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
-                                          SLICE_R14C3D       CIN0_TO_COUT0_DELAY     0.277                 11.299  2       
-scanning/scanner_counter/n1580                               NET DELAY               0.000                 11.299  2       
+                                          SLICE_R16C10D      CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+scanning/scanner_counter/n1580                               NET DELAY               0.000                 10.704  2       
 scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
-                                          SLICE_R14C3D       CIN1_TO_COUT1_DELAY     0.277                 11.576  2       
-scanning/scanner_counter/n782                                NET DELAY               0.555                 12.131  2       
+                                          SLICE_R16C10D      CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+scanning/scanner_counter/n782                                NET DELAY               0.555                 11.536  2       
 scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
-                                          SLICE_R14C4A       CIN0_TO_COUT0_DELAY     0.277                 12.408  2       
-scanning/scanner_counter/n1583                               NET DELAY               0.000                 12.408  2       
+                                          SLICE_R16C11A      CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+scanning/scanner_counter/n1583                               NET DELAY               0.000                 11.813  2       
 scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
-                                          SLICE_R14C4A       CIN1_TO_COUT1_DELAY     0.277                 12.685  2       
-scanning/scanner_counter/n784                                NET DELAY               0.000                 12.685  2       
+                                          SLICE_R16C11A      CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+scanning/scanner_counter/n784                                NET DELAY               0.000                 12.090  2       
 scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
-                                          SLICE_R14C4B       CIN0_TO_COUT0_DELAY     0.277                 12.962  2       
-scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.962  2       
+                                          SLICE_R16C11B      CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.367  2       
 scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
-                                          SLICE_R14C4B       CIN1_TO_COUT1_DELAY     0.277                 13.239  2       
-scanning/scanner_counter/n786                                NET DELAY               0.000                 13.239  2       
+                                          SLICE_R16C11B      CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+scanning/scanner_counter/n786                                NET DELAY               0.000                 12.644  2       
 scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
-                                          SLICE_R14C4C       CIN0_TO_COUT0_DELAY     0.277                 13.516  2       
-scanning/scanner_counter/n1589                               NET DELAY               0.000                 13.516  2       
+                                          SLICE_R16C11C      CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+scanning/scanner_counter/n1589                               NET DELAY               0.000                 12.921  2       
 scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
-                                          SLICE_R14C4C       CIN1_TO_COUT1_DELAY     0.277                 13.793  2       
-scanning/scanner_counter/n788                                NET DELAY               0.000                 13.793  2       
+                                          SLICE_R16C11C      CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+scanning/scanner_counter/n788                                NET DELAY               0.000                 13.198  2       
 scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
-                                          SLICE_R14C4D       CIN0_TO_COUT0_DELAY     0.277                 14.070  2       
-scanning/scanner_counter/n1592                               NET DELAY               0.000                 14.070  2       
+                                          SLICE_R16C11D      CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+scanning/scanner_counter/n1592                               NET DELAY               0.000                 13.475  2       
 scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
-                                          SLICE_R14C4D       CIN1_TO_COUT1_DELAY     0.277                 14.347  2       
-scanning/scanner_counter/n790                                NET DELAY               0.555                 14.902  2       
+                                          SLICE_R16C11D      CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+scanning/scanner_counter/n790                                NET DELAY               0.555                 14.307  2       
 scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
-                                          SLICE_R14C5A       CIN0_TO_COUT0_DELAY     0.277                 15.179  2       
-scanning/scanner_counter/n1595                               NET DELAY               0.000                 15.179  2       
+                                          SLICE_R16C12A      CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+scanning/scanner_counter/n1595                               NET DELAY               0.000                 14.584  2       
 scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
-                                          SLICE_R14C5A       CIN1_TO_COUT1_DELAY     0.277                 15.456  2       
-scanning/scanner_counter/n792                                NET DELAY               0.000                 15.456  2       
+                                          SLICE_R16C12A      CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+scanning/scanner_counter/n792                                NET DELAY               0.000                 14.861  2       
 scanning/scanner_counter/add_7_add_5_19/CI0->scanning/scanner_counter/add_7_add_5_19/CO0
-                                          SLICE_R14C5B       CIN0_TO_COUT0_DELAY     0.277                 15.733  2       
-scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.733  2       
+                                          SLICE_R16C12B      CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.138  2       
 scanning/scanner_counter/add_7_add_5_19/CI1->scanning/scanner_counter/add_7_add_5_19/CO1
-                                          SLICE_R14C5B       CIN1_TO_COUT1_DELAY     0.277                 16.010  2       
-scanning/scanner_counter/n794                                NET DELAY               0.000                 16.010  2       
+                                          SLICE_R16C12B      CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+scanning/scanner_counter/n794                                NET DELAY               0.000                 15.415  2       
 scanning/scanner_counter/add_7_add_5_21/CI0->scanning/scanner_counter/add_7_add_5_21/CO0
-                                          SLICE_R14C5C       CIN0_TO_COUT0_DELAY     0.277                 16.287  2       
-scanning/scanner_counter/n1601                               NET DELAY               0.000                 16.287  2       
+                                          SLICE_R16C12C      CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+scanning/scanner_counter/n1601                               NET DELAY               0.000                 15.692  2       
 scanning/scanner_counter/add_7_add_5_21/CI1->scanning/scanner_counter/add_7_add_5_21/CO1
-                                          SLICE_R14C5C       CIN1_TO_COUT1_DELAY     0.277                 16.564  2       
-scanning/scanner_counter/n796                                NET DELAY               0.000                 16.564  2       
+                                          SLICE_R16C12C      CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+scanning/scanner_counter/n796                                NET DELAY               0.000                 15.969  2       
 scanning/scanner_counter/add_7_add_5_23/CI0->scanning/scanner_counter/add_7_add_5_23/CO0
-                                          SLICE_R14C5D       CIN0_TO_COUT0_DELAY     0.277                 16.841  2       
-scanning/scanner_counter/n1604                               NET DELAY               0.000                 16.841  2       
+                                          SLICE_R16C12D      CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+scanning/scanner_counter/n1604                               NET DELAY               0.000                 16.246  2       
 scanning/scanner_counter/add_7_add_5_23/CI1->scanning/scanner_counter/add_7_add_5_23/CO1
-                                          SLICE_R14C5D       CIN1_TO_COUT1_DELAY     0.277                 17.118  2       
-scanning/scanner_counter/n798                                NET DELAY               1.216                 18.334  2       
+                                          SLICE_R16C12D      CIN1_TO_COUT1_DELAY     0.277                 16.523  2       
+scanning/scanner_counter/n798                                NET DELAY               1.216                 17.739  2       
 scanning/scanner_counter/add_7_add_5_25/D0->scanning/scanner_counter/add_7_add_5_25/S0
-                                          SLICE_R14C6A       D0_TO_F0_DELAY          0.449                 18.783  1       
-scanning/scanner_counter/n132[23]                            NET DELAY               2.168                 20.951  1       
+                                          SLICE_R16C13A      D0_TO_F0_DELAY          0.449                 18.188  1       
+scanning/scanner_counter/n132[23]                            NET DELAY               2.432                 20.620  1       
 scanning/scanner_counter/i541_2_lut/A->scanning/scanner_counter/i541_2_lut/Z
-                                          SLICE_R14C6D       D0_TO_F0_DELAY          0.476                 21.427  1       
-scanning/scanner_counter/n34[23]                             NET DELAY               0.000                 21.427  1       
-scanning/scanner_counter/count__i23/D                        ENDPOINT                0.000                 21.427  1       
+                                          SLICE_R17C12C      C0_TO_F0_DELAY          0.476                 21.096  1       
+scanning/scanner_counter/n34[23]                             NET DELAY               0.000                 21.096  1       
+scanning/scanner_counter/count__i23/D                        ENDPOINT                0.000                 21.096  1       
 
 
 Destination Clock Path
@@ -448,24 +448,24 @@ segment_counter/int_osc                                      NET DELAY          
                                                              Setup time           -(0.198)                 26.134  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 Required Time                                                                                              26.134  
-Arrival Time                                                                                            -(21.426)  
+Arrival Time                                                                                            -(21.095)  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                        4.707  
+Path Slack  (Passed)                                                                                        5.038  
 
 
 
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i22/D  (SLICE_R15C5D)
+Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R17C9B)
+Path End         : scanning/scanner_counter/count__i22/D  (SLICE_R15C12B)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 25
-Delay Ratio      : 44.7% (route), 55.3% (logic)
+Delay Ratio      : 42.5% (route), 57.5% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 5.275 ns  (Passed)
+Path Slack       : 5.870 ns  (Passed)
 
 
 Source Clock Path
@@ -481,81 +481,81 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY               2.670                  9.557  2       
+                                          SLICE_R17C9B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
+scanning/scanner_counter/scan_count[0]                       NET DELAY               2.075                  8.962  2       
 scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
-                                          SLICE_R14C3A       B1_TO_COUT1_DELAY       0.357                  9.914  2       
-scanning/scanner_counter/n776                                NET DELAY               0.000                  9.914  2       
+                                          SLICE_R16C10A      B1_TO_COUT1_DELAY       0.357                  9.319  2       
+scanning/scanner_counter/n776                                NET DELAY               0.000                  9.319  2       
 scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
-                                          SLICE_R14C3B       CIN0_TO_COUT0_DELAY     0.277                 10.191  2       
-scanning/scanner_counter/n1574                               NET DELAY               0.000                 10.191  2       
+                                          SLICE_R16C10B      CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+scanning/scanner_counter/n1574                               NET DELAY               0.000                  9.596  2       
 scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
-                                          SLICE_R14C3B       CIN1_TO_COUT1_DELAY     0.277                 10.468  2       
-scanning/scanner_counter/n778                                NET DELAY               0.000                 10.468  2       
+                                          SLICE_R16C10B      CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+scanning/scanner_counter/n778                                NET DELAY               0.000                  9.873  2       
 scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
-                                          SLICE_R14C3C       CIN0_TO_COUT0_DELAY     0.277                 10.745  2       
-scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.745  2       
+                                          SLICE_R16C10C      CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.150  2       
 scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
-                                          SLICE_R14C3C       CIN1_TO_COUT1_DELAY     0.277                 11.022  2       
-scanning/scanner_counter/n780                                NET DELAY               0.000                 11.022  2       
+                                          SLICE_R16C10C      CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+scanning/scanner_counter/n780                                NET DELAY               0.000                 10.427  2       
 scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
-                                          SLICE_R14C3D       CIN0_TO_COUT0_DELAY     0.277                 11.299  2       
-scanning/scanner_counter/n1580                               NET DELAY               0.000                 11.299  2       
+                                          SLICE_R16C10D      CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+scanning/scanner_counter/n1580                               NET DELAY               0.000                 10.704  2       
 scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
-                                          SLICE_R14C3D       CIN1_TO_COUT1_DELAY     0.277                 11.576  2       
-scanning/scanner_counter/n782                                NET DELAY               0.555                 12.131  2       
+                                          SLICE_R16C10D      CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+scanning/scanner_counter/n782                                NET DELAY               0.555                 11.536  2       
 scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
-                                          SLICE_R14C4A       CIN0_TO_COUT0_DELAY     0.277                 12.408  2       
-scanning/scanner_counter/n1583                               NET DELAY               0.000                 12.408  2       
+                                          SLICE_R16C11A      CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+scanning/scanner_counter/n1583                               NET DELAY               0.000                 11.813  2       
 scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
-                                          SLICE_R14C4A       CIN1_TO_COUT1_DELAY     0.277                 12.685  2       
-scanning/scanner_counter/n784                                NET DELAY               0.000                 12.685  2       
+                                          SLICE_R16C11A      CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+scanning/scanner_counter/n784                                NET DELAY               0.000                 12.090  2       
 scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
-                                          SLICE_R14C4B       CIN0_TO_COUT0_DELAY     0.277                 12.962  2       
-scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.962  2       
+                                          SLICE_R16C11B      CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.367  2       
 scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
-                                          SLICE_R14C4B       CIN1_TO_COUT1_DELAY     0.277                 13.239  2       
-scanning/scanner_counter/n786                                NET DELAY               0.000                 13.239  2       
+                                          SLICE_R16C11B      CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+scanning/scanner_counter/n786                                NET DELAY               0.000                 12.644  2       
 scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
-                                          SLICE_R14C4C       CIN0_TO_COUT0_DELAY     0.277                 13.516  2       
-scanning/scanner_counter/n1589                               NET DELAY               0.000                 13.516  2       
+                                          SLICE_R16C11C      CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+scanning/scanner_counter/n1589                               NET DELAY               0.000                 12.921  2       
 scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
-                                          SLICE_R14C4C       CIN1_TO_COUT1_DELAY     0.277                 13.793  2       
-scanning/scanner_counter/n788                                NET DELAY               0.000                 13.793  2       
+                                          SLICE_R16C11C      CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+scanning/scanner_counter/n788                                NET DELAY               0.000                 13.198  2       
 scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
-                                          SLICE_R14C4D       CIN0_TO_COUT0_DELAY     0.277                 14.070  2       
-scanning/scanner_counter/n1592                               NET DELAY               0.000                 14.070  2       
+                                          SLICE_R16C11D      CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+scanning/scanner_counter/n1592                               NET DELAY               0.000                 13.475  2       
 scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
-                                          SLICE_R14C4D       CIN1_TO_COUT1_DELAY     0.277                 14.347  2       
-scanning/scanner_counter/n790                                NET DELAY               0.555                 14.902  2       
+                                          SLICE_R16C11D      CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+scanning/scanner_counter/n790                                NET DELAY               0.555                 14.307  2       
 scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
-                                          SLICE_R14C5A       CIN0_TO_COUT0_DELAY     0.277                 15.179  2       
-scanning/scanner_counter/n1595                               NET DELAY               0.000                 15.179  2       
+                                          SLICE_R16C12A      CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+scanning/scanner_counter/n1595                               NET DELAY               0.000                 14.584  2       
 scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
-                                          SLICE_R14C5A       CIN1_TO_COUT1_DELAY     0.277                 15.456  2       
-scanning/scanner_counter/n792                                NET DELAY               0.000                 15.456  2       
+                                          SLICE_R16C12A      CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+scanning/scanner_counter/n792                                NET DELAY               0.000                 14.861  2       
 scanning/scanner_counter/add_7_add_5_19/CI0->scanning/scanner_counter/add_7_add_5_19/CO0
-                                          SLICE_R14C5B       CIN0_TO_COUT0_DELAY     0.277                 15.733  2       
-scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.733  2       
+                                          SLICE_R16C12B      CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.138  2       
 scanning/scanner_counter/add_7_add_5_19/CI1->scanning/scanner_counter/add_7_add_5_19/CO1
-                                          SLICE_R14C5B       CIN1_TO_COUT1_DELAY     0.277                 16.010  2       
-scanning/scanner_counter/n794                                NET DELAY               0.000                 16.010  2       
+                                          SLICE_R16C12B      CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+scanning/scanner_counter/n794                                NET DELAY               0.000                 15.415  2       
 scanning/scanner_counter/add_7_add_5_21/CI0->scanning/scanner_counter/add_7_add_5_21/CO0
-                                          SLICE_R14C5C       CIN0_TO_COUT0_DELAY     0.277                 16.287  2       
-scanning/scanner_counter/n1601                               NET DELAY               0.000                 16.287  2       
+                                          SLICE_R16C12C      CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+scanning/scanner_counter/n1601                               NET DELAY               0.000                 15.692  2       
 scanning/scanner_counter/add_7_add_5_21/CI1->scanning/scanner_counter/add_7_add_5_21/CO1
-                                          SLICE_R14C5C       CIN1_TO_COUT1_DELAY     0.277                 16.564  2       
-scanning/scanner_counter/n796                                NET DELAY               0.000                 16.564  2       
+                                          SLICE_R16C12C      CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+scanning/scanner_counter/n796                                NET DELAY               0.000                 15.969  2       
 scanning/scanner_counter/add_7_add_5_23/CI0->scanning/scanner_counter/add_7_add_5_23/CO0
-                                          SLICE_R14C5D       CIN0_TO_COUT0_DELAY     0.277                 16.841  2       
-scanning/scanner_counter/n1604                               NET DELAY               0.661                 17.502  2       
+                                          SLICE_R16C12D      CIN0_TO_COUT0_DELAY     0.277                 16.246  2       
+scanning/scanner_counter/n1604                               NET DELAY               0.661                 16.907  2       
 scanning/scanner_counter/add_7_add_5_23/D1->scanning/scanner_counter/add_7_add_5_23/S1
-                                          SLICE_R14C5D       D1_TO_F1_DELAY          0.449                 17.951  1       
-scanning/scanner_counter/n132[22]                            NET DELAY               2.432                 20.383  1       
+                                          SLICE_R16C12D      D1_TO_F1_DELAY          0.449                 17.356  1       
+scanning/scanner_counter/n132[22]                            NET DELAY               2.432                 19.788  1       
 scanning/scanner_counter/i544_2_lut/A->scanning/scanner_counter/i544_2_lut/Z
-                                          SLICE_R15C5D       C1_TO_F1_DELAY          0.476                 20.859  1       
-scanning/scanner_counter/n34[22]                             NET DELAY               0.000                 20.859  1       
-scanning/scanner_counter/count__i22/D                        ENDPOINT                0.000                 20.859  1       
+                                          SLICE_R15C12B      C1_TO_F1_DELAY          0.476                 20.264  1       
+scanning/scanner_counter/n34[22]                             NET DELAY               0.000                 20.264  1       
+scanning/scanner_counter/count__i22/D                        ENDPOINT                0.000                 20.264  1       
 
 
 Destination Clock Path
@@ -570,24 +570,24 @@ segment_counter/int_osc                                      NET DELAY          
                                                              Setup time           -(0.198)                 26.134  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 Required Time                                                                                              26.134  
-Arrival Time                                                                                            -(20.858)  
+Arrival Time                                                                                            -(20.263)  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                        5.275  
+Path Slack  (Passed)                                                                                        5.870  
 
 
 
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i21/D  (SLICE_R15C5D)
+Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R17C9B)
+Path End         : scanning/scanner_counter/count__i21/D  (SLICE_R15C12B)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 24
-Delay Ratio      : 45.6% (route), 54.4% (logic)
+Delay Ratio      : 43.3% (route), 56.7% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 5.552 ns  (Passed)
+Path Slack       : 6.147 ns  (Passed)
 
 
 Source Clock Path
@@ -603,78 +603,78 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY               2.670                  9.557  2       
+                                          SLICE_R17C9B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
+scanning/scanner_counter/scan_count[0]                       NET DELAY               2.075                  8.962  2       
 scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
-                                          SLICE_R14C3A       B1_TO_COUT1_DELAY       0.357                  9.914  2       
-scanning/scanner_counter/n776                                NET DELAY               0.000                  9.914  2       
+                                          SLICE_R16C10A      B1_TO_COUT1_DELAY       0.357                  9.319  2       
+scanning/scanner_counter/n776                                NET DELAY               0.000                  9.319  2       
 scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
-                                          SLICE_R14C3B       CIN0_TO_COUT0_DELAY     0.277                 10.191  2       
-scanning/scanner_counter/n1574                               NET DELAY               0.000                 10.191  2       
+                                          SLICE_R16C10B      CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+scanning/scanner_counter/n1574                               NET DELAY               0.000                  9.596  2       
 scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
-                                          SLICE_R14C3B       CIN1_TO_COUT1_DELAY     0.277                 10.468  2       
-scanning/scanner_counter/n778                                NET DELAY               0.000                 10.468  2       
+                                          SLICE_R16C10B      CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+scanning/scanner_counter/n778                                NET DELAY               0.000                  9.873  2       
 scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
-                                          SLICE_R14C3C       CIN0_TO_COUT0_DELAY     0.277                 10.745  2       
-scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.745  2       
+                                          SLICE_R16C10C      CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.150  2       
 scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
-                                          SLICE_R14C3C       CIN1_TO_COUT1_DELAY     0.277                 11.022  2       
-scanning/scanner_counter/n780                                NET DELAY               0.000                 11.022  2       
+                                          SLICE_R16C10C      CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+scanning/scanner_counter/n780                                NET DELAY               0.000                 10.427  2       
 scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
-                                          SLICE_R14C3D       CIN0_TO_COUT0_DELAY     0.277                 11.299  2       
-scanning/scanner_counter/n1580                               NET DELAY               0.000                 11.299  2       
+                                          SLICE_R16C10D      CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+scanning/scanner_counter/n1580                               NET DELAY               0.000                 10.704  2       
 scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
-                                          SLICE_R14C3D       CIN1_TO_COUT1_DELAY     0.277                 11.576  2       
-scanning/scanner_counter/n782                                NET DELAY               0.555                 12.131  2       
+                                          SLICE_R16C10D      CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+scanning/scanner_counter/n782                                NET DELAY               0.555                 11.536  2       
 scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
-                                          SLICE_R14C4A       CIN0_TO_COUT0_DELAY     0.277                 12.408  2       
-scanning/scanner_counter/n1583                               NET DELAY               0.000                 12.408  2       
+                                          SLICE_R16C11A      CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+scanning/scanner_counter/n1583                               NET DELAY               0.000                 11.813  2       
 scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
-                                          SLICE_R14C4A       CIN1_TO_COUT1_DELAY     0.277                 12.685  2       
-scanning/scanner_counter/n784                                NET DELAY               0.000                 12.685  2       
+                                          SLICE_R16C11A      CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+scanning/scanner_counter/n784                                NET DELAY               0.000                 12.090  2       
 scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
-                                          SLICE_R14C4B       CIN0_TO_COUT0_DELAY     0.277                 12.962  2       
-scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.962  2       
+                                          SLICE_R16C11B      CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.367  2       
 scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
-                                          SLICE_R14C4B       CIN1_TO_COUT1_DELAY     0.277                 13.239  2       
-scanning/scanner_counter/n786                                NET DELAY               0.000                 13.239  2       
+                                          SLICE_R16C11B      CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+scanning/scanner_counter/n786                                NET DELAY               0.000                 12.644  2       
 scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
-                                          SLICE_R14C4C       CIN0_TO_COUT0_DELAY     0.277                 13.516  2       
-scanning/scanner_counter/n1589                               NET DELAY               0.000                 13.516  2       
+                                          SLICE_R16C11C      CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+scanning/scanner_counter/n1589                               NET DELAY               0.000                 12.921  2       
 scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
-                                          SLICE_R14C4C       CIN1_TO_COUT1_DELAY     0.277                 13.793  2       
-scanning/scanner_counter/n788                                NET DELAY               0.000                 13.793  2       
+                                          SLICE_R16C11C      CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+scanning/scanner_counter/n788                                NET DELAY               0.000                 13.198  2       
 scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
-                                          SLICE_R14C4D       CIN0_TO_COUT0_DELAY     0.277                 14.070  2       
-scanning/scanner_counter/n1592                               NET DELAY               0.000                 14.070  2       
+                                          SLICE_R16C11D      CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+scanning/scanner_counter/n1592                               NET DELAY               0.000                 13.475  2       
 scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
-                                          SLICE_R14C4D       CIN1_TO_COUT1_DELAY     0.277                 14.347  2       
-scanning/scanner_counter/n790                                NET DELAY               0.555                 14.902  2       
+                                          SLICE_R16C11D      CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+scanning/scanner_counter/n790                                NET DELAY               0.555                 14.307  2       
 scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
-                                          SLICE_R14C5A       CIN0_TO_COUT0_DELAY     0.277                 15.179  2       
-scanning/scanner_counter/n1595                               NET DELAY               0.000                 15.179  2       
+                                          SLICE_R16C12A      CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+scanning/scanner_counter/n1595                               NET DELAY               0.000                 14.584  2       
 scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
-                                          SLICE_R14C5A       CIN1_TO_COUT1_DELAY     0.277                 15.456  2       
-scanning/scanner_counter/n792                                NET DELAY               0.000                 15.456  2       
+                                          SLICE_R16C12A      CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+scanning/scanner_counter/n792                                NET DELAY               0.000                 14.861  2       
 scanning/scanner_counter/add_7_add_5_19/CI0->scanning/scanner_counter/add_7_add_5_19/CO0
-                                          SLICE_R14C5B       CIN0_TO_COUT0_DELAY     0.277                 15.733  2       
-scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.733  2       
+                                          SLICE_R16C12B      CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.138  2       
 scanning/scanner_counter/add_7_add_5_19/CI1->scanning/scanner_counter/add_7_add_5_19/CO1
-                                          SLICE_R14C5B       CIN1_TO_COUT1_DELAY     0.277                 16.010  2       
-scanning/scanner_counter/n794                                NET DELAY               0.000                 16.010  2       
+                                          SLICE_R16C12B      CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+scanning/scanner_counter/n794                                NET DELAY               0.000                 15.415  2       
 scanning/scanner_counter/add_7_add_5_21/CI0->scanning/scanner_counter/add_7_add_5_21/CO0
-                                          SLICE_R14C5C       CIN0_TO_COUT0_DELAY     0.277                 16.287  2       
-scanning/scanner_counter/n1601                               NET DELAY               0.000                 16.287  2       
+                                          SLICE_R16C12C      CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+scanning/scanner_counter/n1601                               NET DELAY               0.000                 15.692  2       
 scanning/scanner_counter/add_7_add_5_21/CI1->scanning/scanner_counter/add_7_add_5_21/CO1
-                                          SLICE_R14C5C       CIN1_TO_COUT1_DELAY     0.277                 16.564  2       
-scanning/scanner_counter/n796                                NET DELAY               0.661                 17.225  2       
+                                          SLICE_R16C12C      CIN1_TO_COUT1_DELAY     0.277                 15.969  2       
+scanning/scanner_counter/n796                                NET DELAY               0.661                 16.630  2       
 scanning/scanner_counter/add_7_add_5_23/D0->scanning/scanner_counter/add_7_add_5_23/S0
-                                          SLICE_R14C5D       D0_TO_F0_DELAY          0.449                 17.674  1       
-scanning/scanner_counter/n132[21]                            NET DELAY               2.432                 20.106  1       
+                                          SLICE_R16C12D      D0_TO_F0_DELAY          0.449                 17.079  1       
+scanning/scanner_counter/n132[21]                            NET DELAY               2.432                 19.511  1       
 scanning/scanner_counter/i547_2_lut/A->scanning/scanner_counter/i547_2_lut/Z
-                                          SLICE_R15C5D       C0_TO_F0_DELAY          0.476                 20.582  1       
-scanning/scanner_counter/n34[21]                             NET DELAY               0.000                 20.582  1       
-scanning/scanner_counter/count__i21/D                        ENDPOINT                0.000                 20.582  1       
+                                          SLICE_R15C12B      C0_TO_F0_DELAY          0.476                 19.987  1       
+scanning/scanner_counter/n34[21]                             NET DELAY               0.000                 19.987  1       
+scanning/scanner_counter/count__i21/D                        ENDPOINT                0.000                 19.987  1       
 
 
 Destination Clock Path
@@ -689,24 +689,24 @@ segment_counter/int_osc                                      NET DELAY          
                                                              Setup time           -(0.198)                 26.134  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 Required Time                                                                                              26.134  
-Arrival Time                                                                                            -(20.581)  
+Arrival Time                                                                                            -(19.986)  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                        5.552  
+Path Slack  (Passed)                                                                                        6.147  
 
 
 
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i20/D  (SLICE_R15C5B)
+Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R17C9B)
+Path End         : scanning/scanner_counter/count__i20/D  (SLICE_R15C12A)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 23
-Delay Ratio      : 46.4% (route), 53.6% (logic)
+Delay Ratio      : 44.2% (route), 55.8% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 5.829 ns  (Passed)
+Path Slack       : 6.424 ns  (Passed)
 
 
 Source Clock Path
@@ -722,75 +722,75 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY               2.670                  9.557  2       
+                                          SLICE_R17C9B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
+scanning/scanner_counter/scan_count[0]                       NET DELAY               2.075                  8.962  2       
 scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
-                                          SLICE_R14C3A       B1_TO_COUT1_DELAY       0.357                  9.914  2       
-scanning/scanner_counter/n776                                NET DELAY               0.000                  9.914  2       
+                                          SLICE_R16C10A      B1_TO_COUT1_DELAY       0.357                  9.319  2       
+scanning/scanner_counter/n776                                NET DELAY               0.000                  9.319  2       
 scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
-                                          SLICE_R14C3B       CIN0_TO_COUT0_DELAY     0.277                 10.191  2       
-scanning/scanner_counter/n1574                               NET DELAY               0.000                 10.191  2       
+                                          SLICE_R16C10B      CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+scanning/scanner_counter/n1574                               NET DELAY               0.000                  9.596  2       
 scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
-                                          SLICE_R14C3B       CIN1_TO_COUT1_DELAY     0.277                 10.468  2       
-scanning/scanner_counter/n778                                NET DELAY               0.000                 10.468  2       
+                                          SLICE_R16C10B      CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+scanning/scanner_counter/n778                                NET DELAY               0.000                  9.873  2       
 scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
-                                          SLICE_R14C3C       CIN0_TO_COUT0_DELAY     0.277                 10.745  2       
-scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.745  2       
+                                          SLICE_R16C10C      CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.150  2       
 scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
-                                          SLICE_R14C3C       CIN1_TO_COUT1_DELAY     0.277                 11.022  2       
-scanning/scanner_counter/n780                                NET DELAY               0.000                 11.022  2       
+                                          SLICE_R16C10C      CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+scanning/scanner_counter/n780                                NET DELAY               0.000                 10.427  2       
 scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
-                                          SLICE_R14C3D       CIN0_TO_COUT0_DELAY     0.277                 11.299  2       
-scanning/scanner_counter/n1580                               NET DELAY               0.000                 11.299  2       
+                                          SLICE_R16C10D      CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+scanning/scanner_counter/n1580                               NET DELAY               0.000                 10.704  2       
 scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
-                                          SLICE_R14C3D       CIN1_TO_COUT1_DELAY     0.277                 11.576  2       
-scanning/scanner_counter/n782                                NET DELAY               0.555                 12.131  2       
+                                          SLICE_R16C10D      CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+scanning/scanner_counter/n782                                NET DELAY               0.555                 11.536  2       
 scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
-                                          SLICE_R14C4A       CIN0_TO_COUT0_DELAY     0.277                 12.408  2       
-scanning/scanner_counter/n1583                               NET DELAY               0.000                 12.408  2       
+                                          SLICE_R16C11A      CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+scanning/scanner_counter/n1583                               NET DELAY               0.000                 11.813  2       
 scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
-                                          SLICE_R14C4A       CIN1_TO_COUT1_DELAY     0.277                 12.685  2       
-scanning/scanner_counter/n784                                NET DELAY               0.000                 12.685  2       
+                                          SLICE_R16C11A      CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+scanning/scanner_counter/n784                                NET DELAY               0.000                 12.090  2       
 scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
-                                          SLICE_R14C4B       CIN0_TO_COUT0_DELAY     0.277                 12.962  2       
-scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.962  2       
+                                          SLICE_R16C11B      CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.367  2       
 scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
-                                          SLICE_R14C4B       CIN1_TO_COUT1_DELAY     0.277                 13.239  2       
-scanning/scanner_counter/n786                                NET DELAY               0.000                 13.239  2       
+                                          SLICE_R16C11B      CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+scanning/scanner_counter/n786                                NET DELAY               0.000                 12.644  2       
 scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
-                                          SLICE_R14C4C       CIN0_TO_COUT0_DELAY     0.277                 13.516  2       
-scanning/scanner_counter/n1589                               NET DELAY               0.000                 13.516  2       
+                                          SLICE_R16C11C      CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+scanning/scanner_counter/n1589                               NET DELAY               0.000                 12.921  2       
 scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
-                                          SLICE_R14C4C       CIN1_TO_COUT1_DELAY     0.277                 13.793  2       
-scanning/scanner_counter/n788                                NET DELAY               0.000                 13.793  2       
+                                          SLICE_R16C11C      CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+scanning/scanner_counter/n788                                NET DELAY               0.000                 13.198  2       
 scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
-                                          SLICE_R14C4D       CIN0_TO_COUT0_DELAY     0.277                 14.070  2       
-scanning/scanner_counter/n1592                               NET DELAY               0.000                 14.070  2       
+                                          SLICE_R16C11D      CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+scanning/scanner_counter/n1592                               NET DELAY               0.000                 13.475  2       
 scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
-                                          SLICE_R14C4D       CIN1_TO_COUT1_DELAY     0.277                 14.347  2       
-scanning/scanner_counter/n790                                NET DELAY               0.555                 14.902  2       
+                                          SLICE_R16C11D      CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+scanning/scanner_counter/n790                                NET DELAY               0.555                 14.307  2       
 scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
-                                          SLICE_R14C5A       CIN0_TO_COUT0_DELAY     0.277                 15.179  2       
-scanning/scanner_counter/n1595                               NET DELAY               0.000                 15.179  2       
+                                          SLICE_R16C12A      CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+scanning/scanner_counter/n1595                               NET DELAY               0.000                 14.584  2       
 scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
-                                          SLICE_R14C5A       CIN1_TO_COUT1_DELAY     0.277                 15.456  2       
-scanning/scanner_counter/n792                                NET DELAY               0.000                 15.456  2       
+                                          SLICE_R16C12A      CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+scanning/scanner_counter/n792                                NET DELAY               0.000                 14.861  2       
 scanning/scanner_counter/add_7_add_5_19/CI0->scanning/scanner_counter/add_7_add_5_19/CO0
-                                          SLICE_R14C5B       CIN0_TO_COUT0_DELAY     0.277                 15.733  2       
-scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.733  2       
+                                          SLICE_R16C12B      CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.138  2       
 scanning/scanner_counter/add_7_add_5_19/CI1->scanning/scanner_counter/add_7_add_5_19/CO1
-                                          SLICE_R14C5B       CIN1_TO_COUT1_DELAY     0.277                 16.010  2       
-scanning/scanner_counter/n794                                NET DELAY               0.000                 16.010  2       
+                                          SLICE_R16C12B      CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+scanning/scanner_counter/n794                                NET DELAY               0.000                 15.415  2       
 scanning/scanner_counter/add_7_add_5_21/CI0->scanning/scanner_counter/add_7_add_5_21/CO0
-                                          SLICE_R14C5C       CIN0_TO_COUT0_DELAY     0.277                 16.287  2       
-scanning/scanner_counter/n1601                               NET DELAY               0.661                 16.948  2       
+                                          SLICE_R16C12C      CIN0_TO_COUT0_DELAY     0.277                 15.692  2       
+scanning/scanner_counter/n1601                               NET DELAY               0.661                 16.353  2       
 scanning/scanner_counter/add_7_add_5_21/D1->scanning/scanner_counter/add_7_add_5_21/S1
-                                          SLICE_R14C5C       D1_TO_F1_DELAY          0.449                 17.397  1       
-scanning/scanner_counter/n132[20]                            NET DELAY               2.432                 19.829  1       
+                                          SLICE_R16C12C      D1_TO_F1_DELAY          0.449                 16.802  1       
+scanning/scanner_counter/n132[20]                            NET DELAY               2.432                 19.234  1       
 scanning/scanner_counter/i550_2_lut/A->scanning/scanner_counter/i550_2_lut/Z
-                                          SLICE_R15C5B       C1_TO_F1_DELAY          0.476                 20.305  1       
-scanning/scanner_counter/n34[20]                             NET DELAY               0.000                 20.305  1       
-scanning/scanner_counter/count__i20/D                        ENDPOINT                0.000                 20.305  1       
+                                          SLICE_R15C12A      C1_TO_F1_DELAY          0.476                 19.710  1       
+scanning/scanner_counter/n34[20]                             NET DELAY               0.000                 19.710  1       
+scanning/scanner_counter/count__i20/D                        ENDPOINT                0.000                 19.710  1       
 
 
 Destination Clock Path
@@ -805,24 +805,24 @@ segment_counter/int_osc                                      NET DELAY          
                                                              Setup time           -(0.198)                 26.134  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 Required Time                                                                                              26.134  
-Arrival Time                                                                                            -(20.304)  
+Arrival Time                                                                                            -(19.709)  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                        5.829  
+Path Slack  (Passed)                                                                                        6.424  
 
 
 
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i19/D  (SLICE_R15C5B)
+Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R17C9B)
+Path End         : scanning/scanner_counter/count__i19/D  (SLICE_R15C12A)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 22
-Delay Ratio      : 47.5% (route), 52.5% (logic)
+Delay Ratio      : 45.3% (route), 54.7% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 6.053 ns  (Passed)
+Path Slack       : 6.648 ns  (Passed)
 
 
 Source Clock Path
@@ -838,72 +838,72 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY               2.670                  9.557  2       
+                                          SLICE_R17C9B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
+scanning/scanner_counter/scan_count[0]                       NET DELAY               2.075                  8.962  2       
 scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
-                                          SLICE_R14C3A       B1_TO_COUT1_DELAY       0.357                  9.914  2       
-scanning/scanner_counter/n776                                NET DELAY               0.000                  9.914  2       
+                                          SLICE_R16C10A      B1_TO_COUT1_DELAY       0.357                  9.319  2       
+scanning/scanner_counter/n776                                NET DELAY               0.000                  9.319  2       
 scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
-                                          SLICE_R14C3B       CIN0_TO_COUT0_DELAY     0.277                 10.191  2       
-scanning/scanner_counter/n1574                               NET DELAY               0.000                 10.191  2       
+                                          SLICE_R16C10B      CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+scanning/scanner_counter/n1574                               NET DELAY               0.000                  9.596  2       
 scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
-                                          SLICE_R14C3B       CIN1_TO_COUT1_DELAY     0.277                 10.468  2       
-scanning/scanner_counter/n778                                NET DELAY               0.000                 10.468  2       
+                                          SLICE_R16C10B      CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+scanning/scanner_counter/n778                                NET DELAY               0.000                  9.873  2       
 scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
-                                          SLICE_R14C3C       CIN0_TO_COUT0_DELAY     0.277                 10.745  2       
-scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.745  2       
+                                          SLICE_R16C10C      CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.150  2       
 scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
-                                          SLICE_R14C3C       CIN1_TO_COUT1_DELAY     0.277                 11.022  2       
-scanning/scanner_counter/n780                                NET DELAY               0.000                 11.022  2       
+                                          SLICE_R16C10C      CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+scanning/scanner_counter/n780                                NET DELAY               0.000                 10.427  2       
 scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
-                                          SLICE_R14C3D       CIN0_TO_COUT0_DELAY     0.277                 11.299  2       
-scanning/scanner_counter/n1580                               NET DELAY               0.000                 11.299  2       
+                                          SLICE_R16C10D      CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+scanning/scanner_counter/n1580                               NET DELAY               0.000                 10.704  2       
 scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
-                                          SLICE_R14C3D       CIN1_TO_COUT1_DELAY     0.277                 11.576  2       
-scanning/scanner_counter/n782                                NET DELAY               0.555                 12.131  2       
+                                          SLICE_R16C10D      CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+scanning/scanner_counter/n782                                NET DELAY               0.555                 11.536  2       
 scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
-                                          SLICE_R14C4A       CIN0_TO_COUT0_DELAY     0.277                 12.408  2       
-scanning/scanner_counter/n1583                               NET DELAY               0.000                 12.408  2       
+                                          SLICE_R16C11A      CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+scanning/scanner_counter/n1583                               NET DELAY               0.000                 11.813  2       
 scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
-                                          SLICE_R14C4A       CIN1_TO_COUT1_DELAY     0.277                 12.685  2       
-scanning/scanner_counter/n784                                NET DELAY               0.000                 12.685  2       
+                                          SLICE_R16C11A      CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+scanning/scanner_counter/n784                                NET DELAY               0.000                 12.090  2       
 scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
-                                          SLICE_R14C4B       CIN0_TO_COUT0_DELAY     0.277                 12.962  2       
-scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.962  2       
+                                          SLICE_R16C11B      CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.367  2       
 scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
-                                          SLICE_R14C4B       CIN1_TO_COUT1_DELAY     0.277                 13.239  2       
-scanning/scanner_counter/n786                                NET DELAY               0.000                 13.239  2       
+                                          SLICE_R16C11B      CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+scanning/scanner_counter/n786                                NET DELAY               0.000                 12.644  2       
 scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
-                                          SLICE_R14C4C       CIN0_TO_COUT0_DELAY     0.277                 13.516  2       
-scanning/scanner_counter/n1589                               NET DELAY               0.000                 13.516  2       
+                                          SLICE_R16C11C      CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+scanning/scanner_counter/n1589                               NET DELAY               0.000                 12.921  2       
 scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
-                                          SLICE_R14C4C       CIN1_TO_COUT1_DELAY     0.277                 13.793  2       
-scanning/scanner_counter/n788                                NET DELAY               0.000                 13.793  2       
+                                          SLICE_R16C11C      CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+scanning/scanner_counter/n788                                NET DELAY               0.000                 13.198  2       
 scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
-                                          SLICE_R14C4D       CIN0_TO_COUT0_DELAY     0.277                 14.070  2       
-scanning/scanner_counter/n1592                               NET DELAY               0.000                 14.070  2       
+                                          SLICE_R16C11D      CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+scanning/scanner_counter/n1592                               NET DELAY               0.000                 13.475  2       
 scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
-                                          SLICE_R14C4D       CIN1_TO_COUT1_DELAY     0.277                 14.347  2       
-scanning/scanner_counter/n790                                NET DELAY               0.555                 14.902  2       
+                                          SLICE_R16C11D      CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+scanning/scanner_counter/n790                                NET DELAY               0.555                 14.307  2       
 scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
-                                          SLICE_R14C5A       CIN0_TO_COUT0_DELAY     0.277                 15.179  2       
-scanning/scanner_counter/n1595                               NET DELAY               0.000                 15.179  2       
+                                          SLICE_R16C12A      CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+scanning/scanner_counter/n1595                               NET DELAY               0.000                 14.584  2       
 scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
-                                          SLICE_R14C5A       CIN1_TO_COUT1_DELAY     0.277                 15.456  2       
-scanning/scanner_counter/n792                                NET DELAY               0.000                 15.456  2       
+                                          SLICE_R16C12A      CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+scanning/scanner_counter/n792                                NET DELAY               0.000                 14.861  2       
 scanning/scanner_counter/add_7_add_5_19/CI0->scanning/scanner_counter/add_7_add_5_19/CO0
-                                          SLICE_R14C5B       CIN0_TO_COUT0_DELAY     0.277                 15.733  2       
-scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.733  2       
+                                          SLICE_R16C12B      CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+scanning/scanner_counter/n1598                               NET DELAY               0.000                 15.138  2       
 scanning/scanner_counter/add_7_add_5_19/CI1->scanning/scanner_counter/add_7_add_5_19/CO1
-                                          SLICE_R14C5B       CIN1_TO_COUT1_DELAY     0.277                 16.010  2       
-scanning/scanner_counter/n794                                NET DELAY               0.661                 16.671  2       
+                                          SLICE_R16C12B      CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+scanning/scanner_counter/n794                                NET DELAY               0.661                 16.076  2       
 scanning/scanner_counter/add_7_add_5_21/D0->scanning/scanner_counter/add_7_add_5_21/S0
-                                          SLICE_R14C5C       D0_TO_F0_DELAY          0.449                 17.120  1       
-scanning/scanner_counter/n132[19]                            NET DELAY               2.485                 19.605  1       
+                                          SLICE_R16C12C      D0_TO_F0_DELAY          0.449                 16.525  1       
+scanning/scanner_counter/n132[19]                            NET DELAY               2.485                 19.010  1       
 scanning/scanner_counter/i488_2_lut/A->scanning/scanner_counter/i488_2_lut/Z
-                                          SLICE_R15C5B       B0_TO_F0_DELAY          0.476                 20.081  1       
-scanning/scanner_counter/n34[19]                             NET DELAY               0.000                 20.081  1       
-scanning/scanner_counter/count__i19/D                        ENDPOINT                0.000                 20.081  1       
+                                          SLICE_R15C12A      B0_TO_F0_DELAY          0.476                 19.486  1       
+scanning/scanner_counter/n34[19]                             NET DELAY               0.000                 19.486  1       
+scanning/scanner_counter/count__i19/D                        ENDPOINT                0.000                 19.486  1       
 
 
 Destination Clock Path
@@ -918,24 +918,24 @@ segment_counter/int_osc                                      NET DELAY          
                                                              Setup time           -(0.198)                 26.134  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 Required Time                                                                                              26.134  
-Arrival Time                                                                                            -(20.080)  
+Arrival Time                                                                                            -(19.485)  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                        6.053  
+Path Slack  (Passed)                                                                                        6.648  
 
 
 
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i18/D  (SLICE_R15C5A)
+Path Begin       : segment_counter/count__i0/Q  (SLICE_R17C5D)
+Path End         : segment_counter/count__i19/D  (SLICE_R16C7D)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
-Logic Level      : 21
-Delay Ratio      : 48.2% (route), 51.8% (logic)
+Logic Level      : 22
+Delay Ratio      : 45.1% (route), 54.9% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 6.383 ns  (Passed)
+Path Slack       : 6.701 ns  (Passed)
 
 
 Source Clock Path
@@ -943,77 +943,80 @@ Name                                      Cell/Site Name     Delay Name         
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  26      
 segment_counter/int_osc                                      NET DELAY               5.499                  5.499  26      
-{scanning/scanner_counter/count__i1/CK   scanning/scanner_counter/count__i0/CK}
+{segment_counter/count__i0/CK   segment_counter/count__i1/CK}
                                                              CLOCK PIN               0.000                  5.499  1       
 
 
 Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY               2.670                  9.557  2       
-scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
-                                          SLICE_R14C3A       B1_TO_COUT1_DELAY       0.357                  9.914  2       
-scanning/scanner_counter/n776                                NET DELAY               0.000                  9.914  2       
-scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
-                                          SLICE_R14C3B       CIN0_TO_COUT0_DELAY     0.277                 10.191  2       
-scanning/scanner_counter/n1574                               NET DELAY               0.000                 10.191  2       
-scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
-                                          SLICE_R14C3B       CIN1_TO_COUT1_DELAY     0.277                 10.468  2       
-scanning/scanner_counter/n778                                NET DELAY               0.000                 10.468  2       
-scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
-                                          SLICE_R14C3C       CIN0_TO_COUT0_DELAY     0.277                 10.745  2       
-scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.745  2       
-scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
-                                          SLICE_R14C3C       CIN1_TO_COUT1_DELAY     0.277                 11.022  2       
-scanning/scanner_counter/n780                                NET DELAY               0.000                 11.022  2       
-scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
-                                          SLICE_R14C3D       CIN0_TO_COUT0_DELAY     0.277                 11.299  2       
-scanning/scanner_counter/n1580                               NET DELAY               0.000                 11.299  2       
-scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
-                                          SLICE_R14C3D       CIN1_TO_COUT1_DELAY     0.277                 11.576  2       
-scanning/scanner_counter/n782                                NET DELAY               0.555                 12.131  2       
-scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
-                                          SLICE_R14C4A       CIN0_TO_COUT0_DELAY     0.277                 12.408  2       
-scanning/scanner_counter/n1583                               NET DELAY               0.000                 12.408  2       
-scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
-                                          SLICE_R14C4A       CIN1_TO_COUT1_DELAY     0.277                 12.685  2       
-scanning/scanner_counter/n784                                NET DELAY               0.000                 12.685  2       
-scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
-                                          SLICE_R14C4B       CIN0_TO_COUT0_DELAY     0.277                 12.962  2       
-scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.962  2       
-scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
-                                          SLICE_R14C4B       CIN1_TO_COUT1_DELAY     0.277                 13.239  2       
-scanning/scanner_counter/n786                                NET DELAY               0.000                 13.239  2       
-scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
-                                          SLICE_R14C4C       CIN0_TO_COUT0_DELAY     0.277                 13.516  2       
-scanning/scanner_counter/n1589                               NET DELAY               0.000                 13.516  2       
-scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
-                                          SLICE_R14C4C       CIN1_TO_COUT1_DELAY     0.277                 13.793  2       
-scanning/scanner_counter/n788                                NET DELAY               0.000                 13.793  2       
-scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
-                                          SLICE_R14C4D       CIN0_TO_COUT0_DELAY     0.277                 14.070  2       
-scanning/scanner_counter/n1592                               NET DELAY               0.000                 14.070  2       
-scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
-                                          SLICE_R14C4D       CIN1_TO_COUT1_DELAY     0.277                 14.347  2       
-scanning/scanner_counter/n790                                NET DELAY               0.555                 14.902  2       
-scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
-                                          SLICE_R14C5A       CIN0_TO_COUT0_DELAY     0.277                 15.179  2       
-scanning/scanner_counter/n1595                               NET DELAY               0.000                 15.179  2       
-scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
-                                          SLICE_R14C5A       CIN1_TO_COUT1_DELAY     0.277                 15.456  2       
-scanning/scanner_counter/n792                                NET DELAY               0.000                 15.456  2       
-scanning/scanner_counter/add_7_add_5_19/CI0->scanning/scanner_counter/add_7_add_5_19/CO0
-                                          SLICE_R14C5B       CIN0_TO_COUT0_DELAY     0.277                 15.733  2       
-scanning/scanner_counter/n1598                               NET DELAY               0.661                 16.394  2       
-scanning/scanner_counter/add_7_add_5_19/D1->scanning/scanner_counter/add_7_add_5_19/S1
-                                          SLICE_R14C5B       D1_TO_F1_DELAY          0.449                 16.843  1       
-scanning/scanner_counter/n132[18]                            NET DELAY               2.432                 19.275  1       
-scanning/scanner_counter/i492_2_lut/A->scanning/scanner_counter/i492_2_lut/Z
-                                          SLICE_R15C5A       C1_TO_F1_DELAY          0.476                 19.751  1       
-scanning/scanner_counter/n34[18]                             NET DELAY               0.000                 19.751  1       
-scanning/scanner_counter/count__i18/D                        ENDPOINT                0.000                 19.751  1       
+segment_counter/count__i0/CK->segment_counter/count__i0/Q
+                                          SLICE_R17C5D       CLK_TO_Q0_DELAY         1.388                  6.887  2       
+segment_counter/count[0]                                     NET DELAY               2.075                  8.962  2       
+segment_counter/add_7_add_5_1/B1->segment_counter/add_7_add_5_1/CO1
+                                          SLICE_R16C5A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+segment_counter/n755                                         NET DELAY               0.000                  9.319  2       
+segment_counter/add_7_add_5_3/CI0->segment_counter/add_7_add_5_3/CO0
+                                          SLICE_R16C5B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+segment_counter/n1541                                        NET DELAY               0.000                  9.596  2       
+segment_counter/add_7_add_5_3/CI1->segment_counter/add_7_add_5_3/CO1
+                                          SLICE_R16C5B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+segment_counter/n757                                         NET DELAY               0.000                  9.873  2       
+segment_counter/add_7_add_5_5/CI0->segment_counter/add_7_add_5_5/CO0
+                                          SLICE_R16C5C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+segment_counter/n1544                                        NET DELAY               0.000                 10.150  2       
+segment_counter/add_7_add_5_5/CI1->segment_counter/add_7_add_5_5/CO1
+                                          SLICE_R16C5C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+segment_counter/n759                                         NET DELAY               0.000                 10.427  2       
+segment_counter/add_7_add_5_7/CI0->segment_counter/add_7_add_5_7/CO0
+                                          SLICE_R16C5D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+segment_counter/n1547                                        NET DELAY               0.000                 10.704  2       
+segment_counter/add_7_add_5_7/CI1->segment_counter/add_7_add_5_7/CO1
+                                          SLICE_R16C5D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+segment_counter/n761                                         NET DELAY               0.555                 11.536  2       
+segment_counter/add_7_add_5_9/CI0->segment_counter/add_7_add_5_9/CO0
+                                          SLICE_R16C6A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+segment_counter/n1550                                        NET DELAY               0.000                 11.813  2       
+segment_counter/add_7_add_5_9/CI1->segment_counter/add_7_add_5_9/CO1
+                                          SLICE_R16C6A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+segment_counter/n763                                         NET DELAY               0.000                 12.090  2       
+segment_counter/add_7_add_5_11/CI0->segment_counter/add_7_add_5_11/CO0
+                                          SLICE_R16C6B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+segment_counter/n1556                                        NET DELAY               0.000                 12.367  2       
+segment_counter/add_7_add_5_11/CI1->segment_counter/add_7_add_5_11/CO1
+                                          SLICE_R16C6B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+segment_counter/n765                                         NET DELAY               0.000                 12.644  2       
+segment_counter/add_7_add_5_13/CI0->segment_counter/add_7_add_5_13/CO0
+                                          SLICE_R16C6C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+segment_counter/n1559                                        NET DELAY               0.000                 12.921  2       
+segment_counter/add_7_add_5_13/CI1->segment_counter/add_7_add_5_13/CO1
+                                          SLICE_R16C6C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+segment_counter/n767                                         NET DELAY               0.000                 13.198  2       
+segment_counter/add_7_add_5_15/CI0->segment_counter/add_7_add_5_15/CO0
+                                          SLICE_R16C6D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+segment_counter/n1562                                        NET DELAY               0.000                 13.475  2       
+segment_counter/add_7_add_5_15/CI1->segment_counter/add_7_add_5_15/CO1
+                                          SLICE_R16C6D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+segment_counter/n769                                         NET DELAY               0.555                 14.307  2       
+segment_counter/add_7_add_5_17/CI0->segment_counter/add_7_add_5_17/CO0
+                                          SLICE_R16C7A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+segment_counter/n1565                                        NET DELAY               0.000                 14.584  2       
+segment_counter/add_7_add_5_17/CI1->segment_counter/add_7_add_5_17/CO1
+                                          SLICE_R16C7A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+segment_counter/n771                                         NET DELAY               0.000                 14.861  2       
+segment_counter/add_7_add_5_19/CI0->segment_counter/add_7_add_5_19/CO0
+                                          SLICE_R16C7B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+segment_counter/n1568                                        NET DELAY               0.000                 15.138  2       
+segment_counter/add_7_add_5_19/CI1->segment_counter/add_7_add_5_19/CO1
+                                          SLICE_R16C7B       CIN1_TO_COUT1_DELAY     0.277                 15.415  2       
+segment_counter/n773                                         NET DELAY               0.661                 16.076  2       
+segment_counter/add_7_add_5_21/D0->segment_counter/add_7_add_5_21/S0
+                                          SLICE_R16C7C       D0_TO_F0_DELAY          0.449                 16.525  1       
+segment_counter/n107[19]                                     NET DELAY               2.432                 18.957  1       
+segment_counter/i510_2_lut/A->segment_counter/i510_2_lut/Z
+                                          SLICE_R16C7D       C0_TO_F0_DELAY          0.476                 19.433  1       
+segment_counter/n29[19]                                      NET DELAY               0.000                 19.433  1       
+segment_counter/count__i19/D                                 ENDPOINT                0.000                 19.433  1       
 
 
 Destination Clock Path
@@ -1022,166 +1025,140 @@ Name                                      Cell/Site Name     Delay Name         
                                                              CONSTRAINT              0.000                 20.833  1       
 hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  26      
 segment_counter/int_osc                                      NET DELAY               5.499                 26.332  26      
-{scanning/scanner_counter/count__i17/CK   scanning/scanner_counter/count__i18/CK}
+{segment_counter/count__i19/CK   segment_counter/count__i18/CK}
                                                              CLOCK PIN               0.000                 26.332  1       
                                                              Uncertainty          -(0.000)                 26.332  
                                                              Setup time           -(0.198)                 26.134  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 Required Time                                                                                              26.134  
-Arrival Time                                                                                            -(19.750)  
+Arrival Time                                                                                            -(19.432)  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                        6.383  
+Path Slack  (Passed)                                                                                        6.701  
 
 
 
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i4/D  (SLICE_R15C3D)
+Path Begin       : segment_counter/count__i0/Q  (SLICE_R17C5D)
+Path End         : segment_counter/count__i18/D  (SLICE_R16C7D)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
-Logic Level      : 7
-Delay Ratio      : 70.2% (route), 29.8% (logic)
+Logic Level      : 21
+Delay Ratio      : 46.0% (route), 54.0% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 6.558 ns  (Passed)
+Path Slack       : 6.978 ns  (Passed)
 
 
 Source Clock Path
-Name                                      Cell/Site Name     Delay Name       Incr      Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY       0.000                  0.000  26      
-segment_counter/int_osc                                      NET DELAY           5.499                  5.499  26      
-{scanning/scanner_counter/count__i1/CK   scanning/scanner_counter/count__i0/CK}
-                                                             CLOCK PIN           0.000                  5.499  1       
+Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  26      
+segment_counter/int_osc                                      NET DELAY               5.499                  5.499  26      
+{segment_counter/count__i0/CK   segment_counter/count__i1/CK}
+                                                             CLOCK PIN               0.000                  5.499  1       
 
 
 Data Path
-Name                                      Cell/Site Name     Delay Name       Incr      Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY     1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY           2.353                  9.240  2       
-scanning/scanner_counter/i5_4_lut/A->scanning/scanner_counter/i5_4_lut/Z
-                                          SLICE_R15C3A       D0_TO_F0_DELAY      0.449                  9.689  1       
-scanning/scanner_counter/n13                                 NET DELAY           3.080                 12.769  1       
-scanning/scanner_counter/i129_4_lut/A->scanning/scanner_counter/i129_4_lut/Z
-                                          SLICE_R13C3A       B1_TO_F1_DELAY      0.476                 13.245  1       
-scanning/scanner_counter/n20                                 NET DELAY           0.304                 13.549  1       
-scanning/scanner_counter/i1_4_lut/A->scanning/scanner_counter/i1_4_lut/Z
-                                          SLICE_R13C3B       C0_TO_F0_DELAY      0.476                 14.025  1       
-scanning/scanner_counter/n498                                NET DELAY           0.304                 14.329  1       
-scanning/scanner_counter/i1_4_lut_adj_5/A->scanning/scanner_counter/i1_4_lut_adj_5/Z
-                                          SLICE_R13C3B       C1_TO_F1_DELAY      0.476                 14.805  1       
-scanning/scanner_counter/n996                                NET DELAY           0.304                 15.109  1       
-scanning/scanner_counter/i120_4_lut/A->scanning/scanner_counter/i120_4_lut/Z
-                                          SLICE_R13C3C       C0_TO_F0_DELAY      0.449                 15.558  26      
-scanning/scanner_counter/n4                                  NET DELAY           3.542                 19.100  26      
-scanning/scanner_counter/i495_2_lut/B->scanning/scanner_counter/i495_2_lut/Z
-                                          SLICE_R15C3D       C0_TO_F0_DELAY      0.476                 19.576  1       
-scanning/scanner_counter/n34[4]                              NET DELAY           0.000                 19.576  1       
-scanning/scanner_counter/count__i4/D                         ENDPOINT            0.000                 19.576  1       
+Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+segment_counter/count__i0/CK->segment_counter/count__i0/Q
+                                          SLICE_R17C5D       CLK_TO_Q0_DELAY         1.388                  6.887  2       
+segment_counter/count[0]                                     NET DELAY               2.075                  8.962  2       
+segment_counter/add_7_add_5_1/B1->segment_counter/add_7_add_5_1/CO1
+                                          SLICE_R16C5A       B1_TO_COUT1_DELAY       0.357                  9.319  2       
+segment_counter/n755                                         NET DELAY               0.000                  9.319  2       
+segment_counter/add_7_add_5_3/CI0->segment_counter/add_7_add_5_3/CO0
+                                          SLICE_R16C5B       CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+segment_counter/n1541                                        NET DELAY               0.000                  9.596  2       
+segment_counter/add_7_add_5_3/CI1->segment_counter/add_7_add_5_3/CO1
+                                          SLICE_R16C5B       CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+segment_counter/n757                                         NET DELAY               0.000                  9.873  2       
+segment_counter/add_7_add_5_5/CI0->segment_counter/add_7_add_5_5/CO0
+                                          SLICE_R16C5C       CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+segment_counter/n1544                                        NET DELAY               0.000                 10.150  2       
+segment_counter/add_7_add_5_5/CI1->segment_counter/add_7_add_5_5/CO1
+                                          SLICE_R16C5C       CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+segment_counter/n759                                         NET DELAY               0.000                 10.427  2       
+segment_counter/add_7_add_5_7/CI0->segment_counter/add_7_add_5_7/CO0
+                                          SLICE_R16C5D       CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+segment_counter/n1547                                        NET DELAY               0.000                 10.704  2       
+segment_counter/add_7_add_5_7/CI1->segment_counter/add_7_add_5_7/CO1
+                                          SLICE_R16C5D       CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+segment_counter/n761                                         NET DELAY               0.555                 11.536  2       
+segment_counter/add_7_add_5_9/CI0->segment_counter/add_7_add_5_9/CO0
+                                          SLICE_R16C6A       CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+segment_counter/n1550                                        NET DELAY               0.000                 11.813  2       
+segment_counter/add_7_add_5_9/CI1->segment_counter/add_7_add_5_9/CO1
+                                          SLICE_R16C6A       CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+segment_counter/n763                                         NET DELAY               0.000                 12.090  2       
+segment_counter/add_7_add_5_11/CI0->segment_counter/add_7_add_5_11/CO0
+                                          SLICE_R16C6B       CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+segment_counter/n1556                                        NET DELAY               0.000                 12.367  2       
+segment_counter/add_7_add_5_11/CI1->segment_counter/add_7_add_5_11/CO1
+                                          SLICE_R16C6B       CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+segment_counter/n765                                         NET DELAY               0.000                 12.644  2       
+segment_counter/add_7_add_5_13/CI0->segment_counter/add_7_add_5_13/CO0
+                                          SLICE_R16C6C       CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+segment_counter/n1559                                        NET DELAY               0.000                 12.921  2       
+segment_counter/add_7_add_5_13/CI1->segment_counter/add_7_add_5_13/CO1
+                                          SLICE_R16C6C       CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+segment_counter/n767                                         NET DELAY               0.000                 13.198  2       
+segment_counter/add_7_add_5_15/CI0->segment_counter/add_7_add_5_15/CO0
+                                          SLICE_R16C6D       CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+segment_counter/n1562                                        NET DELAY               0.000                 13.475  2       
+segment_counter/add_7_add_5_15/CI1->segment_counter/add_7_add_5_15/CO1
+                                          SLICE_R16C6D       CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+segment_counter/n769                                         NET DELAY               0.555                 14.307  2       
+segment_counter/add_7_add_5_17/CI0->segment_counter/add_7_add_5_17/CO0
+                                          SLICE_R16C7A       CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+segment_counter/n1565                                        NET DELAY               0.000                 14.584  2       
+segment_counter/add_7_add_5_17/CI1->segment_counter/add_7_add_5_17/CO1
+                                          SLICE_R16C7A       CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+segment_counter/n771                                         NET DELAY               0.000                 14.861  2       
+segment_counter/add_7_add_5_19/CI0->segment_counter/add_7_add_5_19/CO0
+                                          SLICE_R16C7B       CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+segment_counter/n1568                                        NET DELAY               0.661                 15.799  2       
+segment_counter/add_7_add_5_19/D1->segment_counter/add_7_add_5_19/S1
+                                          SLICE_R16C7B       D1_TO_F1_DELAY          0.449                 16.248  1       
+segment_counter/n107[18]                                     NET DELAY               2.432                 18.680  1       
+segment_counter/i511_2_lut/A->segment_counter/i511_2_lut/Z
+                                          SLICE_R16C7D       C1_TO_F1_DELAY          0.476                 19.156  1       
+segment_counter/n29[18]                                      NET DELAY               0.000                 19.156  1       
+segment_counter/count__i18/D                                 ENDPOINT                0.000                 19.156  1       
 
 
 Destination Clock Path
-Name                                      Cell/Site Name     Delay Name       Incr      Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-                                                             CONSTRAINT          0.000                 20.833  1       
-hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY       0.000                 20.833  26      
-segment_counter/int_osc                                      NET DELAY           5.499                 26.332  26      
-{scanning/scanner_counter/count__i4/CK   scanning/scanner_counter/count__i5/CK}
-                                                             CLOCK PIN           0.000                 26.332  1       
-                                                             Uncertainty      -(0.000)                 26.332  
-                                                             Setup time       -(0.198)                 26.134  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-Required Time                                                                                          26.134  
-Arrival Time                                                                                        -(19.575)  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                    6.558  
+Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+                                                             CONSTRAINT              0.000                 20.833  1       
+hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  26      
+segment_counter/int_osc                                      NET DELAY               5.499                 26.332  26      
+{segment_counter/count__i19/CK   segment_counter/count__i18/CK}
+                                                             CLOCK PIN               0.000                 26.332  1       
+                                                             Uncertainty          -(0.000)                 26.332  
+                                                             Setup time           -(0.198)                 26.134  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+Required Time                                                                                              26.134  
+Arrival Time                                                                                            -(19.155)  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+Path Slack  (Passed)                                                                                        6.978  
 
 
 
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i2/D  (SLICE_R15C3B)
+Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R17C9B)
+Path End         : scanning/scanner_counter/count__i18/D  (SLICE_R17C12B)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
-Logic Level      : 7
-Delay Ratio      : 70.2% (route), 29.8% (logic)
+Logic Level      : 21
+Delay Ratio      : 46.0% (route), 54.0% (logic)
 Clock Skew       : 0.000 ns 
 Setup Constraint : 20.833 ns 
-Path Slack       : 6.558 ns  (Passed)
-
-
-Source Clock Path
-Name                                      Cell/Site Name     Delay Name       Incr      Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY       0.000                  0.000  26      
-segment_counter/int_osc                                      NET DELAY           5.499                  5.499  26      
-{scanning/scanner_counter/count__i1/CK   scanning/scanner_counter/count__i0/CK}
-                                                             CLOCK PIN           0.000                  5.499  1       
-
-
-Data Path
-Name                                      Cell/Site Name     Delay Name       Incr      Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY     1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY           2.353                  9.240  2       
-scanning/scanner_counter/i5_4_lut/A->scanning/scanner_counter/i5_4_lut/Z
-                                          SLICE_R15C3A       D0_TO_F0_DELAY      0.449                  9.689  1       
-scanning/scanner_counter/n13                                 NET DELAY           3.080                 12.769  1       
-scanning/scanner_counter/i129_4_lut/A->scanning/scanner_counter/i129_4_lut/Z
-                                          SLICE_R13C3A       B1_TO_F1_DELAY      0.476                 13.245  1       
-scanning/scanner_counter/n20                                 NET DELAY           0.304                 13.549  1       
-scanning/scanner_counter/i1_4_lut/A->scanning/scanner_counter/i1_4_lut/Z
-                                          SLICE_R13C3B       C0_TO_F0_DELAY      0.476                 14.025  1       
-scanning/scanner_counter/n498                                NET DELAY           0.304                 14.329  1       
-scanning/scanner_counter/i1_4_lut_adj_5/A->scanning/scanner_counter/i1_4_lut_adj_5/Z
-                                          SLICE_R13C3B       C1_TO_F1_DELAY      0.476                 14.805  1       
-scanning/scanner_counter/n996                                NET DELAY           0.304                 15.109  1       
-scanning/scanner_counter/i120_4_lut/A->scanning/scanner_counter/i120_4_lut/Z
-                                          SLICE_R13C3C       C0_TO_F0_DELAY      0.449                 15.558  26      
-scanning/scanner_counter/n4                                  NET DELAY           3.542                 19.100  26      
-scanning/scanner_counter/i501_2_lut/B->scanning/scanner_counter/i501_2_lut/Z
-                                          SLICE_R15C3B       C0_TO_F0_DELAY      0.476                 19.576  1       
-scanning/scanner_counter/n34[2]                              NET DELAY           0.000                 19.576  1       
-scanning/scanner_counter/count__i2/D                         ENDPOINT            0.000                 19.576  1       
-
-
-Destination Clock Path
-Name                                      Cell/Site Name     Delay Name       Incr      Arrival/Required Time  Fanout  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-                                                             CONSTRAINT          0.000                 20.833  1       
-hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY       0.000                 20.833  26      
-segment_counter/int_osc                                      NET DELAY           5.499                 26.332  26      
-{scanning/scanner_counter/count__i2/CK   scanning/scanner_counter/count__i3/CK}
-                                                             CLOCK PIN           0.000                 26.332  1       
-                                                             Uncertainty      -(0.000)                 26.332  
-                                                             Setup time       -(0.198)                 26.134  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-Required Time                                                                                          26.134  
-Arrival Time                                                                                        -(19.575)  
-----------------------------------------  -----------------  ---------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                    6.558  
-
-
-
-
-++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
-
-Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R16C3B)
-Path End         : scanning/scanner_counter/count__i17/D  (SLICE_R15C5A)
-Source Clock     : int_osc (R)
-Destination Clock: int_osc (R)
-Logic Level      : 20
-Delay Ratio      : 49.2% (route), 50.8% (logic)
-Clock Skew       : 0.000 ns 
-Setup Constraint : 20.833 ns 
-Path Slack       : 6.660 ns  (Passed)
+Path Slack       : 6.978 ns  (Passed)
 
 
 Source Clock Path
@@ -1197,66 +1174,69 @@ Data Path
 Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
-                                          SLICE_R16C3B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
-scanning/scanner_counter/scan_count[0]                       NET DELAY               2.670                  9.557  2       
+                                          SLICE_R17C9B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
+scanning/scanner_counter/scan_count[0]                       NET DELAY               2.075                  8.962  2       
 scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
-                                          SLICE_R14C3A       B1_TO_COUT1_DELAY       0.357                  9.914  2       
-scanning/scanner_counter/n776                                NET DELAY               0.000                  9.914  2       
+                                          SLICE_R16C10A      B1_TO_COUT1_DELAY       0.357                  9.319  2       
+scanning/scanner_counter/n776                                NET DELAY               0.000                  9.319  2       
 scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
-                                          SLICE_R14C3B       CIN0_TO_COUT0_DELAY     0.277                 10.191  2       
-scanning/scanner_counter/n1574                               NET DELAY               0.000                 10.191  2       
+                                          SLICE_R16C10B      CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+scanning/scanner_counter/n1574                               NET DELAY               0.000                  9.596  2       
 scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
-                                          SLICE_R14C3B       CIN1_TO_COUT1_DELAY     0.277                 10.468  2       
-scanning/scanner_counter/n778                                NET DELAY               0.000                 10.468  2       
+                                          SLICE_R16C10B      CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+scanning/scanner_counter/n778                                NET DELAY               0.000                  9.873  2       
 scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
-                                          SLICE_R14C3C       CIN0_TO_COUT0_DELAY     0.277                 10.745  2       
-scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.745  2       
+                                          SLICE_R16C10C      CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.150  2       
 scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
-                                          SLICE_R14C3C       CIN1_TO_COUT1_DELAY     0.277                 11.022  2       
-scanning/scanner_counter/n780                                NET DELAY               0.000                 11.022  2       
+                                          SLICE_R16C10C      CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+scanning/scanner_counter/n780                                NET DELAY               0.000                 10.427  2       
 scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
-                                          SLICE_R14C3D       CIN0_TO_COUT0_DELAY     0.277                 11.299  2       
-scanning/scanner_counter/n1580                               NET DELAY               0.000                 11.299  2       
+                                          SLICE_R16C10D      CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+scanning/scanner_counter/n1580                               NET DELAY               0.000                 10.704  2       
 scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
-                                          SLICE_R14C3D       CIN1_TO_COUT1_DELAY     0.277                 11.576  2       
-scanning/scanner_counter/n782                                NET DELAY               0.555                 12.131  2       
+                                          SLICE_R16C10D      CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+scanning/scanner_counter/n782                                NET DELAY               0.555                 11.536  2       
 scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
-                                          SLICE_R14C4A       CIN0_TO_COUT0_DELAY     0.277                 12.408  2       
-scanning/scanner_counter/n1583                               NET DELAY               0.000                 12.408  2       
+                                          SLICE_R16C11A      CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+scanning/scanner_counter/n1583                               NET DELAY               0.000                 11.813  2       
 scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
-                                          SLICE_R14C4A       CIN1_TO_COUT1_DELAY     0.277                 12.685  2       
-scanning/scanner_counter/n784                                NET DELAY               0.000                 12.685  2       
+                                          SLICE_R16C11A      CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+scanning/scanner_counter/n784                                NET DELAY               0.000                 12.090  2       
 scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
-                                          SLICE_R14C4B       CIN0_TO_COUT0_DELAY     0.277                 12.962  2       
-scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.962  2       
+                                          SLICE_R16C11B      CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.367  2       
 scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
-                                          SLICE_R14C4B       CIN1_TO_COUT1_DELAY     0.277                 13.239  2       
-scanning/scanner_counter/n786                                NET DELAY               0.000                 13.239  2       
+                                          SLICE_R16C11B      CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+scanning/scanner_counter/n786                                NET DELAY               0.000                 12.644  2       
 scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
-                                          SLICE_R14C4C       CIN0_TO_COUT0_DELAY     0.277                 13.516  2       
-scanning/scanner_counter/n1589                               NET DELAY               0.000                 13.516  2       
+                                          SLICE_R16C11C      CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+scanning/scanner_counter/n1589                               NET DELAY               0.000                 12.921  2       
 scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
-                                          SLICE_R14C4C       CIN1_TO_COUT1_DELAY     0.277                 13.793  2       
-scanning/scanner_counter/n788                                NET DELAY               0.000                 13.793  2       
+                                          SLICE_R16C11C      CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+scanning/scanner_counter/n788                                NET DELAY               0.000                 13.198  2       
 scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
-                                          SLICE_R14C4D       CIN0_TO_COUT0_DELAY     0.277                 14.070  2       
-scanning/scanner_counter/n1592                               NET DELAY               0.000                 14.070  2       
+                                          SLICE_R16C11D      CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+scanning/scanner_counter/n1592                               NET DELAY               0.000                 13.475  2       
 scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
-                                          SLICE_R14C4D       CIN1_TO_COUT1_DELAY     0.277                 14.347  2       
-scanning/scanner_counter/n790                                NET DELAY               0.555                 14.902  2       
+                                          SLICE_R16C11D      CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+scanning/scanner_counter/n790                                NET DELAY               0.555                 14.307  2       
 scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
-                                          SLICE_R14C5A       CIN0_TO_COUT0_DELAY     0.277                 15.179  2       
-scanning/scanner_counter/n1595                               NET DELAY               0.000                 15.179  2       
+                                          SLICE_R16C12A      CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+scanning/scanner_counter/n1595                               NET DELAY               0.000                 14.584  2       
 scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
-                                          SLICE_R14C5A       CIN1_TO_COUT1_DELAY     0.277                 15.456  2       
-scanning/scanner_counter/n792                                NET DELAY               0.661                 16.117  2       
-scanning/scanner_counter/add_7_add_5_19/D0->scanning/scanner_counter/add_7_add_5_19/S0
-                                          SLICE_R14C5B       D0_TO_F0_DELAY          0.449                 16.566  1       
-scanning/scanner_counter/n132[17]                            NET DELAY               2.432                 18.998  1       
-scanning/scanner_counter/i496_2_lut/A->scanning/scanner_counter/i496_2_lut/Z
-                                          SLICE_R15C5A       C0_TO_F0_DELAY          0.476                 19.474  1       
-scanning/scanner_counter/n34[17]                             NET DELAY               0.000                 19.474  1       
-scanning/scanner_counter/count__i17/D                        ENDPOINT                0.000                 19.474  1       
+                                          SLICE_R16C12A      CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+scanning/scanner_counter/n792                                NET DELAY               0.000                 14.861  2       
+scanning/scanner_counter/add_7_add_5_19/CI0->scanning/scanner_counter/add_7_add_5_19/CO0
+                                          SLICE_R16C12B      CIN0_TO_COUT0_DELAY     0.277                 15.138  2       
+scanning/scanner_counter/n1598                               NET DELAY               0.661                 15.799  2       
+scanning/scanner_counter/add_7_add_5_19/D1->scanning/scanner_counter/add_7_add_5_19/S1
+                                          SLICE_R16C12B      D1_TO_F1_DELAY          0.449                 16.248  1       
+scanning/scanner_counter/n132[18]                            NET DELAY               2.432                 18.680  1       
+scanning/scanner_counter/i492_2_lut/A->scanning/scanner_counter/i492_2_lut/Z
+                                          SLICE_R17C12B      C1_TO_F1_DELAY          0.476                 19.156  1       
+scanning/scanner_counter/n34[18]                             NET DELAY               0.000                 19.156  1       
+scanning/scanner_counter/count__i18/D                        ENDPOINT                0.000                 19.156  1       
 
 
 Destination Clock Path
@@ -1271,9 +1251,116 @@ segment_counter/int_osc                                      NET DELAY          
                                                              Setup time           -(0.198)                 26.134  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
 Required Time                                                                                              26.134  
-Arrival Time                                                                                            -(19.473)  
+Arrival Time                                                                                            -(19.155)  
 ----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
-Path Slack  (Passed)                                                                                        6.660  
+Path Slack  (Passed)                                                                                        6.978  
+
+
+
+
+++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin       : scanning/scanner_counter/count__i0/Q  (SLICE_R17C9B)
+Path End         : scanning/scanner_counter/count__i17/D  (SLICE_R17C12B)
+Source Clock     : int_osc (R)
+Destination Clock: int_osc (R)
+Logic Level      : 20
+Delay Ratio      : 46.9% (route), 53.1% (logic)
+Clock Skew       : 0.000 ns 
+Setup Constraint : 20.833 ns 
+Path Slack       : 7.255 ns  (Passed)
+
+
+Source Clock Path
+Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                  0.000  26      
+segment_counter/int_osc                                      NET DELAY               5.499                  5.499  26      
+{scanning/scanner_counter/count__i1/CK   scanning/scanner_counter/count__i0/CK}
+                                                             CLOCK PIN               0.000                  5.499  1       
+
+
+Data Path
+Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+scanning/scanner_counter/count__i0/CK->scanning/scanner_counter/count__i0/Q
+                                          SLICE_R17C9B       CLK_TO_Q1_DELAY         1.388                  6.887  2       
+scanning/scanner_counter/scan_count[0]                       NET DELAY               2.075                  8.962  2       
+scanning/scanner_counter/add_7_add_5_1/B1->scanning/scanner_counter/add_7_add_5_1/CO1
+                                          SLICE_R16C10A      B1_TO_COUT1_DELAY       0.357                  9.319  2       
+scanning/scanner_counter/n776                                NET DELAY               0.000                  9.319  2       
+scanning/scanner_counter/add_7_add_5_3/CI0->scanning/scanner_counter/add_7_add_5_3/CO0
+                                          SLICE_R16C10B      CIN0_TO_COUT0_DELAY     0.277                  9.596  2       
+scanning/scanner_counter/n1574                               NET DELAY               0.000                  9.596  2       
+scanning/scanner_counter/add_7_add_5_3/CI1->scanning/scanner_counter/add_7_add_5_3/CO1
+                                          SLICE_R16C10B      CIN1_TO_COUT1_DELAY     0.277                  9.873  2       
+scanning/scanner_counter/n778                                NET DELAY               0.000                  9.873  2       
+scanning/scanner_counter/add_7_add_5_5/CI0->scanning/scanner_counter/add_7_add_5_5/CO0
+                                          SLICE_R16C10C      CIN0_TO_COUT0_DELAY     0.277                 10.150  2       
+scanning/scanner_counter/n1577                               NET DELAY               0.000                 10.150  2       
+scanning/scanner_counter/add_7_add_5_5/CI1->scanning/scanner_counter/add_7_add_5_5/CO1
+                                          SLICE_R16C10C      CIN1_TO_COUT1_DELAY     0.277                 10.427  2       
+scanning/scanner_counter/n780                                NET DELAY               0.000                 10.427  2       
+scanning/scanner_counter/add_7_add_5_7/CI0->scanning/scanner_counter/add_7_add_5_7/CO0
+                                          SLICE_R16C10D      CIN0_TO_COUT0_DELAY     0.277                 10.704  2       
+scanning/scanner_counter/n1580                               NET DELAY               0.000                 10.704  2       
+scanning/scanner_counter/add_7_add_5_7/CI1->scanning/scanner_counter/add_7_add_5_7/CO1
+                                          SLICE_R16C10D      CIN1_TO_COUT1_DELAY     0.277                 10.981  2       
+scanning/scanner_counter/n782                                NET DELAY               0.555                 11.536  2       
+scanning/scanner_counter/add_7_add_5_9/CI0->scanning/scanner_counter/add_7_add_5_9/CO0
+                                          SLICE_R16C11A      CIN0_TO_COUT0_DELAY     0.277                 11.813  2       
+scanning/scanner_counter/n1583                               NET DELAY               0.000                 11.813  2       
+scanning/scanner_counter/add_7_add_5_9/CI1->scanning/scanner_counter/add_7_add_5_9/CO1
+                                          SLICE_R16C11A      CIN1_TO_COUT1_DELAY     0.277                 12.090  2       
+scanning/scanner_counter/n784                                NET DELAY               0.000                 12.090  2       
+scanning/scanner_counter/add_7_add_5_11/CI0->scanning/scanner_counter/add_7_add_5_11/CO0
+                                          SLICE_R16C11B      CIN0_TO_COUT0_DELAY     0.277                 12.367  2       
+scanning/scanner_counter/n1586                               NET DELAY               0.000                 12.367  2       
+scanning/scanner_counter/add_7_add_5_11/CI1->scanning/scanner_counter/add_7_add_5_11/CO1
+                                          SLICE_R16C11B      CIN1_TO_COUT1_DELAY     0.277                 12.644  2       
+scanning/scanner_counter/n786                                NET DELAY               0.000                 12.644  2       
+scanning/scanner_counter/add_7_add_5_13/CI0->scanning/scanner_counter/add_7_add_5_13/CO0
+                                          SLICE_R16C11C      CIN0_TO_COUT0_DELAY     0.277                 12.921  2       
+scanning/scanner_counter/n1589                               NET DELAY               0.000                 12.921  2       
+scanning/scanner_counter/add_7_add_5_13/CI1->scanning/scanner_counter/add_7_add_5_13/CO1
+                                          SLICE_R16C11C      CIN1_TO_COUT1_DELAY     0.277                 13.198  2       
+scanning/scanner_counter/n788                                NET DELAY               0.000                 13.198  2       
+scanning/scanner_counter/add_7_add_5_15/CI0->scanning/scanner_counter/add_7_add_5_15/CO0
+                                          SLICE_R16C11D      CIN0_TO_COUT0_DELAY     0.277                 13.475  2       
+scanning/scanner_counter/n1592                               NET DELAY               0.000                 13.475  2       
+scanning/scanner_counter/add_7_add_5_15/CI1->scanning/scanner_counter/add_7_add_5_15/CO1
+                                          SLICE_R16C11D      CIN1_TO_COUT1_DELAY     0.277                 13.752  2       
+scanning/scanner_counter/n790                                NET DELAY               0.555                 14.307  2       
+scanning/scanner_counter/add_7_add_5_17/CI0->scanning/scanner_counter/add_7_add_5_17/CO0
+                                          SLICE_R16C12A      CIN0_TO_COUT0_DELAY     0.277                 14.584  2       
+scanning/scanner_counter/n1595                               NET DELAY               0.000                 14.584  2       
+scanning/scanner_counter/add_7_add_5_17/CI1->scanning/scanner_counter/add_7_add_5_17/CO1
+                                          SLICE_R16C12A      CIN1_TO_COUT1_DELAY     0.277                 14.861  2       
+scanning/scanner_counter/n792                                NET DELAY               0.661                 15.522  2       
+scanning/scanner_counter/add_7_add_5_19/D0->scanning/scanner_counter/add_7_add_5_19/S0
+                                          SLICE_R16C12B      D0_TO_F0_DELAY          0.449                 15.971  1       
+scanning/scanner_counter/n132[17]                            NET DELAY               2.432                 18.403  1       
+scanning/scanner_counter/i496_2_lut/A->scanning/scanner_counter/i496_2_lut/Z
+                                          SLICE_R17C12B      C0_TO_F0_DELAY          0.476                 18.879  1       
+scanning/scanner_counter/n34[17]                             NET DELAY               0.000                 18.879  1       
+scanning/scanner_counter/count__i17/D                        ENDPOINT                0.000                 18.879  1       
+
+
+Destination Clock Path
+Name                                      Cell/Site Name     Delay Name           Incr      Arrival/Required Time  Fanout  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+                                                             CONSTRAINT              0.000                 20.833  1       
+hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY           0.000                 20.833  26      
+segment_counter/int_osc                                      NET DELAY               5.499                 26.332  26      
+{scanning/scanner_counter/count__i17/CK   scanning/scanner_counter/count__i18/CK}
+                                                             CLOCK PIN               0.000                 26.332  1       
+                                                             Uncertainty          -(0.000)                 26.332  
+                                                             Setup time           -(0.198)                 26.134  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+Required Time                                                                                              26.134  
+Arrival Time                                                                                            -(18.878)  
+----------------------------------------  -----------------  -------------------  --------  ---------------------  ------  
+Path Slack  (Passed)                                                                                        7.255  
 
 
 
@@ -1297,8 +1384,8 @@ Path Slack  (Passed)                                                            
 -------------------------------------------------------
 segment_counter/clk_state/D              |    1.913 ns 
 scanning/scanner_counter/clk_state/D     |    1.943 ns 
-segment_counter/count__i10/D             |    2.943 ns 
-segment_counter/count__i11/D             |    2.943 ns 
+segment_counter/count__i19/D             |    2.943 ns 
+segment_counter/count__i18/D             |    2.943 ns 
 segment_counter/count__i3/D              |    2.943 ns 
 segment_counter/count__i2/D              |    2.943 ns 
 segment_counter/count__i5/D              |    2.943 ns 
@@ -1327,8 +1414,8 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/clk_state/Q  (SLICE_R16C3A)
-Path End         : segment_counter/clk_state/D  (SLICE_R16C3A)
+Path Begin       : segment_counter/clk_state/Q  (SLICE_R15C5D)
+Path End         : segment_counter/clk_state/D  (SLICE_R15C5D)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 2
@@ -1350,10 +1437,10 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/clk_state/CK->segment_counter/clk_state/Q
-                                          SLICE_R16C3A       CLK_TO_Q1_DELAY  0.779                  3.863  7       
+                                          SLICE_R15C5D       CLK_TO_Q1_DELAY  0.779                  3.863  7       
 segment_counter/pwr_c                                        NET DELAY        0.882                  4.745  7       
 segment_counter/i19_2_lut/A->segment_counter/i19_2_lut/Z
-                                          SLICE_R16C3A       C1_TO_F1_DELAY   0.252                  4.997  1       
+                                          SLICE_R15C5D       C1_TO_F1_DELAY   0.252                  4.997  1       
 segment_counter/n28                                          NET DELAY        0.000                  4.997  1       
 segment_counter/clk_state/D                                  ENDPOINT         0.000                  4.997  1       
 
@@ -1378,8 +1465,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : scanning/scanner_counter/clk_state/Q  (SLICE_R13C4D)
-Path End         : scanning/scanner_counter/clk_state/D  (SLICE_R13C4D)
+Path Begin       : scanning/scanner_counter/clk_state/Q  (SLICE_R17C9D)
+Path End         : scanning/scanner_counter/clk_state/D  (SLICE_R17C9D)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 2
@@ -1401,10 +1488,10 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 scanning/scanner_counter/clk_state/CK->scanning/scanner_counter/clk_state/Q
-                                          SLICE_R13C4D       CLK_TO_Q1_DELAY  0.779                  3.863  5       
+                                          SLICE_R17C9D       CLK_TO_Q1_DELAY  0.779                  3.863  5       
 scanning/scanner_counter/scan_clk                            NET DELAY        0.912                  4.775  5       
 scanning/scanner_counter/i19_2_lut/A->scanning/scanner_counter/i19_2_lut/Z
-                                          SLICE_R13C4D       B1_TO_F1_DELAY   0.252                  5.027  1       
+                                          SLICE_R17C9D       B1_TO_F1_DELAY   0.252                  5.027  1       
 scanning/scanner_counter/n33                                 NET DELAY        0.000                  5.027  1       
 scanning/scanner_counter/clk_state/D                         ENDPOINT         0.000                  5.027  1       
 
@@ -1429,8 +1516,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/count__i18/Q  (SLICE_R18C5C)
-Path End         : segment_counter/count__i10/D  (SLICE_R18C5A)
+Path Begin       : segment_counter/count__i18/Q  (SLICE_R16C7D)
+Path End         : segment_counter/count__i19/D  (SLICE_R16C7D)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 3
@@ -1453,15 +1540,15 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/count__i18/CK->segment_counter/count__i18/Q
-                                          SLICE_R18C5C       CLK_TO_Q1_DELAY  0.779                  3.863  2       
+                                          SLICE_R16C7D       CLK_TO_Q1_DELAY  0.779                  3.863  2       
 segment_counter/count[18]                                    NET DELAY        0.712                  4.575  2       
 segment_counter/i2_4_lut_adj_4/B->segment_counter/i2_4_lut_adj_4/Z
-                                          SLICE_R18C4C       D1_TO_F1_DELAY   0.266                  4.841  21      
+                                          SLICE_R17C6C       D1_TO_F1_DELAY   0.266                  4.841  21      
 segment_counter/n4                                           NET DELAY        0.934                  5.775  21      
-segment_counter/i537_2_lut/B->segment_counter/i537_2_lut/Z
-                                          SLICE_R18C5A       D0_TO_F0_DELAY   0.252                  6.027  1       
-segment_counter/n29[10]                                      NET DELAY        0.000                  6.027  1       
-segment_counter/count__i10/D                                 ENDPOINT         0.000                  6.027  1       
+segment_counter/i510_2_lut/B->segment_counter/i510_2_lut/Z
+                                          SLICE_R16C7D       D0_TO_F0_DELAY   0.252                  6.027  1       
+segment_counter/n29[19]                                      NET DELAY        0.000                  6.027  1       
+segment_counter/count__i19/D                                 ENDPOINT         0.000                  6.027  1       
 
 
 Destination Clock Path
@@ -1470,7 +1557,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  27      
 segment_counter/int_osc                                      NET DELAY        3.084                  3.084  27      
-{segment_counter/count__i10/CK   segment_counter/count__i11/CK}
+{segment_counter/count__i19/CK   segment_counter/count__i18/CK}
                                                              CLOCK PIN        0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1485,8 +1572,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/count__i18/Q  (SLICE_R18C5C)
-Path End         : segment_counter/count__i11/D  (SLICE_R18C5A)
+Path Begin       : segment_counter/count__i18/Q  (SLICE_R16C7D)
+Path End         : segment_counter/count__i18/D  (SLICE_R16C7D)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 3
@@ -1509,15 +1596,15 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/count__i18/CK->segment_counter/count__i18/Q
-                                          SLICE_R18C5C       CLK_TO_Q1_DELAY  0.779                  3.863  2       
+                                          SLICE_R16C7D       CLK_TO_Q1_DELAY  0.779                  3.863  2       
 segment_counter/count[18]                                    NET DELAY        0.712                  4.575  2       
 segment_counter/i2_4_lut_adj_4/B->segment_counter/i2_4_lut_adj_4/Z
-                                          SLICE_R18C4C       D1_TO_F1_DELAY   0.266                  4.841  21      
+                                          SLICE_R17C6C       D1_TO_F1_DELAY   0.266                  4.841  21      
 segment_counter/n4                                           NET DELAY        0.934                  5.775  21      
-segment_counter/i534_2_lut/B->segment_counter/i534_2_lut/Z
-                                          SLICE_R18C5A       D1_TO_F1_DELAY   0.252                  6.027  1       
-segment_counter/n29[11]                                      NET DELAY        0.000                  6.027  1       
-segment_counter/count__i11/D                                 ENDPOINT         0.000                  6.027  1       
+segment_counter/i511_2_lut/B->segment_counter/i511_2_lut/Z
+                                          SLICE_R16C7D       D1_TO_F1_DELAY   0.252                  6.027  1       
+segment_counter/n29[18]                                      NET DELAY        0.000                  6.027  1       
+segment_counter/count__i18/D                                 ENDPOINT         0.000                  6.027  1       
 
 
 Destination Clock Path
@@ -1526,7 +1613,7 @@ Name                                      Cell/Site Name     Delay Name       In
                                                              CONSTRAINT       0.000                  0.000  1       
 hf_osc/CLKHF                              HFOSC_HFOSC_R1C32  CLOCK LATENCY    0.000                  0.000  27      
 segment_counter/int_osc                                      NET DELAY        3.084                  3.084  27      
-{segment_counter/count__i10/CK   segment_counter/count__i11/CK}
+{segment_counter/count__i19/CK   segment_counter/count__i18/CK}
                                                              CLOCK PIN        0.000                  3.084  1       
                                                              Uncertainty      0.000                  3.084  
                                                              Hold time        0.000                  3.084  
@@ -1541,8 +1628,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/count__i18/Q  (SLICE_R18C5C)
-Path End         : segment_counter/count__i3/D  (SLICE_R18C3C)
+Path Begin       : segment_counter/count__i18/Q  (SLICE_R16C7D)
+Path End         : segment_counter/count__i3/D  (SLICE_R17C5A)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 3
@@ -1565,13 +1652,13 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/count__i18/CK->segment_counter/count__i18/Q
-                                          SLICE_R18C5C       CLK_TO_Q1_DELAY  0.779                  3.863  2       
+                                          SLICE_R16C7D       CLK_TO_Q1_DELAY  0.779                  3.863  2       
 segment_counter/count[18]                                    NET DELAY        0.712                  4.575  2       
 segment_counter/i2_4_lut_adj_4/B->segment_counter/i2_4_lut_adj_4/Z
-                                          SLICE_R18C4C       D1_TO_F1_DELAY   0.266                  4.841  21      
+                                          SLICE_R17C6C       D1_TO_F1_DELAY   0.266                  4.841  21      
 segment_counter/n4                                           NET DELAY        0.934                  5.775  21      
 segment_counter/i556_2_lut/B->segment_counter/i556_2_lut/Z
-                                          SLICE_R18C3C       D0_TO_F0_DELAY   0.252                  6.027  1       
+                                          SLICE_R17C5A       D0_TO_F0_DELAY   0.252                  6.027  1       
 segment_counter/n29[3]                                       NET DELAY        0.000                  6.027  1       
 segment_counter/count__i3/D                                  ENDPOINT         0.000                  6.027  1       
 
@@ -1597,8 +1684,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/count__i18/Q  (SLICE_R18C5C)
-Path End         : segment_counter/count__i2/D  (SLICE_R18C3C)
+Path Begin       : segment_counter/count__i18/Q  (SLICE_R16C7D)
+Path End         : segment_counter/count__i2/D  (SLICE_R17C5A)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 3
@@ -1621,13 +1708,13 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/count__i18/CK->segment_counter/count__i18/Q
-                                          SLICE_R18C5C       CLK_TO_Q1_DELAY  0.779                  3.863  2       
+                                          SLICE_R16C7D       CLK_TO_Q1_DELAY  0.779                  3.863  2       
 segment_counter/count[18]                                    NET DELAY        0.712                  4.575  2       
 segment_counter/i2_4_lut_adj_4/B->segment_counter/i2_4_lut_adj_4/Z
-                                          SLICE_R18C4C       D1_TO_F1_DELAY   0.266                  4.841  21      
+                                          SLICE_R17C6C       D1_TO_F1_DELAY   0.266                  4.841  21      
 segment_counter/n4                                           NET DELAY        0.934                  5.775  21      
 segment_counter/i533_2_lut/B->segment_counter/i533_2_lut/Z
-                                          SLICE_R18C3C       D1_TO_F1_DELAY   0.252                  6.027  1       
+                                          SLICE_R17C5A       D1_TO_F1_DELAY   0.252                  6.027  1       
 segment_counter/n29[2]                                       NET DELAY        0.000                  6.027  1       
 segment_counter/count__i2/D                                  ENDPOINT         0.000                  6.027  1       
 
@@ -1653,8 +1740,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/count__i18/Q  (SLICE_R18C5C)
-Path End         : segment_counter/count__i5/D  (SLICE_R18C3B)
+Path Begin       : segment_counter/count__i18/Q  (SLICE_R16C7D)
+Path End         : segment_counter/count__i5/D  (SLICE_R17C5B)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 3
@@ -1677,13 +1764,13 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/count__i18/CK->segment_counter/count__i18/Q
-                                          SLICE_R18C5C       CLK_TO_Q1_DELAY  0.779                  3.863  2       
+                                          SLICE_R16C7D       CLK_TO_Q1_DELAY  0.779                  3.863  2       
 segment_counter/count[18]                                    NET DELAY        0.712                  4.575  2       
 segment_counter/i2_4_lut_adj_4/B->segment_counter/i2_4_lut_adj_4/Z
-                                          SLICE_R18C4C       D1_TO_F1_DELAY   0.266                  4.841  21      
+                                          SLICE_R17C6C       D1_TO_F1_DELAY   0.266                  4.841  21      
 segment_counter/n4                                           NET DELAY        0.934                  5.775  21      
 segment_counter/i554_2_lut/B->segment_counter/i554_2_lut/Z
-                                          SLICE_R18C3B       D0_TO_F0_DELAY   0.252                  6.027  1       
+                                          SLICE_R17C5B       D0_TO_F0_DELAY   0.252                  6.027  1       
 segment_counter/n29[5]                                       NET DELAY        0.000                  6.027  1       
 segment_counter/count__i5/D                                  ENDPOINT         0.000                  6.027  1       
 
@@ -1709,8 +1796,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/count__i18/Q  (SLICE_R18C5C)
-Path End         : segment_counter/count__i4/D  (SLICE_R18C3B)
+Path Begin       : segment_counter/count__i18/Q  (SLICE_R16C7D)
+Path End         : segment_counter/count__i4/D  (SLICE_R17C5B)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 3
@@ -1733,13 +1820,13 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/count__i18/CK->segment_counter/count__i18/Q
-                                          SLICE_R18C5C       CLK_TO_Q1_DELAY  0.779                  3.863  2       
+                                          SLICE_R16C7D       CLK_TO_Q1_DELAY  0.779                  3.863  2       
 segment_counter/count[18]                                    NET DELAY        0.712                  4.575  2       
 segment_counter/i2_4_lut_adj_4/B->segment_counter/i2_4_lut_adj_4/Z
-                                          SLICE_R18C4C       D1_TO_F1_DELAY   0.266                  4.841  21      
+                                          SLICE_R17C6C       D1_TO_F1_DELAY   0.266                  4.841  21      
 segment_counter/n4                                           NET DELAY        0.934                  5.775  21      
 segment_counter/i555_2_lut/B->segment_counter/i555_2_lut/Z
-                                          SLICE_R18C3B       D1_TO_F1_DELAY   0.252                  6.027  1       
+                                          SLICE_R17C5B       D1_TO_F1_DELAY   0.252                  6.027  1       
 segment_counter/n29[4]                                       NET DELAY        0.000                  6.027  1       
 segment_counter/count__i4/D                                  ENDPOINT         0.000                  6.027  1       
 
@@ -1765,8 +1852,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/count__i18/Q  (SLICE_R18C5C)
-Path End         : segment_counter/count__i0/D  (SLICE_R18C3A)
+Path Begin       : segment_counter/count__i18/Q  (SLICE_R16C7D)
+Path End         : segment_counter/count__i0/D  (SLICE_R17C5D)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 3
@@ -1789,13 +1876,13 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/count__i18/CK->segment_counter/count__i18/Q
-                                          SLICE_R18C5C       CLK_TO_Q1_DELAY  0.779                  3.863  2       
+                                          SLICE_R16C7D       CLK_TO_Q1_DELAY  0.779                  3.863  2       
 segment_counter/count[18]                                    NET DELAY        0.712                  4.575  2       
 segment_counter/i2_4_lut_adj_4/B->segment_counter/i2_4_lut_adj_4/Z
-                                          SLICE_R18C4C       D1_TO_F1_DELAY   0.266                  4.841  21      
+                                          SLICE_R17C6C       D1_TO_F1_DELAY   0.266                  4.841  21      
 segment_counter/n4                                           NET DELAY        0.934                  5.775  21      
 segment_counter/i484_2_lut/B->segment_counter/i484_2_lut/Z
-                                          SLICE_R18C3A       D0_TO_F0_DELAY   0.252                  6.027  1       
+                                          SLICE_R17C5D       D0_TO_F0_DELAY   0.252                  6.027  1       
 segment_counter/n29[0]                                       NET DELAY        0.000                  6.027  1       
 segment_counter/count__i0/D                                  ENDPOINT         0.000                  6.027  1       
 
@@ -1821,8 +1908,8 @@ Path Slack  (Passed)                                                            
 
 ++++ Path 10 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin       : segment_counter/count__i18/Q  (SLICE_R18C5C)
-Path End         : segment_counter/count__i1/D  (SLICE_R18C3A)
+Path Begin       : segment_counter/count__i18/Q  (SLICE_R16C7D)
+Path End         : segment_counter/count__i1/D  (SLICE_R17C5D)
 Source Clock     : int_osc (R)
 Destination Clock: int_osc (R)
 Logic Level      : 3
@@ -1845,13 +1932,13 @@ Data Path
 Name                                      Cell/Site Name     Delay Name       Incr   Arrival/Required Time  Fanout  
 ----------------------------------------  -----------------  ---------------  -----  ---------------------  ------  
 segment_counter/count__i18/CK->segment_counter/count__i18/Q
-                                          SLICE_R18C5C       CLK_TO_Q1_DELAY  0.779                  3.863  2       
+                                          SLICE_R16C7D       CLK_TO_Q1_DELAY  0.779                  3.863  2       
 segment_counter/count[18]                                    NET DELAY        0.712                  4.575  2       
 segment_counter/i2_4_lut_adj_4/B->segment_counter/i2_4_lut_adj_4/Z
-                                          SLICE_R18C4C       D1_TO_F1_DELAY   0.266                  4.841  21      
+                                          SLICE_R17C6C       D1_TO_F1_DELAY   0.266                  4.841  21      
 segment_counter/n4                                           NET DELAY        0.934                  5.775  21      
 segment_counter/i509_2_lut/B->segment_counter/i509_2_lut/Z
-                                          SLICE_R18C3A       D1_TO_F1_DELAY   0.252                  6.027  1       
+                                          SLICE_R17C5D       D1_TO_F1_DELAY   0.252                  6.027  1       
 segment_counter/n29[1]                                       NET DELAY        0.000                  6.027  1       
 segment_counter/count__i1/D                                  ENDPOINT         0.000                  6.027  1       
 
