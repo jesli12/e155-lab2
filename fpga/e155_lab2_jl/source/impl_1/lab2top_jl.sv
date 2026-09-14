@@ -27,7 +27,7 @@ module lab2top_jl(
 	// counter for timing multiplexer (120 Hz)
 	counter #(
 		.WIDTH(28),
-		.MAX_COUNT(200_00_000) // MAX_COUNT = 200_000 = a signal on/off frequency of 120 Hz
+		.MAX_COUNT(200_000) // MAX_COUNT = 200_000 = a signal on/off frequency of 120 Hz
 	) segment_counter (
 		.osc (int_osc), 
 		.nrst (nreset),  
@@ -42,8 +42,10 @@ module lab2top_jl(
 		.segment (seg) // this already outputs for segment display
 	);
 	
-	assign pwr = (seg_clk == 1'b0)? 2'b10 : 2'b01; // MUX: seg_clk == 0 --> pwr = 10 powers first display, seg_clk ==1 --> pwr = 01 powers second display
-	assign sw = (seg_clk == 1'b0)? sw1 : sw2;	   // MUX: seg_clk == 0 --> sw1 + first display on, seg_clk ==1 --> sw2 + second display on (see above)
+	
+	assign pwr[0] = seg_clk;
+	assign pwr[1] = ~seg_clk;
+	assign sw = (seg_clk)? sw1 : sw2;	   // MUX: seg_clk == 0 --> sw1 + first display on, seg_clk ==1 --> sw2 + second display on (see above)
 	
 	// #### KEYPAD!! ####
 	

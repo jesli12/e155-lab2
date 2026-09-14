@@ -8,14 +8,14 @@ I/O cells:      31
                             FD1P3XZ        55          100.0
                          HSOSC_CORE         1          100.0
                                  IB        14          100.0
-                               LUT4       108          100.0
+                               LUT4       107          100.0
                                  OB        17          100.0
 SUB MODULES
         counter(MAX_COUNT=12000000)         1
-counter(WIDTH=28,MAX_COUNT=20000000)         1
+ counter(WIDTH=28,MAX_COUNT=200000)         1
                             scanner         1
                             sev_seg         1
-                              TOTAL       227
+                              TOTAL       226
 ----------------------------------------------------------------------
 Report for cell scanner.v1
 Instance Path : scanning
@@ -23,7 +23,7 @@ Instance Path : scanning
                                cell     count   Res Usage(%)
                                 FA2        13           46.4
                             FD1P3XZ        26           47.3
-                               LUT4        52           48.1
+                               LUT4        52           48.6
 SUB MODULES
         counter(MAX_COUNT=12000000)         1
                               TOTAL        92
@@ -34,17 +34,17 @@ Instance Path : scanning.scanner_counter
                                cell     count   Res Usage(%)
                                 FA2        13           46.4
                             FD1P3XZ        26           47.3
-                               LUT4        36           33.3
+                               LUT4        36           33.6
                               TOTAL        75
 ----------------------------------------------------------------------
-Report for cell counter(WIDTH=28,MAX_COUNT=20000000).v1
+Report for cell counter(WIDTH=28,MAX_COUNT=200000).v1
 Instance Path : segment_counter
                                   Cell usage:
                                cell     count   Res Usage(%)
                                 FA2        15           53.6
                             FD1P3XZ        29           52.7
-                               LUT4        39           36.1
-                              TOTAL        83
+                               LUT4        38           35.5
+                              TOTAL        82
 ----------------------------------------------------------------------
 Report for cell sev_seg.v1
 Instance Path : segment_decoder
