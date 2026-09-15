@@ -41,9 +41,9 @@
 
 # Source Files
 -sver "../source/impl_1/lab2top_jl.sv"
+-sver "../source/impl_1/counter.sv"
 -sver "../source/impl_1/scanner.sv"
 -sver "../source/impl_1/sev_seg.sv"
--sver "../source/impl_1/counter.sv"
 -path ".."
 -top lab2top_jl
 # Output Configuration

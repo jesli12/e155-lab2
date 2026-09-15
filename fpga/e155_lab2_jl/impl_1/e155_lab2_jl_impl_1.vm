@@ -1,5 +1,5 @@
 // Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2026.1.0.37.0
-// Netlist written on Sun Sep 13 23:59:59 2026
+// Netlist written on Mon Sep 14 22:51:32 2026
 // Source file index table: 
 // Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
 // file 0 "c:/users/jesli/documents/github/e155-lab2/fpga/e155_lab2_jl/source/impl_1/counter.sv"
@@ -175,8 +175,8 @@ module lab2top_jl (input [3:0]sw1, input [3:0]sw2, input [3:0]col, input nreset,
     defparam col_c_0__I_0_1_lut.INIT = "0x5555";
     (* LSE_LINE_FILE_ID=27, LSE_LCOL=10, LSE_RCOL=3, LSE_LLINE=54, LSE_RLINE=59 *) scanner scanning ({row_c}, 
             n599, int_osc, n3, nreset_c);
-    (* LSE_LINE_FILE_ID=27, LSE_LCOL=4, LSE_RCOL=3, LSE_LLINE=31, LSE_RLINE=37 *) \counter(WIDTH=28,MAX_COUNT=200000)  segment_counter (int_osc, 
-            n599, n3, pwr_c);
+    (* LSE_LINE_FILE_ID=27, LSE_LCOL=4, LSE_RCOL=3, LSE_LLINE=31, LSE_RLINE=37 *) \counter(WIDTH=28,MAX_COUNT=200000)  segment_counter (n599, 
+            int_osc, n3, pwr_c);
     (* LSE_LINE_FILE_ID=27, LSE_LCOL=10, LSE_RCOL=3, LSE_LLINE=40, LSE_RLINE=43 *) sev_seg segment_decoder ({sw}, 
             {seg_c});
     
@@ -193,8 +193,8 @@ module scanner (output [3:0]row_c, input n599, input int_osc, output n3,
     wire scan_clk;
     (* is_clock=1 *) wire int_osc;
     
-    wire n779, n542, n538, n1170, n741, n545, n4, n1078, n1043, 
-        n763, n773, n534, n757, n1081, n1082;
+    wire n542, n779, n1170, n545, n534, n4, n1043, n773, n763, 
+        n1082, n741, n1078, n757, n1081, n538;
     
     (* lut_function="(!(((C)+!B)+!A))" *) LUT4 i2_3_lut (.A(n779), .B(scan_clk), 
             .C(n1170), .Z(row_c[0]));
@@ -245,12 +245,12 @@ module scanner (output [3:0]row_c, input n599, input int_osc, output n3,
     (* lut_function="(A (C)+!A ((C)+!B))" *) LUT4 i1080_2_lut_3_lut (.A(scan_clk), 
             .B(n779), .C(n1170), .Z(row_c[3]));
     defparam i1080_2_lut_3_lut.INIT = "0xf1f1";
-    (* LSE_LINE_FILE_ID=29, LSE_LCOL=4, LSE_RCOL=3, LSE_LLINE=21, LSE_RLINE=27 *) \counter(MAX_COUNT=12000000)  scanner_counter (scan_count[11], 
-            n599, n1078, scan_count[12], int_osc, n3, scan_count[10], 
-            scan_count[15], scan_count[7], scan_count[9], scan_count[8], 
-            n534, n1081, scan_count[19], n538, scan_count[24], scan_count[23], 
-            scan_count[22], nreset_c, scan_count[17], scan_clk, scan_count[13], 
-            scan_count[14], scan_count[16], scan_count[21], scan_count[18], 
+    (* LSE_LINE_FILE_ID=29, LSE_LCOL=4, LSE_RCOL=3, LSE_LLINE=21, LSE_RLINE=27 *) \counter(MAX_COUNT=12000000)  scanner_counter (n1078, 
+            n599, scan_count[19], int_osc, scan_count[11], n3, scan_count[17], 
+            scan_count[12], scan_count[9], scan_count[15], scan_count[13], 
+            scan_count[14], scan_count[7], scan_count[8], n534, scan_count[16], 
+            scan_count[10], n1081, n538, scan_count[24], scan_count[23], 
+            scan_count[22], nreset_c, scan_clk, scan_count[21], scan_count[18], 
             scan_count[20]);
     
 endmodule
@@ -259,29 +259,29 @@ endmodule
 // Verilog Description of module \counter(MAX_COUNT=12000000) 
 //
 
-module \counter(MAX_COUNT=12000000)  (output \scan_count[11] , input n599, 
-            output n1078, output \scan_count[12] , input int_osc, output n3, 
-            output \scan_count[10] , output \scan_count[15] , output \scan_count[7] , 
-            output \scan_count[9] , output \scan_count[8] , output n534, 
-            input n1081, output \scan_count[19] , output n538, output \scan_count[24] , 
+module \counter(MAX_COUNT=12000000)  (output n1078, input n599, output \scan_count[19] , 
+            input int_osc, output \scan_count[11] , output n3, output \scan_count[17] , 
+            output \scan_count[12] , output \scan_count[9] , output \scan_count[15] , 
+            output \scan_count[13] , output \scan_count[14] , output \scan_count[7] , 
+            output \scan_count[8] , output n534, output \scan_count[16] , 
+            output \scan_count[10] , input n1081, output n538, output \scan_count[24] , 
             output \scan_count[23] , output \scan_count[22] , input nreset_c, 
-            output \scan_count[17] , output scan_clk, output \scan_count[13] , 
-            output \scan_count[14] , output \scan_count[16] , output \scan_count[21] , 
-            output \scan_count[18] , output \scan_count[20] );
+            output scan_clk, output \scan_count[21] , output \scan_count[18] , 
+            output \scan_count[20] );
     
     wire [24:0]scan_count;
     (* is_clock=1 *) wire int_osc;
     
-    wire GND_net, VCC_net;
+    wire VCC_net, GND_net, n1783;
     wire [24:0]n34;
     
-    wire n1780, n13, n1083, n854;
+    wire n1771;
     wire [24:0]n132;
     
-    wire n14, n842, n20, n856, n535, n1777, n1768, n1762, n33, 
-        n4, n844, n850, n1750, n858, n1783, n1759, n852, n1774, 
-        n1771, n848, n1753, n846, n1765, n840, n1756, n838, 
-        n836, n1708;
+    wire n20, n840, n1759, n836, n1780, n852, n14, n1083, n1765, 
+        n535, n13, n4, n33, n848, n858, n842, n856, n854, 
+        n1777, n1774, n850, n1768, n846, n1756, n844, n1762, 
+        n838, n1753, n1750, n1708;
     
     (* lse_init_val=0, LSE_LINE_FILE_ID=29, LSE_LCOL=4, LSE_RCOL=3, LSE_LLINE=21, LSE_RLINE=27 *) FD1P3XZ clk_state (.D(n33), 
             .SP(n599), .CK(int_osc), .SR(n3), .Q(scan_clk));
@@ -411,7 +411,7 @@ module \counter(MAX_COUNT=12000000)  (output \scan_count[11] , input n599,
             .SP(n599), .CK(int_osc), .SR(n3), .Q(\scan_count[24] ));
     defparam count__i24.REGSET = "RESET";
     defparam count__i24.SRMODE = "CE_OVER_LSR";
-    VLO i1 (.Z(GND_net));
+    VLO i2 (.Z(GND_net));
     FA2 add_7_add_5_25 (.A0(GND_net), .B0(\scan_count[23] ), .C0(GND_net), 
         .D0(n858), .CI0(n858), .A1(GND_net), .B1(\scan_count[24] ), 
         .C1(GND_net), .D1(n1783), .CI1(n1783), .CO0(n1783), .S0(n132[23]), 
@@ -570,7 +570,7 @@ module \counter(MAX_COUNT=12000000)  (output \scan_count[11] , input n599,
     (* lut_function="(A+(B+(C)))" *) LUT4 i1_2_lut_3_lut_adj_7 (.A(\scan_count[15] ), 
             .B(\scan_count[14] ), .C(\scan_count[13] ), .Z(n534));
     defparam i1_2_lut_3_lut_adj_7.INIT = "0xfefe";
-    VHI i2 (.Z(VCC_net));
+    VHI i1 (.Z(VCC_net));
     (* LSE_LINE_FILE_ID=29, LSE_LCOL=4, LSE_RCOL=3, LSE_LLINE=21, LSE_RLINE=27 *) FD1P3XZ count__i0 (.D(n34[0]), 
             .SP(n599), .CK(int_osc), .SR(n3), .Q(scan_count[0]));
     defparam count__i0.REGSET = "RESET";
@@ -582,21 +582,21 @@ endmodule
 // Verilog Description of module \counter(WIDTH=28,MAX_COUNT=200000) 
 //
 
-module \counter(WIDTH=28,MAX_COUNT=200000)  (input int_osc, input n599, 
+module \counter(WIDTH=28,MAX_COUNT=200000)  (input n599, input int_osc, 
             input n3, output pwr_c);
     
     wire [27:0]count;
     (* is_clock=1 *) wire int_osc;
     
-    wire GND_net, VCC_net, n831;
+    wire VCC_net, GND_net;
     wire [27:0]n37;
     wire [27:0]n147;
     
-    wire n20, n4, n7, n807, n10, n825, n817, n1717, n4_adj_83, 
-        n1702, n16, n17, n1047, n819, n809, n1048, n827, n1741, 
-        n829, n1738, n833, n1705, n36, n1735, n1747, n1744, 
-        n823, n1732, n821, n1729, n1726, n1723, n815, n1720, 
-        n813, n811, n1714, n1711;
+    wire n815, n1744, n20, n809, n4, n7, n4_adj_83, n1720, n10, 
+        n831, n16, n17, n1047, n1048, n829, n1741, n827, n1738, 
+        n825, n1726, n36, n1735, n1732, n833, n1747, n1702, 
+        n823, n821, n1729, n819, n817, n1723, n813, n1717, n811, 
+        n1714, n1711, n807, n1705;
     
     (* LSE_LINE_FILE_ID=27, LSE_LCOL=4, LSE_RCOL=3, LSE_LLINE=31, LSE_RLINE=37 *) FD1P3XZ count__i26 (.D(n37[26]), 
             .SP(n599), .CK(int_osc), .SR(n3), .Q(count[26]));
@@ -792,7 +792,7 @@ module \counter(WIDTH=28,MAX_COUNT=200000)  (input int_osc, input n599,
             .SP(n599), .CK(int_osc), .SR(n3), .Q(count[0]));
     defparam count__i0.REGSET = "RESET";
     defparam count__i0.SRMODE = "CE_OVER_LSR";
-    VLO i1 (.Z(GND_net));
+    VLO i2 (.Z(GND_net));
     FA2 add_7_add_5_21 (.A0(GND_net), .B0(count[19]), .C0(GND_net), .D0(n825), 
         .CI0(n825), .A1(GND_net), .B1(count[20]), .C1(GND_net), .D1(n1735), 
         .CI1(n1735), .CO0(n1735), .CO1(n827), .S0(n147[19]), .S1(n147[20]));
@@ -900,7 +900,7 @@ module \counter(WIDTH=28,MAX_COUNT=200000)  (input int_osc, input n599,
     (* lut_function="(!((B)+!A))" *) LUT4 i517_2_lut (.A(n147[0]), .B(n4), 
             .Z(n37[0]));
     defparam i517_2_lut.INIT = "0x2222";
-    VHI i2 (.Z(VCC_net));
+    VHI i1 (.Z(VCC_net));
     (* LSE_LINE_FILE_ID=27, LSE_LCOL=4, LSE_RCOL=3, LSE_LLINE=31, LSE_RLINE=37 *) FD1P3XZ count__i1 (.D(n37[1]), 
             .SP(n599), .CK(int_osc), .SR(n3), .Q(count[1]));
     defparam count__i1.REGSET = "RESET";
