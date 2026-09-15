@@ -1,6 +1,6 @@
 // Jessica Li  |  jesli@g.hmc.edu
 // 09/11/2026
-// This is a aubmodule used in the top-level module "lab2top_jl"
+// This is a submodule.
 // It contains the combinational logic for the switch-to-7-segment display.
 // This module takes s[3:0] and displays its single hexadecimal digit on a 7 segment display.
 // Note: applied logic 0 turns on the segment (common anode display)

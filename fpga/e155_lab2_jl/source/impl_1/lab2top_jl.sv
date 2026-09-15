@@ -1,8 +1,8 @@
 // Jessica Li  |  jesli@g.hmc.edu
-// 09/12/2026
-// This is the top-level module, taking input from 4 switches and output on 3 LEDs and a 7 segment display.
-// It contains internal clock initialization (high-speed oscillator) and the switch-to-LED logic.
-// The top-level module also uses another module for switch-to-7-segment display, and another module for the counter.
+// 09/13/2026
+// This is the top-level module, taking input from 2 sets of 4 switches, each set displaying a corresponding hex number on the two 7 segment displays.
+// It contains internal clock initialization (high-speed oscillator) and the keypad-column-to-LED logic.
+// The top-level module also uses another module for switch-to-7-segment display, another module for the counter, and lastly the scanner module for the keypad.
 
 
 module lab2top_jl(
@@ -10,11 +10,11 @@ module lab2top_jl(
 	input   logic  [3:0] sw2,
 	input   logic  [3:0] col,
 	input   logic nreset,
-	input   logic enable,  // do i make these signals internal?
+	input   logic enable, 
 	output  logic  [1:0] pwr,
 	output  logic  [6:0] seg,
 	output  logic  [3:0] row,
-	output  logic  [3:0] led  //
+	output  logic  [3:0] led 
 );
 
 	logic int_osc;
@@ -49,7 +49,7 @@ module lab2top_jl(
 	
 	// #### KEYPAD!! ####
 	
-	// connect submodule SCAN: input = osc_count reset enable, output = row[3:0] to keypad | outputs: 1000 (row[0]), 0100 (row[1]), 0010 (row[2]), and 0001 (row[3])
+	//submodule scanner: input = osc_count reset enable, output = row[3:0] to keypad | outputs: 1000 (row[0]), 0100 (row[1]), 0010 (row[2]), and 0001 (row[3])
 	
 	scanner scanning(
 		.int_osc (int_osc), 
@@ -58,12 +58,8 @@ module lab2top_jl(
 		.rows (row)
 	);
 	
-	
 	// Note: col output is 0 when button pressed & row powered, pulled up to 1 when not pressed due to transistors
-	assign led[0] = (col[0] == 0)? 1'b1 : 1'b0;
-	assign led[1] = (col[1] == 0)? 1'b1 : 1'b0;
-	assign led[2] = (col[2] == 0)? 1'b1 : 1'b0;
-	assign led[3] = (col[3] == 0)? 1'b1 : 1'b0;
-	
+	assign led = ~(col);
+
 
 endmodule

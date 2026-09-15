@@ -8,7 +8,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Mon Sep 14 23:02:15 2026
+Mapped on: Tue Sep 15 02:46:33 2026
 
 Design Information
 ------------------
@@ -52,12 +52,12 @@ Design Summary
       Net int_osc: 55 loads, 55 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
    Number of Clock Enables:  2
       Net VCC_net: 1 loads, 0 SLICEs
-      Net n599: 55 loads, 55 SLICEs
+      Net n596: 55 loads, 55 SLICEs
    Number of LSRs:  1
       Net n3: 55 loads, 55 SLICEs
    Top 10 highest fanout non-clock nets:
       Net n3: 55 loads
-      Net n599: 55 loads
+      Net n596: 55 loads
       Net segment_counter.n4: 29 loads
       Net scanning.scanner_counter.n4: 26 loads
 
@@ -210,7 +210,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 67 MB
-Checksum -- map: 27e6118aa926fbcd2aea7975d3368769a9d7d47a
+Checksum -- map: e3ae79dd130bc20fcf943f598c655b33f4e43223
 
 
 

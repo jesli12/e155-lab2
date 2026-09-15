@@ -1,5 +1,5 @@
 // Jessica Li  |  jesli@g.hmc.edu
-// 09/12/2026 (just name changes from lab1, no major changes)
+// 09/12/2026 (just name changes from lab1 and surfacing count, no major changes)
 // This is a submodule
 // It contains a simple clock divider that takes the HSOSC input
 

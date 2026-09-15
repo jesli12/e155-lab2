@@ -1,0 +1,15 @@
+- Entry: 1
+  Time: Tue Sep 15 01:52:48 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -clean -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2_scanner_tb/lab2_scanner_tb.f 
+- Entry: 2
+  Time: Tue Sep 15 01:54:26 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2_scanner_tb/lab2_scanner_tb.f 
+- Entry: 3
+  Time: Tue Sep 15 01:55:01 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2_scanner_tb/lab2_scanner_tb.f 
+- Entry: 4
+  Time: Tue Sep 15 01:56:24 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2_scanner_tb/lab2_scanner_tb.f 
+- Entry: 5
+  Time: Tue Sep 15 02:09:23 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2_scanner_tb/lab2_scanner_tb.f 
