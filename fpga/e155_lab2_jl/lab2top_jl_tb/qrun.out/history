@@ -22,3 +22,12 @@
 - Entry: 8
   Time: Tue Sep 15 18:08:52 2026
   Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2top_jl_tb/lab2top_jl_tb.f 
+- Entry: 9
+  Time: Tue Sep 15 18:57:24 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2top_jl_tb/lab2top_jl_tb.f 
+- Entry: 10
+  Time: Tue Sep 15 19:04:40 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2top_jl_tb/lab2top_jl_tb.f 
+- Entry: 11
+  Time: Tue Sep 15 19:06:25 2026
+  Command: C:\lscc\radiant\2026.1\questasim\win64\qrun.exe -reportprogress 300 -guimode -f C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/lab2top_jl_tb/lab2top_jl_tb.f 

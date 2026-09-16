@@ -9,6 +9,8 @@ R0
 R0
 R0
 R0
+R0
+R0
 !s11f vlog 2025.2 2025.05, May 31 2025
 13
 !s112 1.1
@@ -70,23 +72,23 @@ R11
 vlab2top_jl_tb
 R2
 R3
-Z12 !s110 1789520932
+!s110 1789524280
 !i10b 1
-!s100 ai[>OF@GfK:GW;H`L14Jl0
-IGW<E6EO6<zj[b2hh@I<kb2
+!s100 8bKDclb[eGfQQdd1eH]m52
+I_CoAL;dI=38SblX^=nbQT1
 S1
 R1
-w1789520912
+w1789524246
 8C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/source/impl_1/lab2top_jl_tb.sv
 FC:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/source/impl_1/lab2top_jl_tb.sv
-!i122 7
-L0 11 82
+!i122 9
+L0 11 83
 R5
 R6
 r1
 !s85 0
 31
-!s108 1789520932.000000
+!s108 1789524280.000000
 R8
 R9
 !i113 0
@@ -95,8 +97,8 @@ R11
 Tqrun_opt
 !i145 1
 !i144 0
-R12
-V4dfXXdfBkgUajAVOal`NX1
+!s110 1789524281
+VY1[XGK0QbmF6[>gc@dY5J3
 04 13 4 work lab2top_jl_tb fast 0
 R0
 !s12f OEM25U6 
