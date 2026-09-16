@@ -1,0 +1,12 @@
+#Start recording tcl command: 9/15/2026 21:02:56
+#Project Location: C:/Users/jesli/Documents/GitHub/e155-lab2/AI_Prototypes/lab2_ai_proto2; Project name: lab2_ai_proto2
+prj_create -name "lab2_ai_proto2" -impl "implement" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "C:/Users/jesli/Documents/GitHub/e155-lab2/AI_Prototypes/lab2_ai_proto2/source/implement/lab2_ai_proto2.sv"
+prj_add_source "C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/counter_2_4Hz.sv"
+prj_add_source "C:/Users/jesli/Documents/GitHub/e155-lab1/fpga/iCE40_lab1/source/impl_1/switch_to_display.sv"
+prj_run PAR -impl implement
+prj_run Export -impl implement
+prj_run PAR -impl implement
+prj_run Export -impl implement
+#Stop recording: 9/15/2026 21:11:15
