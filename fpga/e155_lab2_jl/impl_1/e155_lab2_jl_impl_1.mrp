@@ -8,13 +8,13 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
-Mapped on: Tue Sep 15 19:53:32 2026
+Mapped on: Tue Sep 15 20:03:46 2026
 
 Design Information
 ------------------
 
 Command line:   map -pdc C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab
-     2_jl/lab2sev_seg_pinout.pdc -i e155_lab2_jl_impl_1_syn.udb -o
+     2_jl/lab2scanner_pinout.pdc -i e155_lab2_jl_impl_1_syn.udb -o
      e155_lab2_jl_impl_1_map.udb -mp e155_lab2_jl_impl_1.mrp -hierrpt -gui
      -msgset
      C:/Users/jesli/Documents/GitHub/e155-lab2/fpga/e155_lab2_jl/promote.xml
@@ -118,7 +118,7 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+-------+-------+-----------+
 | col[1]              | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| col[0]              | INPUT     | LVCMOS33  |       |       |           |
+| col[0]              | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | nreset              | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -192,7 +192,7 @@ Instance Name: hf_osc
 Constraint Summary
 ------------------
 
-   Total number of constraints: 37
+   Total number of constraints: 16
 
                                     Page 3
 
@@ -210,7 +210,7 @@ Run Time and Memory Usage
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 67 MB
-Checksum -- map: e1c03b26ba0912938742973fc86fabc354d4da
+Checksum -- map: e3ae79dd130bc20fcf943f598c655b33f4e43223
 
 
 
