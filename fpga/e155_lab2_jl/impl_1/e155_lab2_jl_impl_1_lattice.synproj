@@ -45,7 +45,6 @@
 -sver "../source/impl_1/scanner.sv"
 -sver "../source/impl_1/sev_seg.sv"
 -path ".."
--top lab2top_jl
 # Output Configuration
 -udb "e155_lab2_jl_impl_1_rtl.udb"
 -output_hdl "e155_lab2_jl_impl_1.vm"
