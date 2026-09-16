@@ -1,0 +1,10 @@
+---------------------------------------------------
+Report for cell lab2_ai_proto_no_assist
+   Instance path: lab2_ai_proto_no_assist
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         69        100.0
+                               LUTGATE	         51        100.0
+                                LUTCCU	         18        100.0
+                                 IOBUF	         26        100.0
+                                PFUREG	         18        100.0

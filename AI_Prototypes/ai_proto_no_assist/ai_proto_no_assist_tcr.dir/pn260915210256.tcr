@@ -1,0 +1,12 @@
+#Start recording tcl command: 9/15/2026 20:50:39
+#Project Location: C:/Users/jesli/Documents/GitHub/e155-lab2/AI_Prototypes/ai_proto_no_assist; Project name: ai_proto_no_assist
+prj_create -name "ai_proto_no_assist" -impl "implementation1" -dev iCE40UP5K-SG48I -performance "High-Performance_1.2V" -synthesis "lse"
+prj_save 
+prj_add_source "C:/Users/jesli/Documents/GitHub/e155-lab2/AI_Prototypes/ai_proto_no_assist/source/implementation1/lab2_ai_proto_no_assist.sv"
+prj_run PAR -impl implementation1
+prj_run Export -impl implementation1
+prj_run PAR -impl implementation1
+prj_run Export -impl implementation1
+prj_save 
+prj_close
+#Stop recording: 9/15/2026 21:02:56

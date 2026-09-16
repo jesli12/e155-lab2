@@ -1,0 +1,20 @@
+---------------------------------------------------
+Report for cell lab2_ai_proto2
+   Instance path: lab2_ai_proto2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                 IOLGC	       7.00        100.0
+                                  LUT4	         15        100.0
+                               LUTGATE	         15        100.0
+                                 IOREG	          7        100.0
+                                 IOBUF	         20        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                     switch_to_display	          1        46.7
+---------------------------------------------------
+Report for cell switch_to_display
+   Instance path: lab2_ai_proto2/decoder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        46.7
+                               LUTGATE	          7        46.7

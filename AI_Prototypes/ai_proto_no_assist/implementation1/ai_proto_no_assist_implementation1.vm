@@ -1,0 +1,403 @@
+// Verilog netlist produced by program LSE :  version Radiant Software (64-bit) 2026.1.0.37.0
+// Netlist written on Tue Sep 15 20:52:29 2026
+// Source file index table: 
+// Object locations will have the form @<file_index>(<first_ line>[<left_column>],<last_line>[<right_column>])
+// file 0 "c:/users/jesli/documents/github/e155-lab2/ai_prototypes/ai_proto_no_assist/source/implementation1/lab2_ai_proto_no_assist.sv"
+// file 1 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ice40up.v"
+// file 2 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ice40up.vhd"
+// file 3 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc.v"
+// file 4 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_distributed_ram.v"
+// file 5 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_ecc.v"
+// file 6 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_flag_and_cnts_logic.v"
+// file 7 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_reg.v"
+// file 8 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_gray_synchronizer.v"
+// file 9 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden.v"
+// file 10 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_prim.v"
+// file 11 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_ctrl_logic.v"
+// file 12 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_rd_output_logic.v"
+// file 13 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_ring_counter.v"
+// file 14 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_harden_wr_ctrl_logic.v"
+// file 15 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_prim_gen.v"
+// file 16 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_rd_ctrl_logic.v"
+// file 17 "c:/lscc/radiant/2026.1/ip/lfmxo4/fifo_dc/rtl/lscc_lfmxo4_fifo_dc_wr_ctrl_logic.v"
+// file 18 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp.v"
+// file 19 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_behavioral.v"
+// file 20 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_functions.vh"
+// file 21 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_impl.v"
+// file 22 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dp/rtl/lscc_lfmxo4_ram_dp_lut_decode.v"
+// file 23 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/hsiao_ecc_decoder.v"
+// file 24 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/hsiao_ecc_encoder.v"
+// file 25 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/lscc_lfmxo4_ram_dq.v"
+// file 26 "c:/lscc/radiant/2026.1/ip/lfmxo4/ram_dq/rtl/lscc_lfmxo4_ram_dq_lut_decode.v"
+// file 27 "c:/lscc/radiant/2026.1/ip/common/adder/rtl/lscc_adder.v"
+// file 28 "c:/lscc/radiant/2026.1/ip/common/adder_subtractor/rtl/lscc_add_sub.v"
+// file 29 "c:/lscc/radiant/2026.1/ip/common/complex_mult/rtl/lscc_complex_mult.v"
+// file 30 "c:/lscc/radiant/2026.1/ip/common/counter/rtl/lscc_cntr.v"
+// file 31 "c:/lscc/radiant/2026.1/ip/common/fifo/rtl/lscc_fifo.v"
+// file 32 "c:/lscc/radiant/2026.1/ip/common/fifo_dc/rtl/lscc_fifo_dc.v"
+// file 33 "c:/lscc/radiant/2026.1/ip/common/mult_accumulate/rtl/lscc_mult_accumulate.v"
+// file 34 "c:/lscc/radiant/2026.1/ip/common/mult_add_sub/rtl/lscc_mult_add_sub.v"
+// file 35 "c:/lscc/radiant/2026.1/ip/common/mult_add_sub_sum/rtl/lscc_mult_add_sub_sum.v"
+// file 36 "c:/lscc/radiant/2026.1/ip/common/multiplier/rtl/lscc_multiplier.v"
+// file 37 "c:/lscc/radiant/2026.1/ip/common/ram_dp/rtl/lscc_ram_dp.v"
+// file 38 "c:/lscc/radiant/2026.1/ip/common/ram_dq/rtl/lscc_ram_dq.v"
+// file 39 "c:/lscc/radiant/2026.1/ip/common/rom/rtl/lscc_rom.v"
+// file 40 "c:/lscc/radiant/2026.1/ip/common/subtractor/rtl/lscc_subtractor.v"
+// file 41 "c:/lscc/radiant/2026.1/ip/pmi/pmi_add.v"
+// file 42 "c:/lscc/radiant/2026.1/ip/pmi/pmi_addsub.v"
+// file 43 "c:/lscc/radiant/2026.1/ip/pmi/pmi_complex_mult.v"
+// file 44 "c:/lscc/radiant/2026.1/ip/pmi/pmi_counter.v"
+// file 45 "c:/lscc/radiant/2026.1/ip/pmi/pmi_dsp.v"
+// file 46 "c:/lscc/radiant/2026.1/ip/pmi/pmi_fifo.v"
+// file 47 "c:/lscc/radiant/2026.1/ip/pmi/pmi_fifo_dc.v"
+// file 48 "c:/lscc/radiant/2026.1/ip/pmi/pmi_mac.v"
+// file 49 "c:/lscc/radiant/2026.1/ip/pmi/pmi_mult.v"
+// file 50 "c:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsub.v"
+// file 51 "c:/lscc/radiant/2026.1/ip/pmi/pmi_multaddsubsum.v"
+// file 52 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp.v"
+// file 53 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dp_be.v"
+// file 54 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq.v"
+// file 55 "c:/lscc/radiant/2026.1/ip/pmi/pmi_ram_dq_be.v"
+// file 56 "c:/lscc/radiant/2026.1/ip/pmi/pmi_rom.v"
+// file 57 "c:/lscc/radiant/2026.1/ip/pmi/pmi_sub.v"
+// file 58 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ccu2_b.v"
+// file 59 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3bz.v"
+// file 60 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3dz.v"
+// file 61 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3iz.v"
+// file 62 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/fd1p3jz.v"
+// file 63 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/hsosc.v"
+// file 64 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/hsosc1p8v.v"
+// file 65 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ib.v"
+// file 66 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ifd1p3az.v"
+// file 67 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/lsosc.v"
+// file 68 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/lsosc1p8v.v"
+// file 69 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ob.v"
+// file 70 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/obz_b.v"
+// file 71 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/ofd1p3az.v"
+// file 72 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/pdp4k.v"
+// file 73 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/rgb.v"
+// file 74 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/rgb1p8v.v"
+// file 75 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/sp256k.v"
+// file 76 "c:/lscc/radiant/2026.1/cae_library/simulation/verilog/ice40up/legacy.v"
+
+//
+// Verilog Description of module lab2_ai_proto_no_assist
+//
+
+module lab2_ai_proto_no_assist (input clk, input rst, input [3:0]in0, 
+            input [3:0]in1, output [6:0]seg0_n, output [6:0]seg1_n, output an0, 
+            output an1);
+    
+    (* is_clock=1 *) wire clk_c;
+    wire rst_c;
+    wire [3:0]in0_c;
+    wire [3:0]in1_c;
+    wire [6:0]seg0_n_c;
+    wire [6:0]seg1_n_c;
+    wire an1_c_N_32;
+    wire [16:0]clk_cnt;
+    wire an1_c;
+    wire [3:0]mux_data;
+    wire [6:0]decoded_seg_n;
+    
+    wire GND_net, VCC_net, n327, n325, n323, n321, n319, n33, 
+        n317, n218, n700, n315, n679, n697, n14, n13;
+    wire [16:0]n73;
+    wire [16:0]clk_cnt_16__N_1;
+    
+    wire n313, n685, n682, n694, n691, n16, n485, n481, n676, 
+        n688;
+    
+    VHI i2 (.Z(VCC_net));
+    (* lut_function="(A (B))" *) LUT4 i169_2_lut (.A(n73[15]), .B(n33), 
+            .Z(clk_cnt_16__N_1[15]));
+    defparam i169_2_lut.INIT = "0x8888";
+    (* lut_function="(A+(B+(C+(D))))" *) LUT4 i6_4_lut (.A(clk_cnt[7]), .B(clk_cnt[8]), 
+            .C(clk_cnt[5]), .D(clk_cnt[4]), .Z(n14));
+    defparam i6_4_lut.INIT = "0xfffe";
+    (* lut_function="(A+(B))" *) LUT4 i142_2_lut (.A(decoded_seg_n[0]), .B(an1_c), 
+            .Z(seg0_n_c[0]));
+    defparam i142_2_lut.INIT = "0xeeee";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i16 (.D(clk_cnt_16__N_1[16]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[16]));
+    defparam clk_cnt_36__i16.REGSET = "RESET";
+    defparam clk_cnt_36__i16.SRMODE = "ASYNC";
+    (* lut_function="(A (B))" *) LUT4 i344_2_lut (.A(clk_cnt[11]), .B(clk_cnt[14]), 
+            .Z(n481));
+    defparam i344_2_lut.INIT = "0x8888";
+    (* lut_function="(A+(B+(C+(D))))" *) LUT4 i5_4_lut (.A(clk_cnt[12]), .B(clk_cnt[9]), 
+            .C(clk_cnt[3]), .D(clk_cnt[10]), .Z(n13));
+    defparam i5_4_lut.INIT = "0xfffe";
+    (* lut_function="(A+(((D)+!C)+!B))" *) LUT4 i6_4_lut_adj_1 (.A(n13), .B(n481), 
+            .C(clk_cnt[1]), .D(n14), .Z(n16));
+    defparam i6_4_lut_adj_1.INIT = "0xffbf";
+    (* lut_function="(A (B (C (D))))" *) LUT4 i348_4_lut (.A(clk_cnt[6]), 
+            .B(clk_cnt[15]), .C(clk_cnt[16]), .D(clk_cnt[13]), .Z(n485));
+    defparam i348_4_lut.INIT = "0x8000";
+    (* lut_function="(((C+!(D))+!B)+!A)" *) LUT4 i9_4_lut (.A(n485), .B(clk_cnt[0]), 
+            .C(n16), .D(clk_cnt[2]), .Z(n33));
+    defparam i9_4_lut.INIT = "0xf7ff";
+    (* lut_function="(A (B))" *) LUT4 i168_2_lut (.A(n73[16]), .B(n33), 
+            .Z(clk_cnt_16__N_1[16]));
+    defparam i168_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B)+!A !(B))" *) LUT4 i1_2_lut (.A(an1_c), .B(n33), 
+            .Z(n218));
+    defparam i1_2_lut.INIT = "0x9999";
+    FA2 clk_cnt_36_add_4_17 (.A0(GND_net), .B0(GND_net), .C0(clk_cnt[15]), 
+        .D0(n327), .CI0(n327), .A1(GND_net), .B1(GND_net), .C1(clk_cnt[16]), 
+        .D1(n700), .CI1(n700), .CO0(n700), .S0(n73[15]), .S1(n73[16]));
+    defparam clk_cnt_36_add_4_17.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_17.INIT1 = "0xc33c";
+    FA2 clk_cnt_36_add_4_15 (.A0(GND_net), .B0(GND_net), .C0(clk_cnt[13]), 
+        .D0(n325), .CI0(n325), .A1(GND_net), .B1(GND_net), .C1(clk_cnt[14]), 
+        .D1(n697), .CI1(n697), .CO0(n697), .CO1(n327), .S0(n73[13]), 
+        .S1(n73[14]));
+    defparam clk_cnt_36_add_4_15.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_15.INIT1 = "0xc33c";
+    FA2 clk_cnt_36_add_4_13 (.A0(GND_net), .B0(GND_net), .C0(clk_cnt[11]), 
+        .D0(n323), .CI0(n323), .A1(GND_net), .B1(GND_net), .C1(clk_cnt[12]), 
+        .D1(n694), .CI1(n694), .CO0(n694), .CO1(n325), .S0(n73[11]), 
+        .S1(n73[12]));
+    defparam clk_cnt_36_add_4_13.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_13.INIT1 = "0xc33c";
+    FA2 clk_cnt_36_add_4_11 (.A0(GND_net), .B0(GND_net), .C0(clk_cnt[9]), 
+        .D0(n321), .CI0(n321), .A1(GND_net), .B1(GND_net), .C1(clk_cnt[10]), 
+        .D1(n691), .CI1(n691), .CO0(n691), .CO1(n323), .S0(n73[9]), 
+        .S1(n73[10]));
+    defparam clk_cnt_36_add_4_11.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_11.INIT1 = "0xc33c";
+    FA2 clk_cnt_36_add_4_9 (.A0(GND_net), .B0(GND_net), .C0(clk_cnt[7]), 
+        .D0(n319), .CI0(n319), .A1(GND_net), .B1(GND_net), .C1(clk_cnt[8]), 
+        .D1(n688), .CI1(n688), .CO0(n688), .CO1(n321), .S0(n73[7]), 
+        .S1(n73[8]));
+    defparam clk_cnt_36_add_4_9.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_9.INIT1 = "0xc33c";
+    (* lut_function="(A (B (C+(D)))+!A !(B ((D)+!C)+!B !(C (D))))" *) LUT4 decoded_seg_n_1__I_0_2_4_lut (.A(mux_data[1]), 
+            .B(mux_data[3]), .C(mux_data[2]), .D(mux_data[0]), .Z(decoded_seg_n[1]));
+    defparam decoded_seg_n_1__I_0_2_4_lut.INIT = "0x98c0";
+    (* lut_function="(A+(B))" *) LUT4 i195_2_lut (.A(decoded_seg_n[1]), .B(an1_c), 
+            .Z(seg0_n_c[1]));
+    defparam i195_2_lut.INIT = "0xeeee";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i15 (.D(clk_cnt_16__N_1[15]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[15]));
+    defparam clk_cnt_36__i15.REGSET = "RESET";
+    defparam clk_cnt_36__i15.SRMODE = "ASYNC";
+    FA2 clk_cnt_36_add_4_7 (.A0(GND_net), .B0(GND_net), .C0(clk_cnt[5]), 
+        .D0(n317), .CI0(n317), .A1(GND_net), .B1(GND_net), .C1(clk_cnt[6]), 
+        .D1(n685), .CI1(n685), .CO0(n685), .CO1(n319), .S0(n73[5]), 
+        .S1(n73[6]));
+    defparam clk_cnt_36_add_4_7.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_7.INIT1 = "0xc33c";
+    (* lut_function="(A (B (C (D)))+!A (B (D)+!B !((D)+!C)))" *) LUT4 decoded_seg_n_2__I_0_2_4_lut (.A(mux_data[0]), 
+            .B(mux_data[3]), .C(mux_data[1]), .D(mux_data[2]), .Z(decoded_seg_n[2]));
+    defparam decoded_seg_n_2__I_0_2_4_lut.INIT = "0xc410";
+    (* lut_function="(A (B))" *) LUT4 i144_2_lut (.A(n73[0]), .B(n33), .Z(clk_cnt_16__N_1[0]));
+    defparam i144_2_lut.INIT = "0x8888";
+    (* lut_function="(A+(B))" *) LUT4 i194_2_lut (.A(decoded_seg_n[2]), .B(an1_c), 
+            .Z(seg0_n_c[2]));
+    defparam i194_2_lut.INIT = "0xeeee";
+    (* lut_function="(A (B))" *) LUT4 i183_2_lut (.A(n73[1]), .B(n33), .Z(clk_cnt_16__N_1[1]));
+    defparam i183_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B))" *) LUT4 i182_2_lut (.A(n73[2]), .B(n33), .Z(clk_cnt_16__N_1[2]));
+    defparam i182_2_lut.INIT = "0x8888";
+    FA2 clk_cnt_36_add_4_5 (.A0(GND_net), .B0(GND_net), .C0(clk_cnt[3]), 
+        .D0(n315), .CI0(n315), .A1(GND_net), .B1(GND_net), .C1(clk_cnt[4]), 
+        .D1(n682), .CI1(n682), .CO0(n682), .CO1(n317), .S0(n73[3]), 
+        .S1(n73[4]));
+    defparam clk_cnt_36_add_4_5.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_5.INIT1 = "0xc33c";
+    (* lut_function="(A (B))" *) LUT4 i181_2_lut (.A(n73[3]), .B(n33), .Z(clk_cnt_16__N_1[3]));
+    defparam i181_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B (C (D)+!C !(D))+!B (C (D)))+!A !(B+(C (D)+!C !(D))))" *) LUT4 decoded_seg_n_3__I_0_2_4_lut (.A(mux_data[1]), 
+            .B(mux_data[3]), .C(mux_data[2]), .D(mux_data[0]), .Z(decoded_seg_n[3]));
+    defparam decoded_seg_n_3__I_0_2_4_lut.INIT = "0xa118";
+    FA2 clk_cnt_36_add_4_3 (.A0(GND_net), .B0(GND_net), .C0(clk_cnt[1]), 
+        .D0(n313), .CI0(n313), .A1(GND_net), .B1(GND_net), .C1(clk_cnt[2]), 
+        .D1(n679), .CI1(n679), .CO0(n679), .CO1(n315), .S0(n73[1]), 
+        .S1(n73[2]));
+    defparam clk_cnt_36_add_4_3.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_3.INIT1 = "0xc33c";
+    (* lut_function="(A (B))" *) LUT4 i180_2_lut (.A(n73[4]), .B(n33), .Z(clk_cnt_16__N_1[4]));
+    defparam i180_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B))" *) LUT4 i179_2_lut (.A(n73[5]), .B(n33), .Z(clk_cnt_16__N_1[5]));
+    defparam i179_2_lut.INIT = "0x8888";
+    (* lut_function="(A+(B))" *) LUT4 i193_2_lut (.A(decoded_seg_n[3]), .B(an1_c), 
+            .Z(seg0_n_c[3]));
+    defparam i193_2_lut.INIT = "0xeeee";
+    (* lut_function="(A (B))" *) LUT4 i178_2_lut (.A(n73[6]), .B(n33), .Z(clk_cnt_16__N_1[6]));
+    defparam i178_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B))" *) LUT4 i177_2_lut (.A(n73[7]), .B(n33), .Z(clk_cnt_16__N_1[7]));
+    defparam i177_2_lut.INIT = "0x8888";
+    (* lut_function="(!(A ((D)+!C)+!A (B (C+(D))+!B !(C))))" *) LUT4 i20_4_lut (.A(mux_data[1]), 
+            .B(mux_data[2]), .C(mux_data[0]), .D(mux_data[3]), .Z(decoded_seg_n[4]));
+    defparam i20_4_lut.INIT = "0x10b4";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i14 (.D(clk_cnt_16__N_1[14]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[14]));
+    defparam clk_cnt_36__i14.REGSET = "RESET";
+    defparam clk_cnt_36__i14.SRMODE = "ASYNC";
+    (* lut_function="(A (B))" *) LUT4 i176_2_lut (.A(n73[8]), .B(n33), .Z(clk_cnt_16__N_1[8]));
+    defparam i176_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B))" *) LUT4 i175_2_lut (.A(n73[9]), .B(n33), .Z(clk_cnt_16__N_1[9]));
+    defparam i175_2_lut.INIT = "0x8888";
+    (* lut_function="(!(A (D)+!A !(B (C)+!B !((D)+!C))))" *) LUT4 decoded_seg_n_5__I_0_2_4_lut_4_lut (.A(mux_data[1]), 
+            .B(mux_data[2]), .C(mux_data[0]), .D(mux_data[3]), .Z(decoded_seg_n[5]));
+    defparam decoded_seg_n_5__I_0_2_4_lut_4_lut.INIT = "0x40fa";
+    FA2 clk_cnt_36_add_4_1 (.A0(GND_net), .B0(GND_net), .C0(GND_net), 
+        .A1(GND_net), .B1(VCC_net), .C1(clk_cnt[0]), .D1(n676), .CI1(n676), 
+        .CO0(n676), .CO1(n313), .S1(n73[0]));
+    defparam clk_cnt_36_add_4_1.INIT0 = "0xc33c";
+    defparam clk_cnt_36_add_4_1.INIT1 = "0xc33c";
+    (* lut_function="(A+(B))" *) LUT4 i192_2_lut (.A(decoded_seg_n[4]), .B(an1_c), 
+            .Z(seg0_n_c[4]));
+    defparam i192_2_lut.INIT = "0xeeee";
+    (* lut_function="(A (B))" *) LUT4 i174_2_lut (.A(n73[10]), .B(n33), 
+            .Z(clk_cnt_16__N_1[10]));
+    defparam i174_2_lut.INIT = "0x8888";
+    (* lut_function="(A+(B))" *) LUT4 i191_2_lut (.A(decoded_seg_n[5]), .B(an1_c), 
+            .Z(seg0_n_c[5]));
+    defparam i191_2_lut.INIT = "0xeeee";
+    (* lut_function="(A (B))" *) LUT4 i173_2_lut (.A(n73[11]), .B(n33), 
+            .Z(clk_cnt_16__N_1[11]));
+    defparam i173_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B+!(C))+!A (B (C)))" *) LUT4 in0_c_2__I_0_3_lut (.A(in0_c[2]), 
+            .B(in1_c[2]), .C(an1_c), .Z(mux_data[2]));
+    defparam in0_c_2__I_0_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B))" *) LUT4 i172_2_lut (.A(n73[12]), .B(n33), 
+            .Z(clk_cnt_16__N_1[12]));
+    defparam i172_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B))" *) LUT4 i171_2_lut (.A(n73[13]), .B(n33), 
+            .Z(clk_cnt_16__N_1[13]));
+    defparam i171_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B+!(C))+!A (B (C)))" *) LUT4 in0_c_3__I_0_3_lut (.A(in0_c[3]), 
+            .B(in1_c[3]), .C(an1_c), .Z(mux_data[3]));
+    defparam in0_c_3__I_0_3_lut.INIT = "0xcaca";
+    (* lut_function="(A (B))" *) LUT4 i170_2_lut (.A(n73[14]), .B(n33), 
+            .Z(clk_cnt_16__N_1[14]));
+    defparam i170_2_lut.INIT = "0x8888";
+    (* lut_function="(A (B+!(C))+!A (B (C)))" *) LUT4 in0_c_0__I_0_3_lut (.A(in0_c[0]), 
+            .B(in1_c[0]), .C(an1_c), .Z(mux_data[0]));
+    defparam in0_c_0__I_0_3_lut.INIT = "0xcaca";
+    (* lut_function="(!(A))" *) LUT4 an1_c_I_0_1_lut (.A(an1_c), .Z(an1_c_N_32));
+    defparam an1_c_I_0_1_lut.INIT = "0x5555";
+    (* lut_function="(A (B+!(C))+!A (B (C)))" *) LUT4 in0_c_1__I_0_3_lut (.A(in0_c[1]), 
+            .B(in1_c[1]), .C(an1_c), .Z(mux_data[1]));
+    defparam in0_c_1__I_0_3_lut.INIT = "0xcaca";
+    (* lut_function="(A+!(B))" *) LUT4 i143_2_lut (.A(decoded_seg_n[0]), .B(an1_c), 
+            .Z(seg1_n_c[0]));
+    defparam i143_2_lut.INIT = "0xbbbb";
+    (* lut_function="(!(A ((C+!(D))+!B)+!A (B (C+(D))+!B !(C (D)+!C !(D)))))" *) LUT4 decoded_seg_n_6__I_0_2_4_lut (.A(mux_data[1]), 
+            .B(mux_data[0]), .C(mux_data[3]), .D(mux_data[2]), .Z(decoded_seg_n[6]));
+    defparam decoded_seg_n_6__I_0_2_4_lut.INIT = "0x1805";
+    IB clk_pad (.I(clk), .O(clk_c));
+    IB rst_pad (.I(rst), .O(rst_c));
+    IB \in0_pad[3]  (.I(in0[3]), .O(in0_c[3]));
+    IB \in0_pad[2]  (.I(in0[2]), .O(in0_c[2]));
+    IB \in0_pad[1]  (.I(in0[1]), .O(in0_c[1]));
+    (* lut_function="(A+!(B))" *) LUT4 i189_2_lut (.A(decoded_seg_n[1]), .B(an1_c), 
+            .Z(seg1_n_c[1]));
+    defparam i189_2_lut.INIT = "0xbbbb";
+    IB \in0_pad[0]  (.I(in0[0]), .O(in0_c[0]));
+    (* lut_function="(A+!(B))" *) LUT4 i188_2_lut (.A(decoded_seg_n[2]), .B(an1_c), 
+            .Z(seg1_n_c[2]));
+    defparam i188_2_lut.INIT = "0xbbbb";
+    IB \in1_pad[3]  (.I(in1[3]), .O(in1_c[3]));
+    IB \in1_pad[2]  (.I(in1[2]), .O(in1_c[2]));
+    IB \in1_pad[1]  (.I(in1[1]), .O(in1_c[1]));
+    IB \in1_pad[0]  (.I(in1[0]), .O(in1_c[0]));
+    OB \seg0_n_pad[6]  (.I(seg0_n_c[6]), .O(seg0_n[6]));
+    OB \seg0_n_pad[5]  (.I(seg0_n_c[5]), .O(seg0_n[5]));
+    OB \seg0_n_pad[4]  (.I(seg0_n_c[4]), .O(seg0_n[4]));
+    (* lut_function="(A+(B))" *) LUT4 i190_2_lut (.A(decoded_seg_n[6]), .B(an1_c), 
+            .Z(seg0_n_c[6]));
+    defparam i190_2_lut.INIT = "0xeeee";
+    OB \seg0_n_pad[3]  (.I(seg0_n_c[3]), .O(seg0_n[3]));
+    OB \seg0_n_pad[2]  (.I(seg0_n_c[2]), .O(seg0_n[2]));
+    OB \seg0_n_pad[1]  (.I(seg0_n_c[1]), .O(seg0_n[1]));
+    OB \seg0_n_pad[0]  (.I(seg0_n_c[0]), .O(seg0_n[0]));
+    OB \seg1_n_pad[6]  (.I(seg1_n_c[6]), .O(seg1_n[6]));
+    OB \seg1_n_pad[5]  (.I(seg1_n_c[5]), .O(seg1_n[5]));
+    OB \seg1_n_pad[4]  (.I(seg1_n_c[4]), .O(seg1_n[4]));
+    (* lut_function="(A+!(B))" *) LUT4 i187_2_lut (.A(decoded_seg_n[3]), .B(an1_c), 
+            .Z(seg1_n_c[3]));
+    defparam i187_2_lut.INIT = "0xbbbb";
+    OB \seg1_n_pad[3]  (.I(seg1_n_c[3]), .O(seg1_n[3]));
+    OB \seg1_n_pad[2]  (.I(seg1_n_c[2]), .O(seg1_n[2]));
+    OB \seg1_n_pad[1]  (.I(seg1_n_c[1]), .O(seg1_n[1]));
+    OB \seg1_n_pad[0]  (.I(seg1_n_c[0]), .O(seg1_n[0]));
+    OB an0_pad (.I(an1_c_N_32), .O(an0));
+    OB an1_pad (.I(an1_c), .O(an1));
+    FD1P3XZ active_digit (.D(n218), .SP(VCC_net), .CK(clk_c), .SR(rst_c), 
+            .Q(an1_c));
+    defparam active_digit.REGSET = "RESET";
+    defparam active_digit.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i13 (.D(clk_cnt_16__N_1[13]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[13]));
+    defparam clk_cnt_36__i13.REGSET = "RESET";
+    defparam clk_cnt_36__i13.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i12 (.D(clk_cnt_16__N_1[12]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[12]));
+    defparam clk_cnt_36__i12.REGSET = "RESET";
+    defparam clk_cnt_36__i12.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i11 (.D(clk_cnt_16__N_1[11]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[11]));
+    defparam clk_cnt_36__i11.REGSET = "RESET";
+    defparam clk_cnt_36__i11.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i10 (.D(clk_cnt_16__N_1[10]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[10]));
+    defparam clk_cnt_36__i10.REGSET = "RESET";
+    defparam clk_cnt_36__i10.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i9 (.D(clk_cnt_16__N_1[9]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[9]));
+    defparam clk_cnt_36__i9.REGSET = "RESET";
+    defparam clk_cnt_36__i9.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i8 (.D(clk_cnt_16__N_1[8]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[8]));
+    defparam clk_cnt_36__i8.REGSET = "RESET";
+    defparam clk_cnt_36__i8.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i7 (.D(clk_cnt_16__N_1[7]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[7]));
+    defparam clk_cnt_36__i7.REGSET = "RESET";
+    defparam clk_cnt_36__i7.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i6 (.D(clk_cnt_16__N_1[6]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[6]));
+    defparam clk_cnt_36__i6.REGSET = "RESET";
+    defparam clk_cnt_36__i6.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i5 (.D(clk_cnt_16__N_1[5]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[5]));
+    defparam clk_cnt_36__i5.REGSET = "RESET";
+    defparam clk_cnt_36__i5.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i4 (.D(clk_cnt_16__N_1[4]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[4]));
+    defparam clk_cnt_36__i4.REGSET = "RESET";
+    defparam clk_cnt_36__i4.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i3 (.D(clk_cnt_16__N_1[3]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[3]));
+    defparam clk_cnt_36__i3.REGSET = "RESET";
+    defparam clk_cnt_36__i3.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i2 (.D(clk_cnt_16__N_1[2]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[2]));
+    defparam clk_cnt_36__i2.REGSET = "RESET";
+    defparam clk_cnt_36__i2.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i1 (.D(clk_cnt_16__N_1[1]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[1]));
+    defparam clk_cnt_36__i1.REGSET = "RESET";
+    defparam clk_cnt_36__i1.SRMODE = "ASYNC";
+    (* syn_use_carry_chain=1 *) FD1P3XZ clk_cnt_36__i0 (.D(clk_cnt_16__N_1[0]), 
+            .SP(VCC_net), .CK(clk_c), .SR(rst_c), .Q(clk_cnt[0]));
+    defparam clk_cnt_36__i0.REGSET = "RESET";
+    defparam clk_cnt_36__i0.SRMODE = "ASYNC";
+    VLO i1 (.Z(GND_net));
+    (* lut_function="(A+!(B))" *) LUT4 i186_2_lut (.A(decoded_seg_n[4]), .B(an1_c), 
+            .Z(seg1_n_c[4]));
+    defparam i186_2_lut.INIT = "0xbbbb";
+    (* lut_function="(A+!(B))" *) LUT4 i185_2_lut (.A(decoded_seg_n[5]), .B(an1_c), 
+            .Z(seg1_n_c[5]));
+    defparam i185_2_lut.INIT = "0xbbbb";
+    (* lut_function="(A+!(B))" *) LUT4 i184_2_lut (.A(decoded_seg_n[6]), .B(an1_c), 
+            .Z(seg1_n_c[6]));
+    defparam i184_2_lut.INIT = "0xbbbb";
+    (* lut_function="(!(A (B+!(C (D)+!C !(D)))+!A !(B (C (D))+!B !(C+!(D)))))" *) LUT4 mux_data_3__I_0_4_lut (.A(mux_data[2]), 
+            .B(mux_data[1]), .C(mux_data[3]), .D(mux_data[0]), .Z(decoded_seg_n[0]));
+    defparam mux_data_3__I_0_4_lut.INIT = "0x6102";
+    
+endmodule

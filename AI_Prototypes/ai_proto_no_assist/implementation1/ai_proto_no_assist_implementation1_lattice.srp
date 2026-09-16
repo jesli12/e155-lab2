@@ -1,0 +1,217 @@
+synthesis:  version Radiant Software (64-bit) 2026.1.0.37.0
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor Corporation,  All rights reserved.
+Tue Sep 15 20:52:28 2026
+
+
+Command Line:  C:\lscc\radiant\2026.1\ispfpga\bin\nt64\synthesis.exe -f C:/Users/jesli/Documents/GitHub/e155-lab2/AI_Prototypes/ai_proto_no_assist/implementation1/ai_proto_no_assist_implementation1_lattice.synproj -logfile ai_proto_no_assist_implementation1_lattice.srp -gui -msgset C:/Users/jesli/Documents/GitHub/e155-lab2/AI_Prototypes/ai_proto_no_assist/promote.xml 
+
+Lattice Synthesis Engine launched.
+
+Synthesis options:
+The -a option is iCE40UP.
+The -t option is SG48.
+The -sp option is High-Performance_1.2V.
+The -p option is iCE40UP5K.
+
+###################### Device Information ######################
+----------------------------------------------------------------
+Lattice Family        | iCE40UP
+----------------------------------------------------------------
+Device                | iCE40UP5K
+----------------------------------------------------------------
+Package               | SG48
+----------------------------------------------------------------
+Performance Grade     | High-Performance_1.2V
+----------------------------------------------------------------
+################################################################
+
+####################### Device Resources #######################
+----------------------------------------------------------------
+Logic Cells           | 5280
+----------------------------------------------------------------
+RAM Blocks            | 30
+----------------------------------------------------------------
+DSP Blocks            | 8
+----------------------------------------------------------------
+PLLs                  | 1
+----------------------------------------------------------------
+I/O Pins              | 56
+----------------------------------------------------------------
+################################################################
+
+Resolving user-selected strategy settings...
+
+INFO <35001797> - synthesis: Use DCC Insertion disabled by default.
+
+###################### Strategy Settings #######################
+----------------------------------------------------------------
+Optimization Goal     | Area
+----------------------------------------------------------------
+Top-level Module Name | lab2_ai_proto_no_assist
+----------------------------------------------------------------
+Target Frequency      | 200.000 MHz
+----------------------------------------------------------------
+Maximum Fanout        | 1000
+----------------------------------------------------------------
+Timing Path Count     | 3
+----------------------------------------------------------------
+RAM Read/Write Check  | False
+----------------------------------------------------------------
+BRAM Utilization      | 100.0%
+----------------------------------------------------------------
+DSP Usage             | True
+----------------------------------------------------------------
+DSP Utilization       | 100.0%
+----------------------------------------------------------------
+FSM Encoding Style    | Auto
+----------------------------------------------------------------
+Resolve Mixed Drivers | False
+----------------------------------------------------------------
+Fix Gated Clocks      | True
+----------------------------------------------------------------
+Mux Style             | Auto
+----------------------------------------------------------------
+Use Carry Chain       | True
+----------------------------------------------------------------
+Carry Chain Length    | Infinite
+----------------------------------------------------------------
+Loop Limit            | 1950
+----------------------------------------------------------------
+Use I/O Insertion     | True
+----------------------------------------------------------------
+Use I/O Registers     | True
+----------------------------------------------------------------
+Resource Sharing      | True
+----------------------------------------------------------------
+Propagate Constants   | True
+----------------------------------------------------------------
+Remove Duplicate Reg  | True
+----------------------------------------------------------------
+Force GSR             | False
+----------------------------------------------------------------
+ROM Style             | Auto
+----------------------------------------------------------------
+RAM Style             | Auto
+----------------------------------------------------------------
+Remove LOC Properties | False
+----------------------------------------------------------------
+Partition Flow        | False
+----------------------------------------------------------------
+Use DCC Insertion     | None
+----------------------------------------------------------------
+################################################################
+
+
+The -comp option is FALSE.
+The -syn option is FALSE.
+
+Output HDL filename: ai_proto_no_assist_implementation1.vm
+-sdc option: SDC file input is ai_proto_no_assist_implementation1_cpe.ldc.
+-path . (searchpath added)
+-path .. (searchpath added)
+-path ../source/implementation1 (searchpath added)
+-path C:/lscc/radiant/2026.1/ispfpga/ice40tp/data (searchpath added)
+Mixed language design
+Verilog design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v
+Verilog design file: ../source/implementation1/lab2_ai_proto_no_assist.sv
+VHDL library: pmi
+VHDL design file: C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.vhd
+
+Compiling design...
+
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\generic.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\synthesis\verilog\iCE40UP.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ispfpga\..\cae_library\simulation\verilog\iCE40UP\iCE40UP_sp.v. VERI-1482
+Analyzing Verilog file C:/lscc/radiant/2026.1/ip/pmi/pmi_iCE40UP.v. VERI-1482
+Analyzing Verilog file ../source/implementation1/lab2_ai_proto_no_assist.sv. VERI-1482
+Top module name (Verilog): lab2_ai_proto_no_assist
+INFO <35901018> - synthesis: ../source/implementation1/lab2_ai_proto_no_assist.sv(1): compiling module lab2_ai_proto_no_assist. VERI-1018
+[Parameter Setting Section Start]
+
+	[Parameter Settings for top-level module]
+	(Module: lab2_ai_proto_no_assist)
+		CLK_FREQ_HZ               50000000
+		REFRESH_HZ                200
+		TOGGLE_COUNT              125000
+
+[Parameter Setting Section End]
+
+
+
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: clk
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: rst
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: in0[3]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: in0[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: in0[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: in0[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: in1[3]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: in1[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: in1[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: in1[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg0_n[6]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg0_n[5]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg0_n[4]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg0_n[3]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg0_n[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg0_n[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg0_n[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg1_n[6]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg1_n[5]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg1_n[4]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg1_n[3]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg1_n[2]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg1_n[1]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: seg1_n[0]
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: an0
+WARNING <35002062> - synthesis: Port rejected for I/O register mapping: an1
+
+################### Begin Area Report (lab2_ai_proto_no_assist)######################
+Number of register bits => 18 of 5280 (0 % )
+CCU2 => 9
+FD1P3XZ => 18
+IB => 10
+LUT4 => 50
+OB => 16
+################### End Area Report ##################
+Number of odd-length carry chains : 1
+Number of even-length carry chains : 0
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : n33, loads : 25
+  Net : an1_c, loads : 21
+  Net : rst_c, loads : 18
+  Net : clk_cnt_16__N_1[16], loads : 11
+  Net : clk_cnt_16__N_1[15], loads : 11
+  Net : n327, loads : 10
+  Net : n73[16], loads : 10
+  Net : n73[15], loads : 10
+  Net : clk_cnt_16__N_1[14], loads : 10
+  Net : clk_cnt_16__N_1[13], loads : 10
+################### End Clock Report ##################
+
+################### Begin Constraint Report ######################
+Constraint Summary:
+  Total number of constraints: 0
+  Total number of constraints dropped: 0
+###################  End Constraint Report  ######################
+
+Peak Memory Usage: 88 MB
+
+--------------------------------------------------------------
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+--------------------------------------------------------------
+Checksum -- synthesis -- netlist: 829989555f9f956d20f45ff5410e3ce0bcc8ab39

@@ -1,0 +1,20 @@
+----------------------------------------------------------------------
+Report for cell lab2_ai_proto2.TECH
+Register bits:  0 of 5280 (0.000%)
+I/O cells:      20
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 IB         6          100.0
+                              IOL_B         7          100.0
+                               LUT4        14          100.0
+                                 OB        14          100.0
+SUB MODULES
+                  switch_to_display         1
+                              TOTAL        42
+----------------------------------------------------------------------
+Report for cell switch_to_display.v1
+Instance Path : decoder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           50.0
+                              TOTAL         7

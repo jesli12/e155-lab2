@@ -1,0 +1,277 @@
+<HTML>
+<HEAD>
+<TITLE>Map Report</TITLE>
+<link href="file:///C:/lscc/radiant/2026.1/data/theme/css/light/report.css" rel="stylesheet" type="text/css" media="screen"/>
+<link href="file:///C:/lscc/radiant/2026.1/data/theme/css/print/report.css" rel="stylesheet" type="text/css" media="print"/>
+<style type="text/css">
+#toc {
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  padding: 2px 5px 2px 5px;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+}
+#toc_list {
+  display: none;
+  }
+</style>
+
+<script type="text/javascript">
+<!--
+function showTocList() {
+var a = document.getElementById("toc_list");
+a.style.display = "block";
+}
+
+function hideTocList() {
+var a = document.getElementById("toc_list");
+if (a)
+    a.style.display = "none";
+}
+
+//-->
+</script>
+
+</HEAD>
+
+<BODY>
+
+<DIV id="content" onclick="hideTocList()"><PRE>
+<A name="Mrp"></A>                         Lattice Mapping Report File
+
+Design:  lab2_ai_proto2
+Family:  iCE40UP
+Device:  iCE40UP5K
+Package: SG48
+Performance Grade:  High-Performance_1.2V
+
+Mapper:    version Radiant Software (64-bit) 2026.1.0.37.0
+Mapped on: Tue Sep 15 21:07:05 2026
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -i lab2_ai_proto2_implement_syn.udb -o
+     lab2_ai_proto2_implement_map.udb -mp lab2_ai_proto2_implement.mrp -hierrpt
+     -gui -msgset C:/Users/jesli/Documents/GitHub/e155-lab2/AI_Prototypes/lab2_a
+     i_proto2/promote.xml
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+
+   Number of slice registers:   0 out of  5280 (0%)
+   Number of I/O registers:      7 out of   117 (6%)
+   Number of LUT4s:            15 out of  5280 (&lt;1%)
+      Number of logic LUT4s:              15
+      Number of ripple logic:              0 (0 LUT4s)
+   Number of IO sites used:   20 out of 39 (51%)
+      Number of IO sites used for general PIO: 20
+      Number of IO sites used for I3C: 0 out of 2 (0%)
+      (note: If I3C is not used, its site can be used as general PIO)
+      Number of IO sites used for PIO+I3C: 20 out of 36 (56%)
+      Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
+      (note: If RGB LED drivers are not used, sites can be used as OD outputs,
+       see TN1288 iCE40 LED Driver Usage Guide)
+      Number of IO sites used for PIO+I3C+OD+RGB: 20 out of 39 (51%)
+   Number of DSPs:             0 out of 8 (0%)
+   Number of I2Cs:             0 out of 2 (0%)
+   Number of High Speed OSCs:  0 out of 1 (0%)
+   Number of Low Speed OSCs:   0 out of 1 (0%)
+   Number of RGB PWM:          0 out of 1 (0%)
+   Number of RGB Drivers:      0 out of 1 (0%)
+   Number of SCL FILTERs:      0 out of 2 (0%)
+   Number of SRAMs:            0 out of 4 (0%)
+   Number of WARMBOOTs:        0 out of 1 (0%)
+   Number of SPIs:             0 out of 2 (0%)
+   Number of EBRs:             0 out of 30 (0%)
+   Number of PLLs:             0 out of 1 (0%)
+   Number of Clocks:  1
+      Net clk_c: 7 loads, 7 rising, 0 falling (Driver: Port clk)
+   Number of Clock Enables:  0
+   Number of LSRs:  0
+   Top 10 highest fanout non-clock nets:
+      Net in0_c[0]: 7 loads
+      Net in0_c[1]: 7 loads
+      Net in0_c[2]: 7 loads
+      Net in0_c[3]: 7 loads
+      Net rst_c: 7 loads
+      Net VCC_net: 7 loads
+      Net decoded_seg[0]: 1 loads
+      Net decoded_seg[1]: 1 loads
+      Net decoded_seg[2]: 1 loads
+      Net display0_c_6__N_1[0]: 1 loads
+
+   Number of warnings:  10
+   Number of criticals: 0
+   Number of errors:    0
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Criticals/Warnings</big></U></B>
+
+WARNING &lt;71003020&gt; - map: Top module port &apos;en&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;in1[3]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;in1[2]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;in1[1]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;in1[0]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;en&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;in1[3]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;in1[2]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;in1[1]&apos; does not connect to anything.
+WARNING &lt;71003020&gt; - map: Top module port &apos;in1[0]&apos; does not connect to anything.
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+-------+-------+-----------+
+| IO Name             | Direction | Levelmode |  IO   |  IO   | Special   |
+|                     |           |  IO_TYPE  |  REG  |  DDR  | IO Buffer |
++---------------------+-----------+-----------+-------+-------+-----------+
+| clk                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| rst                 | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| in0[3]              | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| in0[2]              | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| in0[1]              | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| in0[0]              | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display0[6]         | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display0[5]         | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display0[4]         | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display0[3]         | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display0[2]         | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display0[1]         | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display0[0]         | OUTPUT    |           | O     |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display1[6]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display1[5]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display1[4]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display1[3]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display1[2]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display1[1]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| display1[0]         | OUTPUT    |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block i227 was optimized away.
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+
+Instance Name: display0_i4
+         Type: IOLOGIC
+Instance Name: display0_i3
+         Type: IOLOGIC
+Instance Name: display0_i2
+         Type: IOLOGIC
+Instance Name: display0_i1
+         Type: IOLOGIC
+Instance Name: display0_i5
+         Type: IOLOGIC
+Instance Name: display0_i0
+         Type: IOLOGIC
+Instance Name: display0_i6
+         Type: IOLOGIC
+
+<A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
+
+   Total number of constraints: 1
+   Total number of constraints dropped: 0
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+
+   Total CPU Time: 0 secs
+   Total REAL Time: 0 secs
+   Peak Memory Usage: 61 MB
+Checksum -- map: 2eae4e1ef7ed3b8bc1235c12936131d0efb68cb9
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995
+     AT&amp;T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent
+     Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems
+     All rights reserved.
+Copyright (c) 2002-2026 Lattice Semiconductor
+     Corporation,  All rights reserved.
+</PRE></DIV>
+<DIV id="toc" class="radiant"><span onmousemove="showTocList()">Contents</span>
+<UL id="toc_list">
+<LI><A href=#mrp_di>Design Information</A></LI>
+<LI><A href=#mrp_ds>Design Summary</A></LI>
+<LI><A href=#mrp_dwe>Design Errors/Criticals/Warnings</A></LI>
+<LI><A href=#mrp_ioa>IO (PIO) Attributes</A></LI>
+<LI><A href=#mrp_rm>Removed logic</A></LI>
+<LI><A href=#mrp_asic>ASIC Components</A></LI>
+<LI><A href=#mrp_consum>Constraint Summary</A></LI>
+<LI><A href=#mrp_runtime>Run Time and Memory Usage</A></LI>
+</UL>
+</DIV>
+
+<button id="back_to_top" class="radiant" onclick="scrollToTop()">&lt;</button>
+<script type="text/javascript">
+<!--
+var scrollStep = 0;
+function scrollToTop(){
+  var funScroll = function() {
+    var top = document.body.scrollTop;
+    if (top == 0) {
+      scrollStep = 0;
+      return;
+    }
+    if (scrollStep == 0)
+      scrollStep = top/20 + 1;
+    top -= scrollStep;
+    if (top < 0)
+      top = 0;
+    document.body.scrollTop = top;
+    requestAnimationFrame(funScroll);
+  };
+  funScroll();
+}
+
+window.addEventListener('scroll', function(e) {
+  var backToTop = document.getElementById('back_to_top')
+  if (document.body.scrollTop > 0) {
+    backToTop.style.display = 'block';
+  } else {	backToTop.style.display = 'none'  }});
+
+//-->
+</script>
+
+<style type="text/css">
+#back_to_top {
+  bottom:20px; right:20px;
+  width:30px; height:30px;
+  font-size: 20px;
+  padding: 2px 5px 2px 5px;
+  position:fixed;
+  background-color:rgba(210,210,210,0.1);
+  border-style: solid;
+  border-color: rgba(192,192,192,0.8);
+  border-width:1px;
+  display:none;
+  -webkit-transform: rotate(90deg);
+  -webkit-transform-origin:50% 50%;
+}
+#back_to_top:focus {
+  outline-width:0px;
+}
+</style>
+
+</BODY>
+
+

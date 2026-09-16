@@ -30,6 +30,9 @@
         <Source name="lab2sev_seg_pinout.pdc" type="Physical Constraints File" type_short="PDC" excluded="TRUE">
             <Options/>
         </Source>
+        <Source name="lab2top_jl_tb/lab2top_jl_tb.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
         <Source name="source/impl_1_2.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
